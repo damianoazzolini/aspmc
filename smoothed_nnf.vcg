@@ -1,0 +1,48 @@
+graph: { title: "obdd"
+
+smanhatten_edges: no
+scaling: 0.50
+treefactor: 0.9
+color: darkmagenta
+edge.color: lightyellow
+edge.thickness: 1
+edge.arrowsize: 5
+node.borderwidth: 1
+node.bordercolor: lightgreen
+node.textcolor: blue
+node.color: lightgray
+
+node: { title: "1" label: "1" shape: box}
+node: { title: "2" label: "2" shape: box}
+node: { title: "3" label: "3" shape: box}
+node: { title: "4" label: "4" shape: box}
+node: { title: "5" label: "-1" shape: box}
+node: { title: "6" label: "-2" shape: box}
+node: { title: "7" label: "-3" shape: box}
+node: { title: "8" label: "-4" shape: box}
+node: { title: "9" label: "O 2" shape: circle}
+edge: { sourcename: "9" targetname: "6" }
+edge: { sourcename: "9" targetname: "2" }
+node: { title: "10" label: "A" shape: box}
+edge: { sourcename: "10" targetname: "4" }
+edge: { sourcename: "10" targetname: "3" }
+edge: { sourcename: "10" targetname: "2" }
+edge: { sourcename: "10" targetname: "1" }
+node: { title: "11" label: "A" shape: box}
+edge: { sourcename: "11" targetname: "6" }
+edge: { sourcename: "11" targetname: "1" }
+node: { title: "12" label: "A" shape: box}
+edge: { sourcename: "12" targetname: "9" }
+edge: { sourcename: "12" targetname: "5" }
+node: { title: "13" label: "O 1" shape: circle}
+edge: { sourcename: "13" targetname: "11" }
+edge: { sourcename: "13" targetname: "12" }
+node: { title: "14" label: "A" shape: box}
+edge: { sourcename: "14" targetname: "8" }
+edge: { sourcename: "14" targetname: "7" }
+node: { title: "15" label: "A" shape: box}
+edge: { sourcename: "15" targetname: "14" }
+edge: { sourcename: "15" targetname: "13" }
+node: { title: "16" label: "O 4" shape: circle}
+edge: { sourcename: "16" targetname: "15" }
+edge: { sourcename: "16" targetname: "10" }}

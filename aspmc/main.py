@@ -323,7 +323,7 @@ def main():
     #     assignment = ", ".join([ program._external_name(v) for v in program._guess if v in solution ])
     #     logger.result(f"The overall weight of the program is {weight}")# with {assignment}")
     #     return
-    results = cnf.evaluate(strategy = strategy, preprocessing = preprocessing)
+    results = cnf.evaluate(strategy = strategy, preprocessing = preprocessing, mapping_id_val = program._nameMap)
 
     # print the results
     logger.info("   Results")
@@ -332,11 +332,21 @@ def main():
         queries = program.get_queries()
     else:
         queries = []
-    if len(queries) > 0:
-        for i,query in enumerate(queries):
-            logger.result(f"{query}: {' '*max(1,(20 - len(query)))}{results[i]}")
+        
+    if len(results) > 0:
+        # added
+        print(results)
+        lp_res = results[0][0]
+        up_res = results[1][0]
+        query = queries[0]
+        logger.result(f"Lower Probabiility: {query}: {' '*max(1,(20 - len(query)))}{lp_res}")
+        logger.result(f"Upper Probabiility: {query}: {' '*max(1,(20 - len(query)))}{up_res}")
     else:
-        logger.result(f"The overall weight of the program is {results[0]}")
+        if len(queries) > 0:
+            for i,query in enumerate(queries):
+                logger.result(f"{query}: {' '*max(1,(20 - len(query)))}{results[i]}")
+        else:
+            logger.result(f"The overall weight of the program is {results[0]}")
 
 if __name__ == "__main__":
     main()

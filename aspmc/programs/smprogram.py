@@ -46,8 +46,18 @@ class SMProblogProgram(TwoAlgebraicProgram, ProblogProgram):
         parser = Lark(my_grammar, start='program', parser='lalr', transformer=ProblogTransformer())
         program = parser.parse(program_str)
 
+        self.program_decoded = program
+        print(program)
+        # add parsing for optimizable
+        
         # ground the program
         clingo_control = Control()
+        # clingo_control = Control(["0","-Wnone","--project"])
+        # program.append("lt(X,Y):- index(X), index(Y), X < Y.")
+        # print(type(program))
+        # print(str(program))
+
+        
         self._ground(clingo_control, program)
 
         # initialize weights
@@ -56,7 +66,13 @@ class SMProblogProgram(TwoAlgebraicProgram, ProblogProgram):
             weight_list[(name, True)] = self.weights[name]
             weight_list[(name, False)] = 1 - self.weights[name]
 
-        TwoAlgebraicProgram.__init__(self, clingo_control, first_semiring, second_semiring, weight_list, {}, "lambda w : w[0]/w[1]", self.queries)
+        # original one
+        # TwoAlgebraicProgram.__init__(self, clingo_control, first_semiring, second_semiring, weight_list, {}, "lambda w : w[0]/w[1]", self.queries)
+        # per LP
+        TwoAlgebraicProgram.__init__(self, clingo_control, first_semiring, second_semiring, weight_list, {}, "lambda w : int(w[0] == w[1])", self.queries)
+        # per UP
+        # TwoAlgebraicProgram.__init__(self, clingo_control, first_semiring, second_semiring, weight_list, {}, "lambda w : int(w[0] > 0)", self.queries)
+        
 
     def _prepare_grounding(self, program):
         # take care of the transformation for negated head atoms

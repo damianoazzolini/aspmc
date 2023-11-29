@@ -92,9 +92,11 @@ class CNF(object):
         self.semirings = []
         self.quantified = []
         self.transform = None
+        self.mapping_id_val = {}
         if path is not None:
             with open(path) as in_file:
                 for line in in_file:
+                    # print(line)
                     line = line.split()
                     if len(line) == 0:
                         continue
@@ -162,6 +164,9 @@ class CNF(object):
             self.quantified = [ set(range(1,self.nr_vars + 1)) ]
             import aspmc.semirings.probabilistic
             self.semirings = [ aspmc.semirings.probabilistic ]
+        # print(self.weights)
+        # import sys
+        # sys.exit()
         for idx in self.weights:
             if abs(idx) in self.quantified[0]:
                 self.weights[idx] = np.array([ self.semirings[0].parse(w) for w in self.weights[idx].split(";") ])
@@ -172,6 +177,40 @@ class CNF(object):
         return str(self)
 
     def __str__(self):
+#         return '''
+# p cnf 7 8
+# -2 1 0
+# -4 3 0
+# -1 5 0
+# -3 5 0
+# c -5 1 3 0
+# -1 -3 6 0
+# c 1 -6 0
+# c 3 -6 0
+# c -2 7 0
+# c -4 7 0
+# -7 2 4 0
+# -5 7 0
+# -6 7 0
+# c p weight 1 0.4 0
+# c p weight -1 0.6 0
+# c p weight 2 (1.0,1.0) 0
+# c p weight -2 (0.0,1.0) 0
+# c p weight 3 (1.0,1.0) 0
+# c p weight -3 (1.0,1.0) 0
+# c p weight 4 (1.0,1.0) 0
+# c p weight -4 (1.0,1.0) 0
+# c p weight 5 (1.0,1.0) 0
+# c p weight -5 (1.0,1.0) 0
+# c p weight 6 (1.0,1.0) 0
+# c p weight -6 (1.0,1.0) 0
+# c p weight 7 (1.0,1.0) 0
+# c p weight -7 (1.0,1.0) 0
+# c p semirings aspmc.semirings.probabilistic aspmc.semirings.two_nat 0
+# c p transform lambda w : int(w[0] == w[1]) 0
+# c p quantify 1 3 0
+# c p quantify  0            
+# '''
         ret = f"p cnf {self.nr_vars} {len(self.clauses)}\n"
         for c in self.clauses:
             ret += f"{' '.join([str(l) for l in c])} 0\n"
@@ -184,10 +223,13 @@ class CNF(object):
         if len(self.semirings) > 0:
             ret += f"c p semirings {' '.join([ x.__name__ for x in self.semirings])} 0\n"
         if self.transform is not None:
+            # print(self.transform)
             ret += f"c p transform {self.transform} 0\n"
         for l in self.quantified:
             ret += f"c p quantify {' '.join([str(x) for x in l])} 0\n"
         ret += f"c p auxilliary {' '.join([str(x) for x in self.auxilliary])} 0\n"
+        
+        # print(ret)
         return ret
 
     def write_kc_cnf(self, out_file):
@@ -695,7 +737,10 @@ class CNF(object):
         logger.debug("Knowledge compiler output:")
 
         if knowledge_compiler == "c2d":
+            # print(src_path)
             p = subprocess.Popen([os.path.join(src_path, "c2d/bin/c2d_linux"), "-cache_size", str(available_memory), "-keep_trivial_cls", "-smooth_all", "-in", file_name, "-dt_in", file_name + ".dtree", "-force", file_name + ".force"], stdout=subprocess.PIPE)
+            # p = subprocess.Popen(["/mnt/c/Users/damia/Desktop/Ricerca/Repos/aspmc_devel/aspmc/aspmc/external/c2d/bin/c2d_linux", "-cache_size", str(available_memory),
+                                #  "-keep_trivial_cls", "-smooth_all", "-in", file_name, "-dt_in", file_name + ".dtree", "-force", file_name + ".force"], stdout=subprocess.PIPE)
         elif knowledge_compiler == "miniC2D":
             p = subprocess.Popen([os.path.join(src_path, "miniC2D/bin/linux/miniC2D"), "-c", file_name, "-v", file_name + ".vtree", "-s" , str(available_memory)], stdout=subprocess.PIPE)
         else:
@@ -707,6 +752,8 @@ class CNF(object):
             logger.debug(line[:-1])
         p.wait()
         p.stdout.close()
+        
+        # print('quiiiiiiiiii')
 
         if p.returncode != 0:
             logger.error(f"Knowledge compilation failed with exit code {p.exitcode}.")
@@ -723,10 +770,19 @@ class CNF(object):
             object: The value of the 2AMC instance.
         """
         start = time.time()
+        # qesto non serve se il DDNNF è già in cache
         cnf_fd, cnf_tmp = tempfile.mkstemp()
         my_signals.tempfiles.add(cnf_tmp)
         if config.config["knowledge_compiler"] == "c2d":
+            # new_cnf = CNF('tmp_cnf.cnf')
             (force_vars, d3) = concom.tree_from_cnf(self, tree_type = dtree.Dtree)
+            # aux_cnf = self
+            # (force_vars, d3) = concom.tree_from_cnf(new_cnf, tree_type = dtree.Dtree)
+            # print(self)
+            # print('d3')
+            # print(d3)
+            # print('force vars')
+            # print(force_vars)
             d3.write(cnf_tmp + ".dtree")
             my_signals.tempfiles.add(cnf_tmp + '.dtree')
             with os.fdopen(cnf_fd, 'wb') as cnf_file:
@@ -749,6 +805,9 @@ class CNF(object):
             exit(-1)
         # perform the compilation
         start = time.time()
+        
+        # import sys
+        # sys.exit()
         CNF.compile_two(cnf_tmp, knowledge_compiler = config.config["knowledge_compiler"])
         end = time.time()
         logger.info(f"Compilation time:         {end - start}")
@@ -760,12 +819,14 @@ class CNF(object):
             weights.append(self.weights[to_dimacs(i)])
         if config.config["knowledge_compiler"] == "c2d":
             circ = ConstrainedDDNNF
+            print("tracc")
         else:
             circ = ConstrainedSDD(path = None, v3 = v3)
         end = time.time()
         logger.info(f"Preparation time:         {end - start}")
         start = time.time()
-        results = circ.parse_wmc(cnf_tmp + '.nnf', weights, P, self.semirings[0], self.semirings[1], self.transform)
+        results = circ.parse_wmc(cnf_tmp + '.nnf', weights, P, self.semirings[0], self.semirings[1], self.transform, self.mapping_id_val)
+        print(results)
         end = time.time()
         logger.info(f"Counting time:            {end - start}")
         # clean up the files
@@ -815,7 +876,7 @@ class CNF(object):
         my_signals.tempfiles.remove(cnf_file_tmp)
         logger.info(f"Preprocessing time:       {end - start}")
 
-    def evaluate(self, strategy = "flexible", preprocessing = False):
+    def evaluate(self, strategy = "flexible", preprocessing = False, mapping_id_val = {}):
         """Evaluates an AMC instance by using the given strategy `strategy`.
         
         The strategy can be one of 

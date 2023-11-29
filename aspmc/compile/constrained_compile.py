@@ -83,6 +83,8 @@ def tree_from_cnf(cnf, tree_type = dtree.Dtree):
         
         The root of the D/Vtree that was constructed.
     """
+    # print(cnf)
+    # print(cnf.quantified[0])
     P = set(cnf.quantified[0])
     if config.config["constrained"] == "XD":
         D = set(cnf.get_defined(P))

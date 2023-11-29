@@ -1,0 +1,105 @@
+p cnf 17 24
+c f223 17 0
+c f213 16 0
+c f212 15 0
+c fb2 14 0
+c f13 13 0
+c f12 12 0
+c f11 11 0
+c fb1 10 0
+c b3 9 0
+c b2 8 0
+c b1 7 0
+c f(3) 6 0
+c b(3) 5 0
+c f(2) 4 0
+c b(2) 3 0
+c f(1) 2 0
+c b(1) 1 0
+c last LFB: 2
+c clausole f(i) -> b(i) --> -f(i) b(i) 0
+-2 1 0
+-4 3 0
+-6 5 0
+c combinazioni 1 fatti prob
+c [(1,), (2,), (3,)]
+c b(1), ..., b(k) -> bi --> -b(1) ... -b(k) bi 0
+-1  7 0
+c b(1), ..., b(k) -> bi --> -b(1) ... -b(k) bi 0
+-3  7 0
+c b(1), ..., b(k) -> bi --> -b(1) ... -b(k) bi 0
+-5  7 0
+c combinazioni 2 fatti prob
+c [(1, 2), (1, 3), (2, 3)]
+c b(1), ..., b(k) -> bi --> -b(1) ... -b(k) bi 0
+-1 -3  8 0
+c b(1), ..., b(k) -> bi --> -b(1) ... -b(k) bi 0
+-1 -5  8 0
+c b(1), ..., b(k) -> bi --> -b(1) ... -b(k) bi 0
+-3 -5  8 0
+c combinazioni 3 fatti prob
+c [(1, 2, 3)]
+c b(1), ..., b(k) -> bi --> -b(1) ... -b(k) bi 0
+-1 -3 -5  9 0
+c combinazioni 1 fly
+c [(1,), (2,), (3,)]
+2 -11 0
+4 -12 0
+6 -13 0
+-10 11 12 13 0
+c combinazioni 2 fly
+c [(1, 2), (1, 3), (2, 3)]
+2 -15 0
+4 -15 0
+2 -16 0
+6 -16 0
+4 -17 0
+6 -17 0
+-14 15 16 17 0
+c % 1 birds: not fb < 1 b
+-7 10 0
+c % 2 birds: not fb < 1 b
+-8 10 0
+c % 3 birds: not fb < 2 b
+-9 14 0
+c p weight 1 0.4 0
+c p weight -1 0.6 0
+c p weight 2 (1.0,1.0) 0
+c p weight -2 (0,1.0) 0
+c p weight 3 0.4 0
+c p weight -3 0.6 0
+c p weight 4 (1.0,1.0) 0
+c p weight -4 (1.0,1.0) 0
+c p weight 5 0.4 0
+c p weight -5 0.6 0
+c p weight 6 (1.0,1.0) 0
+c p weight -6 (1.0,1.0) 0
+c p weight 7 (1.0,1.0) 0
+c p weight -7 (1.0,1.0) 0
+c p weight 8 (1.0,1.0) 0
+c p weight -8 (1.0,1.0) 0
+c p weight 9 (1.0,1.0) 0
+c p weight -9 (1.0,1.0) 0
+c p weight 10 (1.0,1.0) 0
+c p weight -10 (1.0,1.0) 0
+c p weight 11 (1.0,1.0) 0
+c p weight -11 (1.0,1.0) 0
+c p weight 12 (1.0,1.0) 0
+c p weight -12 (1.0,1.0) 0
+c p weight 13 (1.0,1.0) 0
+c p weight -13 (1.0,1.0) 0
+c p weight 14 (1.0,1.0) 0
+c p weight -14 (1.0,1.0) 0
+c p weight 15 (1.0,1.0) 0
+c p weight -15 (1.0,1.0) 0
+c p weight 16 (1.0,1.0) 0
+c p weight -16 (1.0,1.0) 0
+c p weight 17 (1.0,1.0) 0
+c p weight -17 (1.0,1.0) 0
+c p semirings aspmc.semirings.probabilistic aspmc.semirings.two_nat 0
+c p transform lambda w : int(w[0] == w[1]) 0
+c p quantify 1 3 5 0
+c p quantify 0
+c p auxilliary 7 8 9 10 11 12 13 14 15 16 17 0
+c expected: (0.144, 0.4)
+c time aspmc -m cnf prg.cnf -c -k c2d
