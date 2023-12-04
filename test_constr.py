@@ -13,7 +13,7 @@ class Problem:
         function_to_opt : str,
         symbolic_variables : 'list[str]'
         ) -> None:
-        self.function_to_opt = function_to_opt
+        self.function_to_opt = parse_expr(function_to_opt)
         self.symbolic_variables = symbolic_variables
 
 
@@ -22,16 +22,13 @@ class Problem:
         Evaluates the constraint function
         '''
         if other_to_eval == "":
-            s = str(self.function_to_opt)
+            s = self.function_to_opt
         else:
-            s = str(other_to_eval)
+            s = parse_expr(other_to_eval)
         
-        for idx, val in enumerate(self.symbolic_variables):
-            s = s.replace(val, str(x[idx]))
-        # # return sympify(s)
-        # return simplify_chunk(s)
-        ev = eval(s)
-        print(f"fn: {self.function_to_opt}, other: {other_to_eval}, ev in {x}: {ev}")
+        current_dict_values = dict(zip(self.symbolic_variables,x))
+        ev = s.subs(current_dict_values)
+        print(f"fn: {self.function_to_opt}, other: {other_to_eval}, ev in {current_dict_values}: {ev}")
         return ev
 
 
@@ -42,9 +39,10 @@ class Problem:
         j = []
         s = self.function_to_opt
         for symbolic_var in self.symbolic_variables:
-            d = diff(s,symbolic_var)
+            d = diff(s, symbolic_var)
             j.append(self.eval_fn(x,str(d)))
         return j
+
 
 target_equation = "b+c"
 opt_facts = ["b","c"]

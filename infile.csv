@@ -1,0 +1,2 @@
+id, filename, query_list, opt_facts, constr_list, target_eq
+1, test.test, ["qr"], ["edge(1,2)","edge(1,3)"], ["P(qr) - 0.7", "-(P(edge(1,2)) - P(edge(1,3)) - 0.06)", "-(P(edge(1,3)) - P(edge(1,2)) - 0.06)"], "P(edge(1,2)) + P(edge(1,3))"

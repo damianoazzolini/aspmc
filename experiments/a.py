@@ -8,6 +8,7 @@ from scipy.optimize import minimize
 from scipy.optimize import NonlinearConstraint
 from scipy.optimize import shgo
 
+import time
 
 import sys
 
@@ -74,7 +75,9 @@ def get_eq(
     program_files = []
     strategy = "flexible"
     preprocessing = False
-
+    
+    start_time = time.time()
+    
     program = SMProblogProgram(program_str, program_files)
     program._decomposeGraph()
 
@@ -84,8 +87,8 @@ def get_eq(
     cnf = program.get_cnf()
     # print(program.get_weights())
 
-    dump_cnf_file = "cnf_file.cnf"
-    cnf.to_file(dump_cnf_file, extras = True)
+    # dump_cnf_file = "cnf_file.cnf"
+    # cnf.to_file(dump_cnf_file, extras = True)
 
     # dizionario che contiene id variabile - valore
     # print(program._nameMap)
@@ -149,15 +152,18 @@ def get_eq(
     # al posto di evaluate potrei usare solve_compilation_two e fare il caching
     # se mi salvo il DDNNF posso usare usare parse_wmc per leggere non dal file ma
     # dal DDNNF salvato
-
+    
+    nnf_construction_time = time.time() - start_time
+    print(f"nnf_construction_time: {nnf_construction_time}")
+    
     if len(results) > 0:
         # added
         # print(results)
         lp_res = results[0][0]
         up_res = results[1][0]
         # query = "q"
-        print(f"Lower Probabiility: {query}: {' '*max(1,(20 - len(query)))}{lp_res}")
-        print(f"Upper Probabiility: {query}: {' '*max(1,(20 - len(query)))}{up_res}")
+        # print(f"Lower Probabiility: {query}: {' '*max(1,(20 - len(query)))}{lp_res}")
+        # print(f"Upper Probabiility: {query}: {' '*max(1,(20 - len(query)))}{up_res}")
 
     eq_lp = results[3]
     eq_up = results[4]
@@ -173,12 +179,17 @@ def get_eq(
     # sys.exit()
     
     slp = str(simplify(sympify(eq_lp)))
-    print(slp)
+    # print(slp)
     # print(eq_up)
+    
+    start_time = time.time()
     sup = str(simplify(sympify(eq_up)))
     print(sup)
-    # sys.exit()
-
+    symp_time = time.time() - start_time
+    print(f"symp_time: {symp_time}")
+    print(f"number of sums: {sup.count('+')}")
+    print(f"number of prods: {sup.count('*')}")
+    
     return slp, sup, keep_symbolic
     # s = (0.502*v_6*1)/0.99+((1-v_6)*1*0.4*1)/0.01+(0.6*1*1*v_6)/0.99+((1-v_6)*0.5*1*1*1*1)/0.01+(0.4*v_6*1*0)/0.99+(0.01*(1-v_6)*1*1*1)/0.01+(0*0.6*1*1*1*1*v_6)/0.99+(1-v_6)*0.5*1/0.001
 
@@ -187,11 +198,10 @@ def compute_optimal_probability(
         program : str,
         query_list : 'list[str]',
         optimizable_facts: 'dict[str, tuple[float, float]]',
+        target_equation : str,
         constraints_list : 'list[str]',
         target : str = "UP",
-        epsilon : float = -1,
-        method : str = "SLSQP",
-        chunk_size : int = 100
+        method : str = "SLSQP"
     ):
     '''
     Compute the optimal value to associate to probabilistic facts.
@@ -212,15 +222,6 @@ def compute_optimal_probability(
         else:
             constraints_from_queries[query] = lq
 
-    # 2: create target eq: the target is to minimize the sum of the prob of the
-    # optimizable facts
-    target_equation = "+".join(optimizable_facts.keys())
-    print("target")
-    print(target_equation)
-    
-    # problem_to_solve = Problem(symplified, optimizable_facts.keys())
-    problem_to_solve = Problem(target_equation.replace(' ',''), optimizable_facts.keys())
-
     # 3: generate the bounds
     bounds : 'list[tuple[float,float]]' = []
     for bound in optimizable_facts.values():
@@ -229,13 +230,13 @@ def compute_optimal_probability(
     # 3.1: initial values for the parameters
     initial_guesses : 'list[float]' = [0.5]*len(optimizable_facts)
     
-    # 4: generate all the non linear constraints for the queries
-    # provided constraints of the form
+    # 4: generate the target equation and all the non linear constraints 
+    # for the queries provided constraints of the form
     # P(q) - P(v) > 0
     # constraints : 'list[dict]' = []
     constraints = []
     # current_problem_list : 'list[Problem]' = []
-    for idx, constr in enumerate(constraints_list):
+    for idx, constr in enumerate([target_equation] + constraints_list):
         current_constr = constr
         for c_query, c_eq in constraints_from_queries.items():
             to_find = f"P({c_query})"
@@ -248,22 +249,21 @@ def compute_optimal_probability(
                 current_constr = current_constr.replace(to_find, f"({sv})")
         
         # add the constraint
-        print(f"constraint: {current_constr}")
-        current_problem = Problem(current_constr, optimizable_facts.keys())
-        # constraints.append(
-        #     NonlinearConstraint(
-        #         current_problem_list[-1].eval_fn,
-        #         0,
-        #         10,
-        #         current_problem_list[-1].jac_fn
-        #     )
-        # )
-        constraints.append({
-            'type' : 'ineq',
-            'fun' : current_problem.eval_fn,
-            'jac' : current_problem.jac_fn    
-        })
-        
+        if idx == 0:
+            # this is the target equation
+            print(f"Target equation: {current_constr}")
+            problem_to_solve = Problem(current_constr, optimizable_facts.keys())
+        else:
+            print(f"constraint: {current_constr}")
+            current_problem = Problem(current_constr, optimizable_facts.keys())
+
+            constraints.append({
+                'type' : 'ineq',
+                'fun' : current_problem.eval_fn,
+                'jac' : current_problem.jac_fn    
+            })
+    
+    start_time = time.time()
     res = minimize(
         problem_to_solve.eval_fn,
         initial_guesses,
@@ -273,6 +273,8 @@ def compute_optimal_probability(
         options={'ftol': 1e-9},
         constraints=constraints
     )
+    opt_time = time.time() - start_time
+    print(f"opt_time: {opt_time}")
     
     return res
 
@@ -353,15 +355,19 @@ def main_test():
     # optimizable_facts["edge(4,5)"] = (0.4,0.8)
     # optimizable_facts["edge(5,6)"] = (0.4,0.8)
     
+    target_equation = "P(b) + P(c)"
+    
     # by default assume that P(X) > 0, so I write only the left part
     # constraints_list = ["P(path(0,5))"]
     # inequality means that it is to be non-negative
+    # constraints_list = ["P(qr) - 0.7", "-(P(b) - P(c) - 0.06)", "-(P(c) - P(b) - 0.06)"]
     constraints_list = ["P(qr) - 0.7", "-(P(b) - P(c) - 0.06)", "-(P(c) - P(b) - 0.06)"]
     
     res = compute_optimal_probability(
         program=program_str,
         query_list=query_list,
         optimizable_facts=optimizable_facts,
+        target_equation=target_equation,
         constraints_list=constraints_list
     )
     
@@ -387,7 +393,7 @@ def main():
         transmit(A,B):- path(A,B), node(A), node(B), \+ not_transmit(A,B).
         not_transmit(A,B):- path(A,B), node(A), node(B), \+ transmit(A,B).
 
-        qr:- transmit(1,9).
+        qr:- transmit(1,9).        
         node(1).
         node(2).
         node(3).
@@ -400,36 +406,31 @@ def main():
     """
     
     # query_list = ["path(0,5)"]
-    query_list = ["qr"]
+    query_list : 'list[str]' = ["qr"]
     
     optimizable_facts : 'dict[str,tuple[float,float]]' = {}
     
-    # optimizable_facts["a"] = (0.4,0.8)
     optimizable_facts["edge(1,2)"] = (0.4,0.8)
     optimizable_facts["edge(1,3)"] = (0.4,0.8)
-    # optimizable_facts["edge(0,5)"] = (0.4,0.8)
-    # optimizable_facts["edge(1,2)"] = (0.4,0.8)
-    # optimizable_facts["edge(1,4)"] = (0.4,0.8)
-    # optimizable_facts["edge(1,6)"] = (0.4,0.8)
-    # optimizable_facts["edge(2,4)"] = (0.4,0.8)
-    # optimizable_facts["edge(2,6)"] = (0.4,0.8)
-    # optimizable_facts["edge(3,5)"] = (0.4,0.8)
-    # optimizable_facts["edge(4,5)"] = (0.4,0.8)
-    # optimizable_facts["edge(5,6)"] = (0.4,0.8)
+
     
     # by default assume that P(X) > 0, so I write only the left part
     # constraints_list = ["P(path(0,5))"]
-    # inequality means that it is to be non-negative
+    # inequality means that it has to be non-negative
     constraints_list = ["P(qr) - 0.7", "-(P(edge(1,2)) - P(edge(1,3)) - 0.06)", "-(P(edge(1,3)) - P(edge(1,2)) - 0.06)"]
+    # constraints_list = ["P(qr) - 0.7"]
+    
+    target_equation = "P(edge(1,2)) + P(edge(1,3))"
     
     res = compute_optimal_probability(
         program=program_str,
         query_list=query_list,
         optimizable_facts=optimizable_facts,
+        target_equation=target_equation,
         constraints_list=constraints_list
     )
     
-    print(res)
+    print(res)   
 
 
 

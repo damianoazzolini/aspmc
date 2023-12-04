@@ -826,7 +826,7 @@ class CNF(object):
         logger.info(f"Preparation time:         {end - start}")
         start = time.time()
         results = circ.parse_wmc(cnf_tmp + '.nnf', weights, P, self.semirings[0], self.semirings[1], self.transform, self.mapping_id_val)
-        print(results)
+        # print(results)
         end = time.time()
         logger.info(f"Counting time:            {end - start}")
         # clean up the files

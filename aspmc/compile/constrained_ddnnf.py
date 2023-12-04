@@ -57,6 +57,7 @@ class ConstrainedDDNNF(object):
         # tolto il with open
         # with open(path) as ddnnf:
         #     _, nr_nodes, nr_edges, nr_leafs = ddnnf.readline().split()
+        
         mem = []
         mem_lp = []
         mem_up = []
@@ -366,6 +367,9 @@ class ConstrainedDDNNF(object):
         # print(mem_up)
         # print(eq_lp_list)
         # print(eq_up_list)
+        
+        # print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        
         
         if mapping_id_val is None:
             return mem_lp[idx - 1], mem_up[idx - 1], mem[idx - 1]
