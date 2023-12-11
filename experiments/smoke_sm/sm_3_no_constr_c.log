@@ -1,0 +1,38 @@
+Started at: 
+Sat Dec  9 10:36:50 CET 2023
+Instance 3
+[INFO] aspmc: Tree Decomposition #bags: 108 unfolded treewidth: 6 #vertices: 124
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 108 treewidth: 17 #vertices: 135
+[INFO] aspmc: Dtree time:               2.7273383140563965
+[INFO] aspmc: Compilation time:         0.05695080757141113
+[INFO] aspmc: Preparation time:         0.00018787384033203125
+[INFO] aspmc: Counting time:            0.6267907619476318
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., query(qr).]
+tracc
+nnf_construction_time: 4.56279730796814
+Pre simplification
+number of sums: 23420
+number of prods: 32067
+0.011856*v_39 + 0.012
+Post simplification
+symp_time: 7.533738613128662
+number of sums: 1
+number of prods: 1
+opt_time: 0.001794576644897461
+     fun: 0.09999999999999998
+   maxcv: 1.3877787807814457e-17
+ message: 'Optimization terminated successfully.'
+    nfev: 14
+  status: 1
+ success: True
+       x: array([0.05, 0.05])
+
+real	0m13.392s
+user	0m12.554s
+sys	0m0.704s
+Ended at: 
+Sat Dec  9 10:37:03 CET 2023

@@ -1,0 +1,25 @@
+Started at: 
+Sat Dec  9 12:04:45 CET 2023
+Computing answer sets
+Answer set generation time: 0.16635847091674805 s
+number of sums: 1023
+number of prods: 9216
+Starting optimization
+     fun: 0.49999999999999895
+   maxcv: 1.1796119636642288e-16
+ message: 'Optimization terminated successfully.'
+    nfev: 67
+  status: 1
+ success: True
+       x: array([0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05])
+Optimization time: 61.77437925338745 s
+Target equation: 1.000000000000021
+Sum of optimizable facts = 0.49999999999999895
+Optimal probabilities
+[0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05]
+
+real	1m3.254s
+user	1m2.745s
+sys	0m0.338s
+Ended at: 
+Sat Dec  9 12:05:48 CET 2023

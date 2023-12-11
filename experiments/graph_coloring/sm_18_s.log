@@ -1,0 +1,34 @@
+Started at: 
+Thu Dec  7 17:38:24 CET 2023
+Instance 18
+[INFO] aspmc: Tree Decomposition #bags: 199 unfolded treewidth: 5 #vertices: 220
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 203 treewidth: 21 #vertices: 230
+[INFO] aspmc: Dtree time:               32.06979179382324
+[INFO] aspmc: Compilation time:         30.93986439704895
+[INFO] aspmc: Preparation time:         0.0002987384796142578
+slurmstepd: error: Job 2096969 exceeded memory limit (17513808 > 16777216), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 2096969 ON node03 CANCELLED AT 2023-12-07T17:40:24 ***
+[red(X):-node(X),not green(X),not blue(X)., green(X):-node(X),not red(X),not blue(X)., blue(X):-node(X),not red(X),not green(X)., e(X,Y):-edge(X,Y)., e(Y,X):-edge(Y,X)., :-e(X,Y),red(X),red(Y)., :-e(X,Y),green(X),green(Y)., :-e(X,Y),blue(X),blue(Y)., 0.6::edge(1,2)., 0.1::edge(1,3)., 0.4::edge(2,5)., 0.3::edge(2,6)., 0.3::edge(3,4)., 0.8::edge(4,5)., 0.2::edge(5,6)., 0.3::edge(2,12)., 0.3::edge(8,10)., 0.3::edge(14,16)., 0.3::edge(3,13)., 0.3::edge(6,9)., 0.3::edge(8,11)., 0.3::edge(10,18)., 0.3::edge(14,15)., 0.3::edge(8,17)., 0.3::edge(4,17)., 0.3::edge(5,13)., 0.3::edge(1,12)., 0.3::edge(1,15)., qr:-blue(1)., qr:-blue(3)., qr:-blue(5)., qr:-blue(7)., qr:-blue(9)., qr:-blue(11)., qr:-blue(13)., qr:-blue(15)., qr:-blue(17)., red(1)., green(4)., green(6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., node(10)., node(11)., node(12)., node(13)., node(14)., node(15)., node(16)., node(17)., node(18)., query(qr).]
+tracc
+Traceback (most recent call last):
+  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/graph_coloring/runner_with_pair_constr.py", line 34, in <module>
+    res = compute_optimal_probability(
+  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/graph_coloring/a.py", line 172, in compute_optimal_probability
+    lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
+  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/graph_coloring/a.py", line 98, in get_eq
+    results = cnf.evaluate(strategy = strategy, preprocessing = preprocessing)
+  File "/home/dazzolin/test/2023aspmc/aspmc/aspmc/compile/cnf.py", line 904, in evaluate
+    return self.solve_compilation(preprocessing = preprocessing)
+  File "/home/dazzolin/test/2023aspmc/aspmc/aspmc/compile/cnf.py", line 934, in solve_compilation
+    results = self.solve_compilation_two()
+  File "/home/dazzolin/test/2023aspmc/aspmc/aspmc/compile/cnf.py", line 828, in solve_compilation_two
+    results = circ.parse_wmc(cnf_tmp + '.nnf', weights, P, self.semirings[0], self.semirings[1], self.transform, self.mapping_id_val)
+  File "/home/dazzolin/test/2023aspmc/aspmc/aspmc/compile/constrained_ddnnf.py", line 116, in parse_wmc
+    val_lp *= mem_lp[child]
+  File "/home/dazzolin/test/2023aspmc/aspmc/aspmc/signal_handling.py", line 17, in handler
+    raise KeyboardInterrupt("Received Control+C, cleaning up and shutting down.")
+KeyboardInterrupt: Received Control+C, cleaning up and shutting down.

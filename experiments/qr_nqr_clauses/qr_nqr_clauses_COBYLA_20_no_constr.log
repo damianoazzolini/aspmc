@@ -1,0 +1,718 @@
+Started at: 
+Thu Dec  7 17:54:42 CET 2023
+Instance: 2
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0338079929351807
+[INFO] aspmc: Compilation time:         0.18518924713134766
+[INFO] aspmc: Preparation time:         0.00013375282287597656
+[INFO] aspmc: Counting time:            15.115286111831665
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.447731971740723
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 65
+1.0*v_12 - (0.577951262543041*v_1 + 0.422048737456959)*(v_12 - 1)
+Post simplification
+symp_time: 20.03027582168579
+number of sums: 1
+number of subs: 2
+number of prods: 3
+opt_time: 0.002073049545288086
+     fun: 0.5269964027003287
+   maxcv: 0.013500934963984745
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 15
+  status: 4
+ success: False
+       x: array([0.2634982, 0.2634982])
+
+real	0m39.735s
+user	0m38.337s
+sys	0m1.253s
+Instance: 3
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0325818061828613
+[INFO] aspmc: Compilation time:         0.18302249908447266
+[INFO] aspmc: Preparation time:         0.0001289844512939453
+[INFO] aspmc: Counting time:            16.047839403152466
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 19.375970125198364
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 139
+1.0*v_12 - (v_12 - 1)*(0.760231058654565*v_1 - 0.760231058654565*(v_1 - 1)*(0.783743359437696*v_3 + 0.216256640562304) + 0.239768941345435)
+Post simplification
+symp_time: 21.12078332901001
+number of sums: 2
+number of subs: 4
+number of prods: 6
+opt_time: 0.004640102386474609
+     fun: 0.6048841539734382
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 23
+  status: 1
+ success: True
+       x: array([0.25      , 0.25      , 0.10488415])
+
+real	0m41.741s
+user	0m40.257s
+sys	0m1.277s
+Instance: 4
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0329365730285645
+[INFO] aspmc: Compilation time:         0.18190264701843262
+[INFO] aspmc: Preparation time:         0.0001285076141357422
+[INFO] aspmc: Counting time:            15.128872632980347
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.45499277114868
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 163
+1.0*v_12 - (v_12 - 1)*(1.0*v_14 - (v_14 - 1)*(0.783743359437696*v_1 - 0.783743359437696*(v_1 - 1)*(0.783743359437696*v_3 + 0.216256640562304) + 0.216256640562304))
+Post simplification
+symp_time: 21.099050998687744
+number of sums: 2
+number of subs: 6
+number of prods: 8
+opt_time: 0.00754547119140625
+     fun: 0.6360396098465635
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 32
+  status: 1
+ success: True
+       x: array([0.05      , 0.25      , 0.25      , 0.08603961])
+
+real	0m40.734s
+user	0m39.244s
+sys	0m1.328s
+Instance: 5
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.03456711769104
+[INFO] aspmc: Compilation time:         0.18410921096801758
+[INFO] aspmc: Preparation time:         0.0001270771026611328
+[INFO] aspmc: Counting time:            15.507699966430664
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.8407142162323
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 680
+v_12*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743) - (v_12 - 1)*(v_14*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743) + (v_14 - 1)*(-1.0*v_1*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743) + 0.783743359437696*(v_1 - 1)*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.02498916014787*(v_3 - 1)*(v_4 - 1) + 0.1412659743) + 0.216256640562304*(v_1 - 1)*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743)))
+Post simplification
+symp_time: 21.4447979927063
+number of sums: 18
+number of subs: 26
+number of prods: 40
+opt_time: 0.019440889358520508
+     fun: 0.6668024083042278
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 49
+  status: 1
+ success: True
+       x: array([0.05      , 0.25      , 0.25      , 0.06680241, 0.05      ])
+
+real	0m41.475s
+user	0m40.025s
+sys	0m1.276s
+Instance: 6
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0327329635620117
+[INFO] aspmc: Compilation time:         0.17642450332641602
+[INFO] aspmc: Preparation time:         0.0001380443572998047
+[INFO] aspmc: Counting time:            15.243205547332764
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.563143730163574
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 812
+v_12*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743) - (v_12 - 1)*(v_14*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743) - (v_14 - 1)*(v_15*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743) + (v_15 - 1)*(-1.0*v_1*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743) + 0.80798284478113*(v_1 - 1)*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.02498916014787*(v_3 - 1)*(v_4 - 1) + 0.1412659743) + 0.19201715521887*(v_1 - 1)*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(0.97*v_4 + 0.03) + 0.832972004929*(v_3 - 1)*(v_4 - 1) + 0.1412659743))))
+Post simplification
+symp_time: 21.607285261154175
+number of sums: 21
+number of subs: 32
+number of prods: 48
+opt_time: 0.0264132022857666
+     fun: 0.6977515253832768
+   maxcv: 1.7490873083225722e-08
+ message: 'Optimization terminated successfully.'
+    nfev: 54
+  status: 1
+ success: True
+       x: array([0.24775153, 0.05      , 0.05      , 0.25      , 0.05      ,
+       0.05      ])
+
+real	0m41.407s
+user	0m39.862s
+sys	0m1.351s
+Instance: 7
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.033938407897949
+[INFO] aspmc: Compilation time:         0.18474459648132324
+[INFO] aspmc: Preparation time:         0.0001366138458251953
+[INFO] aspmc: Counting time:            17.365397214889526
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 20.700867652893066
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 884
+v_12*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) - (v_12 - 1)*(v_14*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) - (v_14 - 1)*(v_15*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) + (v_15 - 1)*(-1.0*v_1*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) + 0.19201715521887*(v_1 - 1)*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) + 0.80798284478113*(v_1 - 1)*(0.8587340257*v_3 - 0.025762020771*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743))))
+Post simplification
+symp_time: 22.0796639919281
+number of sums: 9
+number of subs: 56
+number of prods: 54
+opt_time: 0.03228926658630371
+     fun: 0.7319151814473797
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 56
+  status: 1
+ success: True
+       x: array([0.23191518, 0.05      , 0.25      , 0.05      , 0.05      ,
+       0.05      , 0.05      ])
+
+real	0m44.216s
+user	0m42.505s
+sys	0m1.349s
+Instance: 8
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0330545902252197
+[INFO] aspmc: Compilation time:         0.17723894119262695
+[INFO] aspmc: Preparation time:         0.00014066696166992188
+[INFO] aspmc: Counting time:            14.86631441116333
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.186816930770874
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 1026
+v_12*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) - (v_12 - 1)*(v_14*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) - (v_14 - 1)*(v_15*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) - (v_15 - 1)*(v_16*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) + (v_16 - 1)*(-1.0*v_1*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) + 0.167027995071*(v_1 - 1)*(0.8587340257*v_3 - 0.8587340257*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743) + 0.832972004929*(v_1 - 1)*(0.8587340257*v_3 - 0.025762020771*(v_3 - 1)*(v_4 - 1)*(v_5 - 1) - 0.8587340257*(v_3 - 1)*(v_4 - v_5*(v_4 - 1)) + 0.1412659743)))))
+Post simplification
+symp_time: 23.74172019958496
+number of sums: 10
+number of subs: 66
+number of prods: 63
+opt_time: 0.04447746276855469
+     fun: 0.7657467889738917
+   maxcv: 5.551115123125783e-17
+ message: 'Optimization terminated successfully.'
+    nfev: 64
+  status: 1
+ success: True
+       x: array([0.25      , 0.21574679, 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      ])
+
+real	0m43.214s
+user	0m41.650s
+sys	0m1.367s
+Instance: 9
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0325846672058105
+[INFO] aspmc: Compilation time:         0.17757296562194824
+[INFO] aspmc: Preparation time:         0.00013494491577148438
+[INFO] aspmc: Counting time:            14.776652097702026
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.097108364105225
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 1306
+v_12*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) - (v_12 - 1)*(v_14*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) - (v_14 - 1)*(v_15*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) - (v_15 - 1)*(v_16*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) + (v_16 - 1)*(-1.0*v_1*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) + 0.832972004929*(v_1 - 1)*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.0265587843*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) + 0.167027995071*(v_1 - 1)*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719)))))
+Post simplification
+symp_time: 27.978235960006714
+number of sums: 31
+number of subs: 80
+number of prods: 91
+opt_time: 0.06177330017089844
+     fun: 0.799244528574796
+   maxcv: 1.3183898417423734e-16
+ message: 'Optimization terminated successfully.'
+    nfev: 72
+  status: 1
+ success: True
+       x: array([0.05      , 0.25      , 0.05      , 0.19924453, 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      ])
+
+real	0m47.332s
+user	0m45.777s
+sys	0m1.394s
+Instance: 10
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.035681962966919
+[INFO] aspmc: Compilation time:         0.17751121520996094
+[INFO] aspmc: Preparation time:         0.00013208389282226562
+[INFO] aspmc: Counting time:            15.012196779251099
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.3364098072052
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 1488
+v_12*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) - (v_12 - 1)*(v_14*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) - (v_14 - 1)*(v_15*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) - (v_15 - 1)*(v_16*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) - (v_16 - 1)*(v_17*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) + (v_17 - 1)*(-1.0*v_1*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) + 0.8587340257*(v_1 - 1)*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.0265587843*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719) + 0.1412659743*(v_1 - 1)*(-0.88529281*v_3*(v_6 - 1) + 0.88529281*v_6 + 0.88529281*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1) + 0.88529281*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1) + 0.11470719))))))
+Post simplification
+symp_time: 35.50671720504761
+number of sums: 35
+number of subs: 92
+number of prods: 104
+opt_time: 0.0998542308807373
+     fun: 0.8323749857074717
+   maxcv: 2.510120391541193e-07
+ message: 'Optimization terminated successfully.'
+    nfev: 106
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.05      , 0.05      , 0.25      ,
+       0.18237499, 0.05      , 0.05      , 0.05      , 0.05      ])
+
+real	0m55.207s
+user	0m53.558s
+sys	0m1.440s
+Instance: 11
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.033630847930908
+[INFO] aspmc: Compilation time:         0.18231797218322754
+[INFO] aspmc: Preparation time:         0.00013828277587890625
+[INFO] aspmc: Counting time:            15.322362899780273
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.650032997131348
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 1920
+v_12*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_12 - 1)*(v_14*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_14 - 1)*(v_15*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_15 - 1)*(v_16*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_16 - 1)*(v_17*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) + (v_17 - 1)*(-1.0*v_1*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) + 0.1412659743*(v_1 - 1)*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) + 0.8587340257*(v_1 - 1)*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.02738019*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)))))))
+Post simplification
+symp_time: 49.58865427970886
+number of sums: 19
+number of subs: 156
+number of prods: 160
+opt_time: 0.12072539329528809
+     fun: 0.8651639241256277
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 99
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.05      , 0.25      , 0.05      ,
+       0.16516392, 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      ])
+
+real	1m9.867s
+user	1m7.970s
+sys	0m1.511s
+Instance: 12
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0356733798980713
+[INFO] aspmc: Compilation time:         0.1791536808013916
+[INFO] aspmc: Preparation time:         0.00015473365783691406
+[INFO] aspmc: Counting time:            15.60806679725647
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.935192823410034
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 2156
+v_12*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_12 - 1)*(v_14*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_14 - 1)*(v_15*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_15 - 1)*(v_16*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_16 - 1)*(v_17*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) - (v_17 - 1)*(v_18*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) + (v_18 - 1)*(-1.0*v_1*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) + 0.11470719*(v_1 - 1)*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.912673*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1)) + 0.88529281*(v_1 - 1)*(0.912673*v_3*(v_6 - 1)*(v_7 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 - 0.02738019*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1) - 0.912673*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1) + 0.087327*(v_6 - 1)*(v_7 - 1))))))))
+Post simplification
+symp_time: 79.3251485824585
+number of sums: 21
+number of subs: 176
+number of prods: 180
+opt_time: 0.12392640113830566
+     fun: 0.8975905888106527
+   maxcv: 3.5697261813183445e-09
+ message: 'Optimization terminated successfully.'
+    nfev: 89
+  status: 1
+ success: True
+       x: array([0.05000325, 0.05000363, 0.05000374, 0.0500034 , 0.05000352,
+       0.05000318, 0.05000346, 0.05000356, 0.05000343, 0.25      ,
+       0.05000388, 0.14755555])
+
+real	1m39.972s
+user	1m37.995s
+sys	0m1.562s
+Instance: 13
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.032710313796997
+[INFO] aspmc: Compilation time:         0.1766507625579834
+[INFO] aspmc: Preparation time:         0.00013589859008789062
+[INFO] aspmc: Counting time:            14.877634763717651
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.197622537612915
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 2723
+v_12*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_12 - 1)*(v_14*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_14 - 1)*(v_15*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_15 - 1)*(v_16*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_16 - 1)*(v_17*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_17 - 1)*(v_18*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) + (v_18 - 1)*(-1.0*v_1*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) + 0.88529281*(v_1 - 1)*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.028227*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) + 0.11470719*(v_1 - 1)*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1))))))))
+Post simplification
+symp_time: 132.41705751419067
+number of sums: 39
+number of subs: 230
+number of prods: 243
+opt_time: 0.1622776985168457
+     fun: 0.9296396768540032
+   maxcv: 6.158039727033326e-07
+ message: 'Optimization terminated successfully.'
+    nfev: 100
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.25      , 0.12963968, 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      ])
+
+real	2m32.242s
+user	2m30.357s
+sys	0m1.604s
+Instance: 14
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0326955318450928
+[INFO] aspmc: Compilation time:         0.17750978469848633
+[INFO] aspmc: Preparation time:         0.00012803077697753906
+[INFO] aspmc: Counting time:            15.611962080001831
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 18.94074273109436
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 3022
+v_12*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_12 - 1)*(v_14*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_14 - 1)*(v_15*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_15 - 1)*(v_16*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_16 - 1)*(v_17*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_17 - 1)*(v_18*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) - (v_18 - 1)*(v_19*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) + (v_19 - 1)*(-1.0*v_1*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) + 0.912673*(v_1 - 1)*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.028227*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)) + 0.087327*(v_1 - 1)*(-0.9409*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) + 0.9409*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.9409*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0591*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)))))))))
+Post simplification
+symp_time: 224.1554343700409
+number of sums: 43
+number of subs: 256
+number of prods: 270
+opt_time: 0.15981817245483398
+     fun: 0.9613181258093073
+   maxcv: 2.0816681711721685e-17
+ message: 'Optimization terminated successfully.'
+    nfev: 104
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.11131813, 0.25      ,
+       0.05      , 0.05      , 0.05      , 0.05      ])
+
+real	4m4.911s
+user	4m2.773s
+sys	0m1.782s
+Instance: 15
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0288004875183105
+[INFO] aspmc: Compilation time:         0.15206408500671387
+[INFO] aspmc: Preparation time:         0.00011754035949707031
+[INFO] aspmc: Counting time:            13.206154346466064
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 16.48456048965454
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 3732
+v_12*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_12 - 1)*(v_14*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_14 - 1)*(v_15*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_15 - 1)*(v_16*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_16 - 1)*(v_17*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_17 - 1)*(v_18*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_18 - 1)*(v_19*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_19 - 1)*(-1.0*v_1*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.087327*(v_1 - 1)*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.912673*(v_1 - 1)*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0291*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)))))))))
+Post simplification
+symp_time: 408.80004954338074
+number of sums: 33
+number of subs: 336
+number of prods: 350
+opt_time: 0.2168896198272705
+     fun: 0.9926099587995832
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 113
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.09260996, 0.05      , 0.25      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ])
+
+real	7m7.681s
+user	7m5.109s
+sys	0m1.887s
+Instance: 16
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0291404724121094
+[INFO] aspmc: Compilation time:         0.15502572059631348
+[INFO] aspmc: Preparation time:         0.00012445449829101562
+[INFO] aspmc: Counting time:            13.024750709533691
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 16.306427240371704
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 4102
+v_12*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_12 - 1)*(v_14*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_14 - 1)*(v_15*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_15 - 1)*(v_16*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_16 - 1)*(v_17*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_17 - 1)*(v_18*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_18 - 1)*(v_19*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_19 - 1)*(v_20*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_20 - 1)*(-1.0*v_1*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.0591*(v_1 - 1)*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.97*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.9409*(v_1 - 1)*(0.97*v_3*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) - 0.0291*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 0.97*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 0.03*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))))))))))
+Post simplification
+symp_time: 814.0559015274048
+number of sums: 36
+number of subs: 370
+number of prods: 385
+opt_time: 0.2721388339996338
+     fun: 1.0235060666451026
+   maxcv: 6.938893903907228e-18
+ message: 'Optimization terminated successfully.'
+    nfev: 132
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.07350607, 0.05      , 0.05      ,
+       0.25      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      ])
+
+real	13m53.655s
+user	13m49.811s
+sys	0m2.896s
+Instance: 17
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.030043363571167
+[INFO] aspmc: Compilation time:         0.15330862998962402
+[INFO] aspmc: Preparation time:         0.00012540817260742188
+[INFO] aspmc: Counting time:            13.200667381286621
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 16.484637022018433
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 4187
+1.0*v_12*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_12 - 1)*(1.0*v_14*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_14 - 1)*(1.0*v_15*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_15 - 1)*(1.0*v_16*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_16 - 1)*(1.0*v_17*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_17 - 1)*(1.0*v_18*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_18 - 1)*(1.0*v_19*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_19 - 1)*(1.0*v_20*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_20 - 1)*(-1.0*v_1*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.9409*(v_1 - 1)*(1.0*v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.03*(v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 1.0*(v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.0591*(v_1 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))))))))))
+Post simplification
+symp_time: 1768.4104630947113
+number of sums: 47
+number of subs: 392
+number of prods: 357
+opt_time: 0.2854468822479248
+     fun: 1.0540010395238073
+   maxcv: 1.3877787807814457e-17
+ message: 'Optimization terminated successfully.'
+    nfev: 129
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.25      , 0.05400104, 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      ])
+
+real	29m50.620s
+user	29m42.844s
+sys	0m6.102s
+Instance: 18
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.028856039047241
+[INFO] aspmc: Compilation time:         0.15176963806152344
+[INFO] aspmc: Preparation time:         0.0001232624053955078
+[INFO] aspmc: Counting time:            12.707362174987793
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 15.986218690872192
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 4563
+1.0*v_12*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_12 - 1)*(1.0*v_14*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_14 - 1)*(1.0*v_15*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_15 - 1)*(1.0*v_16*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_16 - 1)*(1.0*v_17*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_17 - 1)*(1.0*v_18*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_18 - 1)*(1.0*v_19*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_19 - 1)*(1.0*v_20*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_20 - 1)*(1.0*v_21*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_21 - 1)*(-1.0*v_1*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.97*(v_1 - 1)*(1.0*v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - 1.0*v_6*(v_7 - 1) + 1.0*v_7 + 1.0*v_8*(v_6 - 1)*(v_7 - 1) - 1.0*v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + 0.03*(v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + 1.0*(v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + 0.03*(v_1 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)))))))))))
+Post simplification
+symp_time: 3685.9765141010284
+number of sums: 51
+number of subs: 428
+number of prods: 389
+opt_time: 0.33103132247924805
+     fun: 1.087428063093172
+   maxcv: 2.986005426808269e-06
+ message: 'Optimization terminated successfully.'
+    nfev: 138
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.05      , 0.05      , 0.23742806,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      ])
+
+real	61m52.037s
+user	61m35.424s
+sys	0m14.148s
+Instance: 19
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0290699005126953
+[INFO] aspmc: Compilation time:         0.15958714485168457
+[INFO] aspmc: Preparation time:         0.00012183189392089844
+[INFO] aspmc: Counting time:            13.898483276367188
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 17.18347930908203
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 8051
+1.0*v_12*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_12 - 1)*(1.0*v_14*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_14 - 1)*(1.0*v_15*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_15 - 1)*(1.0*v_16*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_16 - 1)*(1.0*v_17*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_17 - 1)*(1.0*v_18*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_18 - 1)*(1.0*v_19*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_19 - 1)*(1.0*v_20*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_20 - 1)*(1.0*v_21*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) + (v_21 - 1)*(-1.0*v_1*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) + 0.03*(v_1 - 1)*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) + 0.97*(v_1 - 1)*(v_11*(v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))))))))))))
+Post simplification
+symp_time: 7571.1307418346405
+number of sums: 87
+number of subs: 764
+number of prods: 670
+opt_time: 0.5240108966827393
+     fun: 1.1213816485669952
+   maxcv: 7.069417273797285e-09
+ message: 'Optimization terminated successfully.'
+    nfev: 145
+  status: 1
+ success: True
+       x: array([0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.22138165])
+
+real	126m46.863s
+user	125m57.574s
+sys	0m42.810s
+Instance: 20
+[INFO] aspmc: Tree Decomposition #bags: 40 unfolded treewidth: 4 #vertices: 52
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 15 #vertices: 78
+[INFO] aspmc: Dtree time:               2.0282421112060547
+[INFO] aspmc: Compilation time:         0.15833044052124023
+[INFO] aspmc: Preparation time:         0.00013303756713867188
+[INFO] aspmc: Counting time:            12.995994806289673
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 16.27885603904724
+Pre simplification
+number of sums: 69631
+number of prods: 147455
+len(eq): 8008
+v_12*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_12 - 1)*(v_14*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_14 - 1)*(v_15*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_15 - 1)*(v_16*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_16 - 1)*(v_17*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_17 - 1)*(v_18*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_18 - 1)*(v_19*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_19 - 1)*(v_20*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_20 - 1)*(v_21*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_21 - 1)*(v_22*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_22 - 1)*(v_1*(v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) + (v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1))) - (v_1 - 1)*(v_11*(v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) + v_11*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)) - (v_11 - 1)*(v_10*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_3*(v_10 - 1)*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1) - v_6*(v_7 - 1) + v_7 + v_8*(v_6 - 1)*(v_7 - 1) - v_9*(v_6 - 1)*(v_7 - 1)*(v_8 - 1) + (v_10 - 1)*(v_3 - 1)*(v_4 - v_5*(v_4 - 1))*(v_6 - 1)*(v_7 - 1)*(v_8 - 1)*(v_9 - 1)))))))))))))
+Post simplification
+symp_time: 6648.495382070541
+number of sums: 84
+number of subs: 766
+number of prods: 659
+opt_time: 0.5765752792358398
+     fun: 1.1549897056803018
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 166
+  status: 1
+ success: True
+       x: array([0.20498971, 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ,
+       0.05      , 0.05      , 0.05      , 0.05      , 0.05      ])
+
+real	111m12.100s
+user	110m53.650s
+sys	0m13.737s
+Ended at: 
+Fri Dec  8 00:01:27 CET 2023

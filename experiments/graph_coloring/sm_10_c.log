@@ -1,0 +1,40 @@
+Started at: 
+Thu Dec  7 17:36:14 CET 2023
+Instance 10
+[INFO] aspmc: Tree Decomposition #bags: 130 unfolded treewidth: 10 #vertices: 148
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 132 treewidth: 17 #vertices: 152
+[INFO] aspmc: Dtree time:               23.897905111312866
+[INFO] aspmc: Compilation time:         0.8086943626403809
+[INFO] aspmc: Preparation time:         0.00022292137145996094
+[INFO] aspmc: Counting time:            4.364215612411499
+[INFO] aspmc: ------------------------------------------------------------
+[red(X):-node(X),not green(X),not blue(X)., green(X):-node(X),not red(X),not blue(X)., blue(X):-node(X),not red(X),not green(X)., e(X,Y):-edge(X,Y)., e(Y,X):-edge(Y,X)., :-e(X,Y),red(X),red(Y)., :-e(X,Y),green(X),green(Y)., :-e(X,Y),blue(X),blue(Y)., 0.6::edge(1,2)., 0.1::edge(1,3)., 0.4::edge(2,5)., 0.3::edge(2,6)., 0.3::edge(3,4)., 0.8::edge(4,5)., 0.2::edge(5,6)., 0.3::edge(2,9)., 0.3::edge(5,7)., 0.3::edge(5,10)., 0.3::edge(5,9)., 0.3::edge(4,7)., qr:-blue(3)., qr:-blue(1)., qr:-blue(3)., qr:-blue(5)., qr:-blue(7)., qr:-blue(9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., node(10)., query(qr).]
+tracc
+nnf_construction_time: 30.194223880767822
+Pre simplification
+number of sums: 4095
+number of prods: 8190
+0
+Post simplification
+symp_time: 1.073901891708374
+number of sums: 0
+number of sub: 0
+number of prods: 0
+opt_time: 0.39229822158813477
+     fun: -0.24000000000000318
+   maxcv: 0.07000000000000038
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 81
+  status: 4
+ success: False
+       x: array([-0.02, -0.02, -0.02, -0.02, -0.02, -0.02, -0.02, -0.02, -0.02,
+       -0.02, -0.02, -0.02])
+
+real	0m32.962s
+user	0m31.156s
+sys	0m1.671s
+Ended at: 
+Thu Dec  7 17:36:47 CET 2023

@@ -1,0 +1,148 @@
+Started at: 
+Mon Dec 11 08:18:59 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 0.10435891151428223 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 0.5
+     jac: array([1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 126
+     nit: 20
+    njev: 16
+  status: 8
+ success: False
+       x: array([0.25, 0.25])
+Optimization time: 27.440850973129272 s
+Target equation: 0.5591443603162874
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m28.873s
+user	0m28.553s
+sys	0m0.184s
+instance 3
+Computing answer sets
+Answer set generation time: 0.10657835006713867 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 0.75
+     jac: array([1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 41
+     nit: 10
+    njev: 6
+  status: 8
+ success: False
+       x: array([0.25, 0.25, 0.25])
+Optimization time: 23.009178638458252 s
+Target equation: 0.6591322373579768
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m24.433s
+user	0m24.027s
+sys	0m0.224s
+instance 4
+Computing answer sets
+Answer set generation time: 0.1026616096496582 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 0.9012773713838542
+     jac: array([1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 4
+     nit: 4
+    njev: 4
+  status: 0
+ success: True
+       x: array([0.22531934, 0.22531934, 0.22531934, 0.22531934])
+Optimization time: 24.184381008148193 s
+Target equation: 0.6999999999731082
+Sum of optimizable facts = 0.9012773713838542
+Optimal probabilities
+[0.22531934 0.22531934 0.22531934 0.22531934]
+
+real	0m25.520s
+user	0m25.161s
+sys	0m0.200s
+instance 5
+Computing answer sets
+Answer set generation time: 0.1039285659790039 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 0.9484377031098175
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 5
+     nit: 4
+    njev: 4
+  status: 0
+ success: True
+       x: array([0.18968754, 0.18968754, 0.18968754, 0.18968754, 0.18968754])
+Optimization time: 46.54836106300354 s
+Target equation: 0.6999999999998611
+Sum of optimizable facts = 0.9484377031098175
+Optimal probabilities
+[0.18968754 0.18968754 0.18968754 0.18968754 0.18968754]
+
+real	0m48.089s
+user	0m47.465s
+sys	0m0.260s
+instance 6
+Computing answer sets
+Answer set generation time: 0.10900712013244629 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 0.9901625261901214
+     jac: array([1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 5
+     nit: 5
+    njev: 5
+  status: 0
+ success: True
+       x: array([0.16502709, 0.16502709, 0.16502709, 0.16502709, 0.16502709,
+       0.16502709])
+Optimization time: 97.09088730812073 s
+Target equation: 0.6999999987105003
+Sum of optimizable facts = 0.9901625261901214
+Optimal probabilities
+[0.16502709 0.16502709 0.16502709 0.16502709 0.16502709 0.16502709]
+
+real	1m38.597s
+user	1m38.084s
+sys	0m0.235s
+instance 7
+Computing answer sets
+Answer set generation time: 0.10379528999328613 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 1.0286801688404092
+     jac: array([1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 6
+     nit: 5
+    njev: 5
+  status: 0
+ success: True
+       x: array([0.14695431, 0.14695431, 0.14695431, 0.14695431, 0.14695431,
+       0.14695431, 0.14695431])
+Optimization time: 182.44168376922607 s
+Target equation: 0.6999999999995343
+Sum of optimizable facts = 1.0286801688404092
+Optimal probabilities
+[0.14695431 0.14695431 0.14695431 0.14695431 0.14695431 0.14695431
+ 0.14695431]
+
+real	3m4.237s
+user	3m3.416s
+sys	0m0.361s
+instance 8
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "

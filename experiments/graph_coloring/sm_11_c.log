@@ -1,0 +1,41 @@
+Started at: 
+Thu Dec  7 17:36:15 CET 2023
+Instance 11
+[INFO] aspmc: Tree Decomposition #bags: 113 unfolded treewidth: 5 #vertices: 128
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 81 treewidth: 14 #vertices: 139
+[INFO] aspmc: Dtree time:               32.041661739349365
+[INFO] aspmc: Compilation time:         0.23940277099609375
+[INFO] aspmc: Preparation time:         0.0002009868621826172
+[INFO] aspmc: Counting time:            1.6312506198883057
+[INFO] aspmc: ------------------------------------------------------------
+[red(X):-node(X),not green(X),not blue(X)., green(X):-node(X),not red(X),not blue(X)., blue(X):-node(X),not red(X),not green(X)., e(X,Y):-edge(X,Y)., e(Y,X):-edge(Y,X)., :-e(X,Y),red(X),red(Y)., :-e(X,Y),green(X),green(Y)., :-e(X,Y),blue(X),blue(Y)., 0.6::edge(1,2)., 0.1::edge(1,3)., 0.4::edge(2,5)., 0.3::edge(2,6)., 0.3::edge(3,4)., 0.8::edge(4,5)., 0.2::edge(5,6)., 0.3::edge(3,10)., 0.3::edge(6,11)., 0.3::edge(2,11)., 0.3::edge(6,10)., 0.3::edge(2,8)., 0.3::edge(1,5)., qr:-blue(1)., qr:-blue(3)., qr:-blue(5)., qr:-blue(7)., qr:-blue(9)., qr:-blue(11)., red(1)., green(4)., green(6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., node(10)., node(11)., query(qr).]
+tracc
+nnf_construction_time: 35.038143157958984
+Pre simplification
+number of sums: 7807
+number of prods: 11838
+v_40*v_53*v_54*v_56*v_62 + v_40*v_53*v_54*v_59*v_61*v_64 - v_40*v_53*v_54 - v_40*v_53*v_56*v_62 - v_40*v_53*v_59*v_61*v_64 + v_40*v_53 - v_40*v_54*v_56*v_62 - v_40*v_54*v_59*v_61*v_64 + v_40*v_54 + v_56*v_62
+Post simplification
+symp_time: 11.312743425369263
+number of sums: 4
+number of sub: 5
+number of prods: 28
+opt_time: 0.4761168956756592
+     fun: 1.5776441731656559
+   maxcv: 9.21029982632604e-06
+ message: 'Optimization terminated successfully.'
+    nfev: 86
+  status: 1
+ success: True
+       x: array([0.09827702, 0.15828007, 0.09827988, 0.09827953, 0.15828624,
+       0.15828007, 0.15828007, 0.09827988, 0.09827988, 0.09827988,
+       0.09827988, 0.09827988, 0.15828189])
+
+real	0m47.963s
+user	0m47.255s
+sys	0m0.584s
+Ended at: 
+Thu Dec  7 17:37:03 CET 2023

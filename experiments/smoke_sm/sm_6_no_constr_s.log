@@ -1,0 +1,61 @@
+Started at: 
+Sat Dec  9 10:36:51 CET 2023
+Instance 6
+Traceback (most recent call last):
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lexer.py", line 590, in lex
+    yield lexer.next_token(lexer_state, parser_state)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lexer.py", line 528, in next_token
+    raise UnexpectedCharacters(lex_state.text, line_ctr.char_pos, line_ctr.line, line_ctr.column,
+lark.exceptions.UnexpectedCharacters: No terminal matches 'n' in the current parser context, at line 33 col 39
+
+smokes(X):- asthma_and_stress(X), not no_smokes(X).
+                                      ^
+Expected one of: 
+	* COMMA
+	* SEMICOLON
+	* RPAR
+	* LPAR
+	* DOT
+	* ":-"
+
+Previous tokens: Token('__ANON_2', 'not')
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/smoke_sm/runner_without_pair_constr.py", line 26, in <module>
+    res = compute_optimal_probability(
+  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/smoke_sm/a.py", line 166, in compute_optimal_probability
+    lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
+  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/smoke_sm/a.py", line 81, in get_eq
+    program = SMProblogProgram(program_str, program_files)
+  File "/home/dazzolin/test/2023aspmc/aspmc/aspmc/programs/smprogram.py", line 47, in __init__
+    program = parser.parse(program_str)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lark.py", line 645, in parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parser_frontends.py", line 96, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 41, in parse
+    return self.parser.parse(lexer, start)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 171, in parse
+    return self.parse_from_state(parser_state)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 193, in parse_from_state
+    raise e
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 183, in parse_from_state
+    for token in state.lexer.lex(state):
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lexer.py", line 599, in lex
+    raise UnexpectedToken(token, e.allowed, state=parser_state, token_history=[last_token], terminals_by_name=self.root_lexer.terminals_by_name)
+lark.exceptions.UnexpectedToken: Unexpected token Token('__ANON_2', 'no_smokes') at line 33, column 39.
+Expected one of: 
+	* COMMA
+	* LPAR
+	* DOT
+Previous tokens: [Token('__ANON_2', 'not')]
+
+
+real	0m1.197s
+user	0m0.933s
+sys	0m0.152s
+Ended at: 
+Sat Dec  9 10:36:52 CET 2023

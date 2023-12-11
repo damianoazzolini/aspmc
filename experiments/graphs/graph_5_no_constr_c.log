@@ -1,0 +1,144 @@
+Started at: 
+Thu Dec  7 17:44:59 CET 2023
+Instance 2
+[INFO] aspmc: Tree Decomposition #bags: 71 unfolded treewidth: 3 #vertices: 97
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 60 treewidth: 5 #vertices: 97
+[INFO] aspmc: Dtree time:               1.0313434600830078
+[INFO] aspmc: Compilation time:         0.01785755157470703
+[INFO] aspmc: Preparation time:         0.00015735626220703125
+[INFO] aspmc: Counting time:            0.06992006301879883
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., query(qr).]
+tracc
+nnf_construction_time: 2.2369070053100586
+Pre simplification
+number of sums: 31
+number of prods: 38
+0.716758661812948*v_20
+Post simplification
+symp_time: 0.25296568870544434
+number of sums: 0
+number of subs: 0
+number of prods: 1
+opt_time: 0.002104520797729492
+     fun: 1.35
+   maxcv: 0.011113543040202956
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 15
+  status: 4
+ success: False
+       x: array([0.96111354, 0.38888646])
+
+real	0m3.650s
+user	0m3.093s
+sys	0m0.427s
+Instance 3
+[INFO] aspmc: Tree Decomposition #bags: 71 unfolded treewidth: 3 #vertices: 97
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 60 treewidth: 5 #vertices: 97
+[INFO] aspmc: Dtree time:               1.0322091579437256
+[INFO] aspmc: Compilation time:         0.017787694931030273
+[INFO] aspmc: Preparation time:         0.00013971328735351562
+[INFO] aspmc: Counting time:            0.06862688064575195
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., query(qr).]
+tracc
+nnf_construction_time: 2.2404115200042725
+Pre simplification
+number of sums: 31
+number of prods: 38
+0.87801098*v_18*v_20
+Post simplification
+symp_time: 0.2543659210205078
+number of sums: 0
+number of subs: 0
+number of prods: 2
+opt_time: 0.0074536800384521484
+     fun: 2.1857844602039993
+   maxcv: 8.780839833022469e-09
+ message: 'Optimization terminated successfully.'
+    nfev: 48
+  status: 1
+ success: True
+       x: array([0.89289647, 0.4       , 0.89288799])
+
+real	0m3.573s
+user	0m3.046s
+sys	0m0.393s
+Instance 4
+[INFO] aspmc: Tree Decomposition #bags: 71 unfolded treewidth: 3 #vertices: 97
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 60 treewidth: 5 #vertices: 97
+[INFO] aspmc: Dtree time:               1.0320234298706055
+[INFO] aspmc: Compilation time:         0.018175601959228516
+[INFO] aspmc: Preparation time:         0.00014662742614746094
+[INFO] aspmc: Counting time:            0.0709681510925293
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., query(qr).]
+tracc
+nnf_construction_time: 2.239612340927124
+Pre simplification
+number of sums: 31
+number of prods: 38
+0.87801098*v_18*v_20
+Post simplification
+symp_time: 0.2743542194366455
+number of sums: 0
+number of subs: 0
+number of prods: 2
+opt_time: 0.012399435043334961
+     fun: 2.5857844612867784
+   maxcv: 8.780106752759309e-09
+ message: 'Optimization terminated successfully.'
+    nfev: 63
+  status: 1
+ success: True
+       x: array([0.89286086, 0.4       , 0.8929236 , 0.4       ])
+
+real	0m3.590s
+user	0m3.092s
+sys	0m0.365s
+Instance 5
+[INFO] aspmc: Tree Decomposition #bags: 71 unfolded treewidth: 3 #vertices: 97
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 60 treewidth: 5 #vertices: 97
+[INFO] aspmc: Dtree time:               1.0319602489471436
+[INFO] aspmc: Compilation time:         0.017483234405517578
+[INFO] aspmc: Preparation time:         0.0001404285430908203
+[INFO] aspmc: Counting time:            0.06792163848876953
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., query(qr).]
+tracc
+nnf_construction_time: 2.2366750240325928
+Pre simplification
+number of sums: 31
+number of prods: 38
+v_13*v_18*v_20
+Post simplification
+symp_time: 0.2726728916168213
+number of sums: 0
+number of subs: 0
+number of prods: 2
+opt_time: 0.021828889846801758
+     fun: 3.463711996767459
+   maxcv: 1.5874184522424173e-08
+ message: 'Optimization terminated successfully.'
+    nfev: 88
+  status: 1
+ success: True
+       x: array([0.88793442, 0.4       , 0.88779044, 0.4       , 0.88798713])
+
+real	0m3.585s
+user	0m3.073s
+sys	0m0.389s
+Ended at: 
+Thu Dec  7 17:45:14 CET 2023

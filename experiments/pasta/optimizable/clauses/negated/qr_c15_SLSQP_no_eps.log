@@ -1,0 +1,97 @@
+Started at: 
+Mon Dec 11 08:19:00 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 4.310362100601196 s
+number of sums: 32766
+number of prods: 458738
+Starting optimization
+     fun: 0.5
+     jac: array([1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 1
+     nit: 5
+    njev: 1
+  status: 8
+ success: False
+       x: array([0.25, 0.25])
+Optimization time: 53.10210657119751 s
+Target equation: 0.6214222617816292
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	1m22.671s
+user	1m10.522s
+sys	0m11.910s
+instance 3
+Computing answer sets
+Answer set generation time: 4.2723588943481445 s
+number of sums: 32766
+number of prods: 458738
+Starting optimization
+     fun: 0.731486309764845
+     jac: array([1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 3
+     nit: 3
+    njev: 3
+  status: 0
+ success: True
+       x: array([0.24382877, 0.24382877, 0.24382877])
+Optimization time: 88.3232364654541 s
+Target equation: 0.6999999959192518
+Sum of optimizable facts = 0.731486309764845
+Optimal probabilities
+[0.24382877 0.24382877 0.24382877]
+
+real	1m58.381s
+user	1m46.091s
+sys	0m11.969s
+instance 4
+Computing answer sets
+Answer set generation time: 4.300074100494385 s
+number of sums: 32766
+number of prods: 458738
+Starting optimization
+     fun: 0.7810217584862743
+     jac: array([1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 4
+     nit: 4
+    njev: 4
+  status: 0
+ success: True
+       x: array([0.19525544, 0.19525544, 0.19525544, 0.19525544])
+Optimization time: 116.11203384399414 s
+Target equation: 0.6999999852648005
+Sum of optimizable facts = 0.7810217584862743
+Optimal probabilities
+[0.19525544 0.19525544 0.19525544 0.19525544]
+
+real	2m26.270s
+user	2m14.387s
+sys	0m11.557s
+instance 5
+Computing answer sets
+Answer set generation time: 4.207159757614136 s
+number of sums: 32766
+number of prods: 458738
+Starting optimization
+     fun: 0.8231316525984433
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 5
+     nit: 5
+    njev: 5
+  status: 0
+ success: True
+       x: array([0.16462633, 0.16462633, 0.16462633, 0.16462633, 0.16462633])
+Optimization time: 242.2049789428711 s
+Target equation: 0.6999999999664859
+Sum of optimizable facts = 0.8231316525984433
+Optimal probabilities
+[0.16462633 0.16462633 0.16462633 0.16462633 0.16462633]
+
+real	4m31.529s
+user	4m20.554s
+sys	0m10.597s
+instance 6

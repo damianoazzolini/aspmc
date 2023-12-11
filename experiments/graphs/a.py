@@ -87,59 +87,6 @@ def get_eq(
     cnf = program.get_cnf()
     # print(program.get_weights())
 
-    # dump_cnf_file = "cnf_file.cnf"
-    # cnf.to_file(dump_cnf_file, extras = True)
-
-    # dizionario che contiene id variabile - valore
-    # print(program._nameMap)
-
-    # opt_var_dict : 'dict[str,tuple[float,float]]' = {}
-
-    # for v in program.program_decoded:
-    #     print(str(v))
-    #     if str(v).startswith('optimizable'):
-    #         l = str(v).replace("\"","").split('optimizable')[1:][0]
-    #         print(l)
-    #         l0 = l.split(',')[0][1:]
-    #         l1 = l.split(',')[1]
-    #         l2 = l.split(',')[2][:-2]
-    #         print(l0,l1,l2)
-    #         opt_var_dict[l0] = (float(l1),float(l2))
-
-    # # opt_var_dict["c"] = (0.4,0.8)
-    # opt_var_dict["edge(b,c)"] = (0.4,0.8)
-    # # opt_var_dict["b"] = (0.4,0.8)
-    # opt_var_dict["edge(b,d)"] = (0.4,0.8)
-
-    # opt_var_dict["edge(0,1)"] = (0.4,0.8)
-    # opt_var_dict["edge(0,3)"] = (0.4,0.8)
-    # opt_var_dict["edge(0,5)"] = (0.4,0.8)
-    # opt_var_dict["edge(1,2)"] = (0.4,0.8)
-    # opt_var_dict["edge(1,4)"] = (0.4,0.8)
-    # opt_var_dict["edge(1,6)"] = (0.4,0.8)
-    # opt_var_dict["edge(2,4)"] = (0.4,0.8)
-    # opt_var_dict["edge(2,6)"] = (0.4,0.8)
-    # opt_var_dict["edge(3,5)"] = (0.4,0.8)
-    # opt_var_dict["edge(4,5)"] = (0.4,0.8)
-    # opt_var_dict["edge(5,6)"] = (0.4,0.8)
-
-    # print(opt_var_dict)
-    # import sys
-    # sys.exit()
-    # print(program)
-    # print("CNF: ")
-    # print(cnf)
-    # print("Pesi CNF:")
-    # print(cnf.weights)
-    # print("Quantified CNF:")
-    # print(cnf.quantified)
-    # for el in cnf.quantified[0]:
-    #     print(el)
-    #     print(cnf.weights[el])
-    #     # cnf.weights[el][0] = 0.8
-    #     # print(cnf.weights[el])
-    #     print(cnf.weights[-el])
-
     keep_symbolic : 'dict[int,str]' = {}
     for el in program._nameMap:
         if program._nameMap[el] in opt_var_dict:
@@ -178,19 +125,24 @@ def get_eq(
     # print(eq_up)
     # sys.exit()
     
-    slp = str(simplify(sympify(eq_lp)))
+    # slp = str(simplify(sympify(eq_lp)))
     # print(slp)
     # print(eq_up)
+    print("Pre simplification")
+    print(f"number of sums: {eq_up.count('+')}")
+    print(f"number of prods: {eq_up.count('*')}")
     
     start_time = time.time()
     sup = str(simplify(sympify(eq_up)))
     print(sup)
     symp_time = time.time() - start_time
+    print("Post simplification")
     print(f"symp_time: {symp_time}")
     print(f"number of sums: {sup.count('+')}")
+    print(f"number of subs: {sup.count('-')}")
     print(f"number of prods: {sup.count('*')}")
     
-    return slp, sup, keep_symbolic
+    return "", sup, keep_symbolic
     # s = (0.502*v_6*1)/0.99+((1-v_6)*1*0.4*1)/0.01+(0.6*1*1*v_6)/0.99+((1-v_6)*0.5*1*1*1*1)/0.01+(0.4*v_6*1*0)/0.99+(0.01*(1-v_6)*1*1*1)/0.01+(0*0.6*1*1*1*1*v_6)/0.99+(1-v_6)*0.5*1/0.001
 
 
@@ -213,6 +165,7 @@ def compute_optimal_probability(
     for query in query_list:
         current_prog = program + f"\nquery({query}).\n"
         lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
+        symb_vars = dict(sorted(symb_vars.items(), reverse = True))
         for k_nnf, name in symb_vars.items():
             lq = lq.replace(f"v_{k_nnf}",name)
             uq = uq.replace(f"v_{k_nnf}",name)
@@ -224,8 +177,14 @@ def compute_optimal_probability(
 
     # 3: generate the bounds
     bounds : 'list[tuple[float,float]]' = []
-    for bound in optimizable_facts.values():
-        bounds.append((bound[0],bound[1]))
+    if method == "SLSQP":
+        for bound in optimizable_facts.values():
+            bounds.append((bound[0],bound[1]))
+    else:
+        # cobyla: convert bounds into constraints
+        for k, v in optimizable_facts.items():
+            constraints_list.append(f"P({k}) - {v[0]}")
+            constraints_list.append(f"{v[1]} - P({k})")
     
     # 3.1: initial values for the parameters
     initial_guesses : 'list[float]' = [0.5]*len(optimizable_facts)
@@ -251,10 +210,10 @@ def compute_optimal_probability(
         # add the constraint
         if idx == 0:
             # this is the target equation
-            print(f"Target equation: {current_constr}")
+            # print(f"Target equation: {current_constr}")
             problem_to_solve = Problem(current_constr, optimizable_facts.keys())
         else:
-            print(f"constraint: {current_constr}")
+            # print(f"constraint: {current_constr}")
             current_problem = Problem(current_constr, optimizable_facts.keys())
 
             constraints.append({
@@ -264,175 +223,25 @@ def compute_optimal_probability(
             })
     
     start_time = time.time()
-    res = minimize(
-        problem_to_solve.eval_fn,
-        initial_guesses,
-        bounds=bounds,
-        jac=problem_to_solve.jac_fn,
-        method=method,
-        options={'ftol': 1e-9},
-        constraints=constraints
-    )
+    if method == "SLSQP":
+        res = minimize(
+            problem_to_solve.eval_fn,
+            initial_guesses,
+            bounds=bounds,
+            jac=problem_to_solve.jac_fn,
+            method=method,
+            options={'ftol': 1e-9},
+            constraints=constraints
+        )
+    else:
+        # COBYLA
+        res = minimize(
+            problem_to_solve.eval_fn,
+            initial_guesses,
+            method=method,
+            constraints=constraints
+        )
     opt_time = time.time() - start_time
     print(f"opt_time: {opt_time}")
     
     return res
-
-
-def main_test():
-    # program_str = """
-    #     node(0).
-    #     node(1).
-    #     node(2).
-    #     node(3).
-    #     node(4).
-    #     node(5).
-
-    #     0.5::edge(0,1).
-    #     0.5::edge(0,2).
-    #     0.5::edge(0,3).
-    #     0.5::edge(0,4).
-    #     0.5::edge(0,5).
-
-    #     0.5::edge(1,2).
-    #     0.5::edge(1,3).
-    #     0.5::edge(1,4).
-    #     0.5::edge(1,5).
-
-    #     0.5::edge(2,3).
-    #     0.5::edge(2,4).
-    #     0.5::edge(2,5).
-    #     0.5::edge(2,6).
-    #     0.5::edge(3,4).
-    #     0.5::edge(3,5).
-
-    #     0.5::edge(4,5).
-        
-    #     path(X, X):- node(X).
-    #     path(X, Y):-
-    #         edge(X, Z),
-    #         path(Z, Y).
-
-    #     % query(path(0,5)).
-    # """
-    
-    # program_str = """
-    # q:- a, b, \+ nqr.
-    # nqr :- \+ q, a.
-    # q:- b, c.
-    
-    # 0.4::c.
-    # 0.5::a.
-    # 0.5::b.
-    # """
-    
-    program_str = """
-    0.4::a.
-    0.5::b.
-    0.5::c.
-    qr :- a , b.
-    qr :- c, \+ nqr.
-    nqr :- \+ qr, c.
-    """
-    
-    # query_list = ["path(0,5)"]
-    query_list = ["qr"]
-    
-    optimizable_facts : 'dict[str,tuple[float,float]]' = {}
-    
-    optimizable_facts["b"] = (0.4,0.8)
-    optimizable_facts["c"] = (0.4,0.8)
-    # optimizable_facts["a"] = (0.4,0.8)
-    # optimizable_facts["edge(0,1)"] = (0.4,0.8)
-    # optimizable_facts["edge(0,3)"] = (0.4,0.8)
-    # optimizable_facts["edge(0,5)"] = (0.4,0.8)
-    # optimizable_facts["edge(1,2)"] = (0.4,0.8)
-    # optimizable_facts["edge(1,4)"] = (0.4,0.8)
-    # optimizable_facts["edge(1,6)"] = (0.4,0.8)
-    # optimizable_facts["edge(2,4)"] = (0.4,0.8)
-    # optimizable_facts["edge(2,6)"] = (0.4,0.8)
-    # optimizable_facts["edge(3,5)"] = (0.4,0.8)
-    # optimizable_facts["edge(4,5)"] = (0.4,0.8)
-    # optimizable_facts["edge(5,6)"] = (0.4,0.8)
-    
-    target_equation = "P(b) + P(c)"
-    
-    # by default assume that P(X) > 0, so I write only the left part
-    # constraints_list = ["P(path(0,5))"]
-    # inequality means that it is to be non-negative
-    # constraints_list = ["P(qr) - 0.7", "-(P(b) - P(c) - 0.06)", "-(P(c) - P(b) - 0.06)"]
-    constraints_list = ["P(qr) - 0.7", "-(P(b) - P(c) - 0.06)", "-(P(c) - P(b) - 0.06)"]
-    
-    res = compute_optimal_probability(
-        program=program_str,
-        query_list=query_list,
-        optimizable_facts=optimizable_facts,
-        target_equation=target_equation,
-        constraints_list=constraints_list
-    )
-    
-    print(res)
-
-
-def main():    
-    program_str = """
-        0.8::edge(1,2).
-        0.8::edge(1,3).
-        0.962::edge(2,4).
-        0.987::edge(3,5).
-        0.992::edge(4,6).
-        0.996::edge(5,6).
-        0.932::edge(6,7).
-        0.814::edge(6,8).
-        0.938::edge(7,9).
-        0.882::edge(8,9).
-
-        path(X,X):- node(X).
-        path(X,Y):- path(X,Z), edge(Z,Y).
-
-        transmit(A,B):- path(A,B), node(A), node(B), \+ not_transmit(A,B).
-        not_transmit(A,B):- path(A,B), node(A), node(B), \+ transmit(A,B).
-
-        qr:- transmit(1,9).        
-        node(1).
-        node(2).
-        node(3).
-        node(4).
-        node(5).
-        node(6).
-        node(7).
-        node(8).
-        node(9).
-    """
-    
-    # query_list = ["path(0,5)"]
-    query_list : 'list[str]' = ["qr"]
-    
-    optimizable_facts : 'dict[str,tuple[float,float]]' = {}
-    
-    optimizable_facts["edge(1,2)"] = (0.4,0.8)
-    optimizable_facts["edge(1,3)"] = (0.4,0.8)
-
-    
-    # by default assume that P(X) > 0, so I write only the left part
-    # constraints_list = ["P(path(0,5))"]
-    # inequality means that it has to be non-negative
-    constraints_list = ["P(qr) - 0.7", "-(P(edge(1,2)) - P(edge(1,3)) - 0.06)", "-(P(edge(1,3)) - P(edge(1,2)) - 0.06)"]
-    # constraints_list = ["P(qr) - 0.7"]
-    
-    target_equation = "P(edge(1,2)) + P(edge(1,3))"
-    
-    res = compute_optimal_probability(
-        program=program_str,
-        query_list=query_list,
-        optimizable_facts=optimizable_facts,
-        target_equation=target_equation,
-        constraints_list=constraints_list
-    )
-    
-    print(res)   
-
-
-
-if __name__ == "__main__":
-    main()

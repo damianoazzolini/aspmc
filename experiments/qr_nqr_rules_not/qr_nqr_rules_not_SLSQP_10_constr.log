@@ -1,0 +1,345 @@
+Started at: 
+Sat Dec  9 09:18:43 CET 2023
+Instance 2
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.019366979598999
+[INFO] aspmc: Compilation time:         0.014158010482788086
+[INFO] aspmc: Preparation time:         7.224082946777344e-05
+[INFO] aspmc: Counting time:            0.02575206756591797
+[INFO] aspmc: ------------------------------------------------------------
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.167706251144409
+Pre simplification
+number of sums: 119
+number of prods: 190
+0.92274469442792*v_11*v_5 + 0.0378513155720799*v_11 - 0.96059601*v_5 + 0.96059601
+Post simplification
+symp_time: 0.34222865104675293
+number of sums: 2
+number of subs: 1
+number of prods: 4
+opt_time: 0.024809598922729492
+     fun: 0.9000000000000002
+     jac: array([1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.89, 0.01])
+
+real	0m4.673s
+user	0m3.802s
+sys	0m0.758s
+Instance 3
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.0177297592163086
+[INFO] aspmc: Compilation time:         0.01456308364868164
+[INFO] aspmc: Preparation time:         7.2479248046875e-05
+[INFO] aspmc: Counting time:            0.025417566299438477
+[INFO] aspmc: ------------------------------------------------------------
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1582391262054443
+Pre simplification
+number of sums: 119
+number of prods: 190
+-0.93206534790699*v_11*v_4*v_5 + 0.93206534790699*v_11*v_4 + 0.93206534790699*v_11*v_5 + 0.02853066209301*v_11 + 0.970299*v_4*v_5 - 0.970299*v_4 - 0.970299*v_5 + 0.970299
+Post simplification
+symp_time: 0.4251434803009033
+number of sums: 5
+number of subs: 3
+number of prods: 12
+opt_time: 0.29079651832580566
+     fun: 1.8900000000000001
+     jac: array([1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 76
+     nit: 14
+    njev: 10
+  status: 8
+ success: False
+       x: array([0.89, 0.11, 0.89])
+
+real	0m4.920s
+user	0m4.041s
+sys	0m0.747s
+Instance 4
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.0181634426116943
+[INFO] aspmc: Compilation time:         0.013695240020751953
+[INFO] aspmc: Preparation time:         6.985664367675781e-05
+[INFO] aspmc: Counting time:            0.02488875389099121
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1590821743011475
+Pre simplification
+number of sums: 119
+number of prods: 190
+-0.941480149401*v_10*v_11*v_4*v_5 + 0.941480149401*v_10*v_11*v_4 + 0.941480149401*v_10*v_11*v_5 + 0.028818850599*v_10*v_11 + 0.970299*v_4*v_5 - 0.970299*v_4 - 0.970299*v_5 + 0.970299
+Post simplification
+symp_time: 0.45308947563171387
+number of sums: 5
+number of subs: 3
+number of prods: 16
+opt_time: 0.14042258262634277
+     fun: 1.8000000000000007
+     jac: array([1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.89, 0.01, 0.89, 0.01])
+
+real	0m4.840s
+user	0m3.868s
+sys	0m0.811s
+Instance 5
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.018005609512329
+[INFO] aspmc: Compilation time:         0.013858318328857422
+[INFO] aspmc: Preparation time:         6.818771362304688e-05
+[INFO] aspmc: Counting time:            0.025610685348510742
+[INFO] aspmc: ------------------------------------------------------------
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1616551876068115
+Pre simplification
+number of sums: 119
+number of prods: 190
+v_10*(v_11*(0.970299*v_3 - 0.970299*v_4*(v_3 - 1) + 0.970299*v_5*(v_3 - 1)*(v_4 - 1) - 0.9994089501*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) + 0.9801*(v_11 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) + 0.9801*(v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)
+Post simplification
+symp_time: 0.5524342060089111
+number of sums: 3
+number of subs: 16
+number of prods: 19
+opt_time: 0.18712663650512695
+     fun: 2.89
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 1
+     nit: 5
+    njev: 1
+  status: 8
+ success: False
+       x: array([0.89, 0.11, 0.89, 0.11, 0.89])
+
+real	0m4.972s
+user	0m4.084s
+sys	0m0.750s
+Instance 6
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.0183770656585693
+[INFO] aspmc: Compilation time:         0.014046669006347656
+[INFO] aspmc: Preparation time:         7.05718994140625e-05
+[INFO] aspmc: Counting time:            0.02526092529296875
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1642556190490723
+Pre simplification
+number of sums: 119
+number of prods: 190
+0.9801*v_10*(v_11*(v_9*(1.0*v_3 - 1.0*v_4*(v_3 - 1) + 1.0*v_5*(v_3 - 1)*(v_4 - 1) - 0.0199*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) - (v_3 - 1)*(v_4 - 1)*(v_5 - 1)) + (v_11 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) + 0.9801*(v_10 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)
+Post simplification
+symp_time: 0.5547335147857666
+number of sums: 3
+number of subs: 20
+number of prods: 22
+opt_time: 0.42336344718933105
+     fun: 2.700000000000001
+     jac: array([1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+
+real	0m5.214s
+user	0m4.300s
+sys	0m0.769s
+Instance 7
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.018038034439087
+[INFO] aspmc: Compilation time:         0.014155864715576172
+[INFO] aspmc: Preparation time:         7.05718994140625e-05
+[INFO] aspmc: Counting time:            0.024428129196166992
+[INFO] aspmc: ------------------------------------------------------------
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.157496929168701
+Pre simplification
+number of sums: 119
+number of prods: 190
+v_10*(v_11*(0.9801*v_9*(1.0*v_3 - 1.0*v_4*(v_3 - 1) + 1.0*v_5*(v_3 - 1)*(v_4 - 1) - (0.99*v_2 + 0.01)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) + 0.99*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) - 0.99*(v_11 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) - 0.99*(v_10 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)
+Post simplification
+symp_time: 0.7062618732452393
+number of sums: 3
+number of subs: 24
+number of prods: 28
+opt_time: 0.9204456806182861
+     fun: 3.889999999999999
+     jac: array([1., 1., 1., 1., 1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 23
+     nit: 7
+    njev: 3
+  status: 8
+ success: False
+       x: array([0.89, 0.11, 0.89, 0.11, 0.89, 0.11, 0.89])
+
+real	0m5.848s
+user	0m4.976s
+sys	0m0.740s
+Instance 8
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.0180728435516357
+[INFO] aspmc: Compilation time:         0.014398574829101562
+[INFO] aspmc: Preparation time:         7.104873657226562e-05
+[INFO] aspmc: Counting time:            0.024486064910888672
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.155580997467041
+Pre simplification
+number of sums: 119
+number of prods: 190
+0.99*v_10*(v_11*(v_8*v_9*(1.0*v_3 - 1.0*v_4*(v_3 - 1) + 1.0*v_5*(v_3 - 1)*(v_4 - 1) - (0.99*v_2 + 0.01)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)) + (v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_8*v_9 - v_8*(v_9 - 1) - v_8 + 1)) - (v_11 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_8*v_9 - v_8*(v_9 - 1) - v_8 + 1)) - 0.99*(v_10 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_8*v_9 - v_8*(v_9 - 1) - v_8 + 1)
+Post simplification
+symp_time: 0.7887487411499023
+number of sums: 6
+number of subs: 33
+number of prods: 36
+opt_time: 0.927109956741333
+     fun: 3.6
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+
+real	0m5.936s
+user	0m5.051s
+sys	0m0.738s
+Instance 9
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.0179030895233154
+[INFO] aspmc: Compilation time:         0.014019250869750977
+[INFO] aspmc: Preparation time:         7.081031799316406e-05
+[INFO] aspmc: Counting time:            0.02590799331665039
+[INFO] aspmc: ------------------------------------------------------------
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1579935550689697
+Pre simplification
+number of sums: 119
+number of prods: 190
+v_10*(v_11*(0.99*v_8*v_9*(v_3 - v_4*(v_3 - 1) + v_5*(v_3 - 1)*(v_4 - 1) + (v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_1*(v_2 - 1) - v_2)) - 1.0*(v_1 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_8*v_9 - v_8*(v_9 - 1) - v_8 + 1)) + 1.0*(v_1 - 1)*(v_11 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_8*v_9 - v_8*(v_9 - 1) - v_8 + 1)) + 1.0*(v_1 - 1)*(v_10 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_8*v_9 - v_8*(v_9 - 1) - v_8 + 1)
+Post simplification
+symp_time: 0.9932129383087158
+number of sums: 7
+number of subs: 36
+number of prods: 38
+opt_time: 3.249297857284546
+     fun: 4.7699999998950595
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 32
+     nit: 10
+    njev: 6
+  status: 8
+ success: False
+       x: array([0.89, 0.11, 0.89, 0.11, 0.89, 0.05, 0.89, 0.05, 0.89])
+
+real	0m8.443s
+user	0m7.505s
+sys	0m0.791s
+Instance 10
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.017321825027466
+[INFO] aspmc: Compilation time:         0.012862205505371094
+[INFO] aspmc: Preparation time:         6.961822509765625e-05
+[INFO] aspmc: Counting time:            0.022694110870361328
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.01::a0., 0.99::a1., 0.01::a2., 0.99::a3., 0.01::a4., 0.99::a5., 0.01::a6., 0.99::a7., 0.01::a8., 0.99::a9., qr:-not a0,not a2,not a4,not a6,not a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.148590087890625
+Pre simplification
+number of sums: 119
+number of prods: 190
+v_10*(v_11*(v_7*v_8*v_9*(v_3 - v_4*(v_3 - 1) + v_5*(v_3 - 1)*(v_4 - 1) + (v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(v_1*(v_2 - 1) - v_2)) + (v_1 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(-v_7*v_8*v_9 + v_8*v_9*(v_7 - 1) + v_8*(v_9 - 1) + v_8 - 1)) - (v_1 - 1)*(v_11 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(-v_7*v_8*v_9 + v_8*v_9*(v_7 - 1) + v_8*(v_9 - 1) + v_8 - 1)) - (v_1 - 1)*(v_10 - 1)*(v_2 - 1)*(v_3 - 1)*(v_4 - 1)*(v_5 - 1)*(-v_7*v_8*v_9 + v_8*v_9*(v_7 - 1) + v_8*(v_9 - 1) + v_8 - 1)
+Post simplification
+symp_time: 0.6972999572753906
+number of sums: 12
+number of subs: 40
+number of prods: 44
+opt_time: 1.5118746757507324
+     fun: 4.500000000000003
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+
+real	0m6.386s
+user	0m5.467s
+sys	0m0.758s
+Ended at: 
+Sat Dec  9 09:19:34 CET 2023

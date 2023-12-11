@@ -1,0 +1,303 @@
+Started at: 
+Thu Dec  7 17:44:59 CET 2023
+Instance 2
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.0705068111419678
+[INFO] aspmc: Compilation time:         0.09539437294006348
+[INFO] aspmc: Preparation time:         0.0002484321594238281
+[INFO] aspmc: Counting time:            0.9770722389221191
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.2726988792419434
+Pre simplification
+number of sums: 511
+number of prods: 545
+-0.399162875810343*v_34*v_36 + 0.496115855281419*v_34 + 0.556899967976268*v_36
+Post simplification
+symp_time: 0.5694088935852051
+number of sums: 2
+number of subs: 1
+number of prods: 4
+opt_time: 0.29149842262268066
+     fun: 1.8999950561302226
+     jac: array([1., 1.])
+ message: 'Inequality constraints incompatible'
+    nfev: 179
+     nit: 19
+    njev: 19
+  status: 4
+ success: False
+       x: array([0.94999924, 0.94999581])
+
+real	0m5.302s
+user	0m4.897s
+sys	0m0.284s
+Instance 3
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.0701415538787842
+[INFO] aspmc: Compilation time:         0.0954887866973877
+[INFO] aspmc: Preparation time:         0.0002810955047607422
+[INFO] aspmc: Counting time:            0.9782698154449463
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.27287220954895
+Pre simplification
+number of sums: 511
+number of prods: 545
+-0.488964286644811*v_31*v_34*v_36 + 0.607729200212796*v_31*v_34 + 0.556899967976268*v_36
+Post simplification
+symp_time: 0.608593225479126
+number of sums: 2
+number of subs: 1
+number of prods: 6
+opt_time: 1.885591745376587
+     fun: 2.8499999999604313
+     jac: array([1., 1., 1.])
+ message: 'Inequality constraints incompatible'
+    nfev: 629
+     nit: 66
+    njev: 64
+  status: 4
+ success: False
+       x: array([0.95, 0.95, 0.95])
+
+real	0m6.770s
+user	0m6.390s
+sys	0m0.256s
+Instance 4
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.071399450302124
+[INFO] aspmc: Compilation time:         0.09609675407409668
+[INFO] aspmc: Preparation time:         0.00027489662170410156
+[INFO] aspmc: Counting time:            0.9531357288360596
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.2500033378601074
+Pre simplification
+number of sums: 511
+number of prods: 545
+-0.590135919972704*v_30*v_31*v_34*v_36 + 0.672128177682589*v_30*v_36 + 0.607729200212796*v_31*v_34
+Post simplification
+symp_time: 0.6387312412261963
+number of sums: 2
+number of subs: 1
+number of prods: 8
+opt_time: 0.2518465518951416
+     fun: 3.7999999997476483
+     jac: array([1., 1., 1., 1.])
+ message: 'Inequality constraints incompatible'
+    nfev: 25
+     nit: 5
+    njev: 5
+  status: 4
+ success: False
+       x: array([0.95, 0.95, 0.95, 0.95])
+
+real	0m5.164s
+user	0m4.746s
+sys	0m0.255s
+Instance 5
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.0719325542449951
+[INFO] aspmc: Compilation time:         0.09580302238464355
+[INFO] aspmc: Preparation time:         0.0002837181091308594
+[INFO] aspmc: Counting time:            0.9442834854125977
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.241861343383789
+Pre simplification
+number of sums: 511
+number of prods: 545
+-0.672128177682589*v_28*v_30*v_31*v_34*v_36 + 1.11022302462516e-16*v_28*v_31*v_34*v_36 + 0.692165831699275*v_28*v_31*v_34 + 0.672128177682589*v_30*v_36
+Post simplification
+symp_time: 0.6594915390014648
+number of sums: 3
+number of subs: 2
+number of prods: 14
+opt_time: 1.0116798877716064
+     fun: 4.749999999999999
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 72
+     nit: 15
+    njev: 11
+  status: 8
+ success: False
+       x: array([0.95, 0.95, 0.95, 0.95, 0.95])
+
+real	0m5.937s
+user	0m5.509s
+sys	0m0.271s
+Instance 6
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.0718796253204346
+[INFO] aspmc: Compilation time:         0.09610438346862793
+[INFO] aspmc: Preparation time:         0.0002570152282714844
+[INFO] aspmc: Counting time:            0.9376826286315918
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.2372076511383057
+Pre simplification
+number of sums: 511
+number of prods: 545
+-0.692165831699275*v_26*v_28*v_30*v_31*v_34*v_36 + 0.692165831699275*v_26*v_30*v_36 + 0.692165831699275*v_28*v_31*v_34
+Post simplification
+symp_time: 0.677365779876709
+number of sums: 2
+number of subs: 1
+number of prods: 12
+opt_time: 3.932255983352661
+     fun: 5.6999999987710295
+     jac: array([1., 1., 1., 1., 1., 1.])
+ message: 'Inequality constraints incompatible'
+    nfev: 384
+     nit: 39
+    njev: 39
+  status: 4
+ success: False
+       x: array([0.95, 0.95, 0.95, 0.95, 0.95, 0.95])
+
+real	0m8.900s
+user	0m8.471s
+sys	0m0.265s
+Instance 7
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.0712199211120605
+[INFO] aspmc: Compilation time:         0.09680342674255371
+[INFO] aspmc: Preparation time:         0.0002608299255371094
+[INFO] aspmc: Counting time:            0.9802157878875732
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.2774102687835693
+Pre simplification
+number of sums: 511
+number of prods: 545
+0.85646911*v_21*(-v_26*v_28*v_30*v_31*v_34*v_36 + v_26*v_30*v_36 + v_28*v_31*v_34)
+Post simplification
+symp_time: 0.6793358325958252
+number of sums: 2
+number of subs: 1
+number of prods: 11
+opt_time: 1.633728265762329
+     fun: 6.083398275642537
+     jac: array([1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 19
+     nit: 12
+    njev: 12
+  status: 0
+ success: True
+       x: array([0.85556638, 0.85556638, 0.85556638, 0.85556638, 0.85556638,
+       0.85556638, 0.95      ])
+
+real	0m6.649s
+user	0m6.194s
+sys	0m0.280s
+Instance 8
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.15346360206604
+[INFO] aspmc: Compilation time:         0.08951377868652344
+[INFO] aspmc: Preparation time:         0.0002510547637939453
+[INFO] aspmc: Counting time:            0.8880724906921387
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.266437530517578
+Pre simplification
+number of sums: 511
+number of prods: 545
+0.85646911*v_21*(-v_26*v_28*v_30*v_31*v_34*v_36 + v_26*v_30*v_36 + v_28*v_31*v_34)
+Post simplification
+symp_time: 0.6834127902984619
+number of sums: 2
+number of subs: 1
+number of prods: 11
+opt_time: 1.6065130233764648
+     fun: 6.483398275646742
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 19
+     nit: 12
+    njev: 12
+  status: 0
+ success: True
+       x: array([0.85556638, 0.85556638, 0.85556638, 0.85556638, 0.85556638,
+       0.85556638, 0.95      , 0.4       ])
+
+real	0m6.617s
+user	0m6.063s
+sys	0m0.289s
+Instance 9
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 6 #vertices: 246
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 152 treewidth: 10 #vertices: 246
+[INFO] aspmc: Dtree time:               1.0662322044372559
+[INFO] aspmc: Compilation time:         0.09003376960754395
+[INFO] aspmc: Preparation time:         0.00026535987854003906
+[INFO] aspmc: Counting time:            0.9103102684020996
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::edge(1,2)., 0.5::edge(1,3)., 0.816343623039356::edge(2,4)., 0.8285621451275564::edge(3,5)., 0.8780109837190632::edge(4,6)., 0.9710507923144887::edge(5,6)., 0.8081620481122697::edge(6,7)., 0.8346009914789065::edge(6,8)., 0.8564691055626658::edge(7,9)., path(X,X):-node(X)., path(X,Y):-path(X,Z),edge(Z,Y)., transmit(A,B):-path(A,B),node(A),node(B),not not_transmit(A,B)., not_transmit(A,B):-path(A,B),node(A),node(B),not transmit(A,B)., qr:-transmit(1,9)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., query(qr).]
+tracc
+nnf_construction_time: 3.1911916732788086
+Pre simplification
+number of sums: 511
+number of prods: 545
+v_19*v_21*(-v_26*v_28*v_30*v_31*v_34*v_36 + v_26*v_30*v_36 + v_28*v_31*v_34)
+Post simplification
+symp_time: 0.6734738349914551
+number of sums: 2
+number of subs: 1
+number of prods: 11
+opt_time: 3.0677361488342285
+     fun: 6.238079278396274
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 34
+     nit: 27
+    njev: 26
+  status: 0
+ success: True
+       x: array([0.4       , 0.91269309, 0.4       , 0.91269309, 0.4       ,
+       0.91269309, 0.95      , 0.4       , 0.95      ])
+
+real	0m7.949s
+user	0m7.509s
+sys	0m0.257s
+Ended at: 
+Thu Dec  7 17:45:52 CET 2023

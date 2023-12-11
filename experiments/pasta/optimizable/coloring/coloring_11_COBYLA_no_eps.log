@@ -1,0 +1,10 @@
+Started at: 
+Sat Dec  9 12:04:47 CET 2023
+Computing answer sets
+[91mError: Found 384 worlds without answer sets.[0m
+
+real	0m2.732s
+user	0m2.433s
+sys	0m0.154s
+Ended at: 
+Sat Dec  9 12:04:49 CET 2023
