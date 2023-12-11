@@ -1,0 +1,180 @@
+Started at: 
+Mon Dec 11 17:10:17 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 0.10345888137817383 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 0.9
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 14
+  status: 1
+ success: True
+       x: array([0.01, 0.89])
+Optimization time: 0.20802950859069824 s
+Target equation: 0.992890148539559
+Sum of optimizable facts = 0.9
+Optimal probabilities
+[0.01 0.89]
+
+real	0m1.426s
+user	0m1.180s
+sys	0m0.157s
+instance 3
+Computing answer sets
+Answer set generation time: 0.10358858108520508 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 0.91
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 20
+  status: 1
+ success: True
+       x: array([0.01, 0.89, 0.01])
+Optimization time: 0.2324225902557373 s
+Target equation: 0.9928901485395591
+Sum of optimizable facts = 0.91
+Optimal probabilities
+[0.01 0.89 0.01]
+
+real	0m1.381s
+user	0m1.154s
+sys	0m0.125s
+instance 4
+Computing answer sets
+Answer set generation time: 0.10399198532104492 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 1.8
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 26
+  status: 1
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89])
+Optimization time: 0.2599940299987793 s
+Target equation: 0.9886578153436443
+Sum of optimizable facts = 1.8
+Optimal probabilities
+[0.01 0.89 0.01 0.89]
+
+real	0m1.424s
+user	0m1.169s
+sys	0m0.135s
+instance 5
+Computing answer sets
+Answer set generation time: 0.10306334495544434 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 1.8099999999999998
+   maxcv: 1.1102230246251565e-16
+ message: 'Optimization terminated successfully.'
+    nfev: 33
+  status: 1
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 0.29458045959472656 s
+Target equation: 0.9886578153436443
+Sum of optimizable facts = 1.8099999999999998
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01]
+
+real	0m1.456s
+user	0m1.201s
+sys	0m0.138s
+instance 6
+Computing answer sets
+Answer set generation time: 0.10536885261535645 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 2.7
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 38
+  status: 1
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89])
+Optimization time: 0.32599306106567383 s
+Target equation: 0.984852990551357
+Sum of optimizable facts = 2.7
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89]
+
+real	0m1.478s
+user	0m1.237s
+sys	0m0.132s
+instance 7
+Computing answer sets
+Answer set generation time: 0.10463261604309082 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 2.7099999999999995
+   maxcv: 1.1102230246251565e-16
+ message: 'Optimization terminated successfully.'
+    nfev: 44
+  status: 1
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 0.37548017501831055 s
+Target equation: 0.9848529905513573
+Sum of optimizable facts = 2.7099999999999995
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01]
+
+real	0m1.543s
+user	0m1.282s
+sys	0m0.144s
+instance 8
+Computing answer sets
+Answer set generation time: 0.10401391983032227 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 3.6000000000000005
+   maxcv: 0.0
+ message: 'Optimization terminated successfully.'
+    nfev: 50
+  status: 1
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89])
+Optimization time: 0.41498613357543945 s
+Target equation: 0.9814324914956644
+Sum of optimizable facts = 3.6000000000000005
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89]
+
+real	0m1.587s
+user	0m1.343s
+sys	0m0.125s
+instance 9
+Computing answer sets
+Answer set generation time: 0.10265779495239258 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 3.6100000000000008
+   maxcv: 1.1102230246251565e-16
+ message: 'Optimization terminated successfully.'
+    nfev: 57
+  status: 1
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 0.4857966899871826 s
+Target equation: 0.9814324914956641
+Sum of optimizable facts = 3.6100000000000008
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01]
+
+real	0m1.652s
+user	0m1.396s
+sys	0m0.135s
+Ended at: 
+Mon Dec 11 17:10:29 CET 2023

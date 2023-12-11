@@ -1,0 +1,168 @@
+Started at: 
+Mon Dec 11 17:10:17 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 0.10757565498352051 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 1.0
+   maxcv: 0.24000000000000005
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 15
+  status: 4
+ success: False
+       x: array([0.35, 0.65])
+Optimization time: 0.20790696144104004 s
+Target equation: 0.8589151796042038
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.450s
+user	0m1.221s
+sys	0m0.129s
+instance 3
+Computing answer sets
+Answer set generation time: 0.10692095756530762 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 1.3499999999999999
+   maxcv: 0.2400000000000001
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 20
+  status: 4
+ success: False
+       x: array([0.35, 0.65, 0.35])
+Optimization time: 0.23519086837768555 s
+Target equation: 0.7783702878310425
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.398s
+user	0m1.137s
+sys	0m0.146s
+instance 4
+Computing answer sets
+Answer set generation time: 0.10448145866394043 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 2.0
+   maxcv: 0.24000000000000005
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 27
+  status: 4
+ success: False
+       x: array([0.35, 0.65, 0.35, 0.65])
+Optimization time: 0.26646924018859863 s
+Target equation: 0.6518425640809882
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.427s
+user	0m1.185s
+sys	0m0.132s
+instance 5
+Computing answer sets
+Answer set generation time: 0.10475683212280273 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 2.35
+   maxcv: 0.24000000000000005
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 35
+  status: 4
+ success: False
+       x: array([0.35, 0.65, 0.35, 0.65, 0.35])
+Optimization time: 0.3145604133605957 s
+Target equation: 0.5687688060632747
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.474s
+user	0m1.238s
+sys	0m0.120s
+instance 6
+Computing answer sets
+Answer set generation time: 0.10375022888183594 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 2.9943127581972613
+   maxcv: 0.2406319157558599
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 130
+  status: 4
+ success: False
+       x: array([0.34873617, 0.64936808, 0.34873617, 0.64936808, 0.34873617,
+       0.64936808])
+Optimization time: 0.4560117721557617 s
+Target equation: 0.4664505831790715
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.615s
+user	0m1.372s
+sys	0m0.126s
+instance 7
+Computing answer sets
+Answer set generation time: 0.10369586944580078 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 3.59480523604174
+   maxcv: 0.2644811579690304
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 51
+  status: 4
+ success: False
+       x: array([0.37448052, 0.69896105, 0.37448052, 0.69896105, 0.37448052,
+       0.69896105, 0.37448052])
+Optimization time: 0.43241381645202637 s
+Target equation: 0.4355188420309692
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.590s
+user	0m1.362s
+sys	0m0.119s
+instance 8
+Computing answer sets
+Answer set generation time: 0.104766845703125 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 4.630812808949553
+   maxcv: 0.29256798984589477
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 68
+  status: 4
+ success: False
+       x: array([0.40256773, 0.75513547, 0.40256773, 0.75513547, 0.40256773,
+       0.75513547, 0.40256773, 0.75513547])
+Optimization time: 0.5299022197723389 s
+Target equation: 0.4074320101541052
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.699s
+user	0m1.444s
+sys	0m0.136s
+instance 9
+Computing answer sets
+Answer set generation time: 0.10400629043579102 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 2.3246957185344446
+   maxcv: 0.384664591533254
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 106
+  status: 4
+ success: False
+       x: array([0.06067082, 0.50533541, 0.06067082, 0.50533541, 0.06067082,
+       0.50533541, 0.06067082, 0.50533541, 0.06067082])
+Optimization time: 0.753746747970581 s
+Target equation: 0.7486366617778056
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m1.899s
+user	0m1.638s
+sys	0m0.150s
+Ended at: 
+Mon Dec 11 17:10:30 CET 2023

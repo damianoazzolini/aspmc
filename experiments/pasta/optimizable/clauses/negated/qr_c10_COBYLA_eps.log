@@ -1,182 +1,168 @@
 Started at: 
-Mon Dec 11 08:18:59 CET 2023
+Mon Dec 11 16:27:42 CET 2023
 instance 2
 Computing answer sets
-Answer set generation time: 0.10585904121398926 s
+Answer set generation time: 0.11062908172607422 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.632631377376426
-   maxcv: 0.06634064220740077
+     fun: 1.0
+   maxcv: 0.21333333333333337
  message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
     nfev: 15
   status: 4
  success: False
-       x: array([0.31631569, 0.31631569])
-Optimization time: 2.9347472190856934 s
-Target equation: 0.6336593577926136
+       x: array([0.63666667, 0.36333333])
+Optimization time: 2.902892827987671 s
+Target equation: 0.6823139833816932
 [93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m4.233s
-user	0m3.975s
-sys	0m0.153s
+real	0m4.193s
+user	0m3.909s
+sys	0m0.175s
 instance 3
 Computing answer sets
-Answer set generation time: 0.10477614402770996 s
+Answer set generation time: 0.10525655746459961 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.802577049497349
-   maxcv: 0.017526037690814178
+     fun: 1.6366666666666667
+   maxcv: 0.2133333333333334
  message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
-    nfev: 24
+    nfev: 20
   status: 4
  success: False
-       x: array([0.26752568, 0.26752568, 0.26752568])
-Optimization time: 5.446356296539307 s
-Target equation: 0.682473962309185
+       x: array([0.63666667, 0.36333333, 0.63666667])
+Optimization time: 5.122358798980713 s
+Target equation: 0.791484435827849
 [93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m6.912s
-user	0m6.410s
-sys	0m0.193s
+real	0m6.355s
+user	0m6.049s
+sys	0m0.147s
 instance 4
 Computing answer sets
-Answer set generation time: 0.10446524620056152 s
+Answer set generation time: 0.1027383804321289 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.8995398659494531
-   maxcv: 2.8100854976287337e-12
- message: 'Optimization terminated successfully.'
-    nfev: 52
-  status: 1
- success: True
-       x: array([0.25      , 0.19004781, 0.20958324, 0.24990881])
-Optimization time: 11.150811910629272 s
-Target equation: 0.6999999999971891
-Sum of optimizable facts = 0.8995398659494531
-Optimal probabilities
-[0.25       0.19004781 0.20958324 0.24990881]
+     fun: 2.0
+   maxcv: 0.21333333333333337
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 28
+  status: 4
+ success: False
+       x: array([0.63666667, 0.36333333, 0.63666667, 0.36333333])
+Optimization time: 7.8432841300964355 s
+Target equation: 0.8631392688767054
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m12.472s
-user	0m12.148s
-sys	0m0.168s
+real	0m9.078s
+user	0m8.769s
+sys	0m0.166s
 instance 5
 Computing answer sets
-Answer set generation time: 0.11610889434814453 s
+Answer set generation time: 0.10456728935241699 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.9466010393633528
-   maxcv: 2.0549012983428483e-06
- message: 'Optimization terminated successfully.'
-    nfev: 40
-  status: 1
- success: True
-       x: array([0.17732021, 0.23732021, 0.17732021, 0.17732021, 0.17732021])
-Optimization time: 13.813745737075806 s
-Target equation: 0.6999979450987065
-Sum of optimizable facts = 0.9466010393633528
-Optimal probabilities
-[0.17732021 0.23732021 0.17732021 0.17732021 0.17732021]
+     fun: 2.6366666666666667
+   maxcv: 0.21333333333333337
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 33
+  status: 4
+ success: False
+       x: array([0.63666667, 0.36333333, 0.63666667, 0.36333333, 0.63666667])
+Optimization time: 12.469630718231201 s
+Target equation: 0.9101704479568761
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m15.178s
-user	0m14.816s
-sys	0m0.190s
+real	0m13.736s
+user	0m13.375s
+sys	0m0.187s
 instance 6
 Computing answer sets
-Answer set generation time: 0.10681915283203125 s
+Answer set generation time: 0.10227155685424805 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.9869303808569024
-   maxcv: 0.0
- message: 'Optimization terminated successfully.'
-    nfev: 51
-  status: 1
- success: True
-       x: array([0.1944884, 0.1344884, 0.1944884, 0.1944884, 0.1344884, 0.1344884])
-Optimization time: 20.811471223831177 s
-Target equation: 0.7000001603479187
-Sum of optimizable facts = 0.9869303808569024
-Optimal probabilities
-[0.1944884 0.1344884 0.1944884 0.1944884 0.1344884 0.1344884]
+     fun: 3.0000000000000004
+   maxcv: 0.2133333333333336
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 46
+  status: 4
+ success: False
+       x: array([0.63666667, 0.36333333, 0.63666667, 0.36333333, 0.63666667,
+       0.36333333])
+Optimization time: 19.799186944961548 s
+Target equation: 0.9410397098273664
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m22.094s
-user	0m21.762s
-sys	0m0.160s
+real	0m21.042s
+user	0m20.645s
+sys	0m0.184s
 instance 7
 Computing answer sets
-Answer set generation time: 0.1065819263458252 s
+Answer set generation time: 0.10648036003112793 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 1.0250883615324462
-   maxcv: 1.3877787807814457e-17
- message: 'Optimization terminated successfully.'
-    nfev: 61
-  status: 1
- success: True
-       x: array([0.11215571, 0.17215571, 0.17215571, 0.17215408, 0.11215571,
-       0.11215571, 0.17215571])
-Optimization time: 35.507343769073486 s
-Target equation: 0.7000001101654725
-Sum of optimizable facts = 1.0250883615324462
-Optimal probabilities
-[0.11215571 0.17215571 0.17215571 0.17215408 0.11215571 0.11215571
- 0.17215571]
+     fun: 3.6366666666666667
+   maxcv: 0.21333333333333343
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 46
+  status: 4
+ success: False
+       x: array([0.63666667, 0.36333333, 0.63666667, 0.36333333, 0.63666667,
+       0.36333333, 0.63666667])
+Optimization time: 29.934815645217896 s
+Target equation: 0.961300977927931
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m36.816s
-user	0m36.332s
-sys	0m0.269s
+real	0m31.192s
+user	0m30.713s
+sys	0m0.209s
 instance 8
 Computing answer sets
-Answer set generation time: 0.10459327697753906 s
+Answer set generation time: 0.10515236854553223 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 1.0612109365877602
-   maxcv: 1.3877787807814457e-17
- message: 'Optimization terminated successfully.'
-    nfev: 83
-  status: 1
- success: True
-       x: array([0.17014836, 0.17014836, 0.11014836, 0.17014836, 0.11014836,
-       0.11014836, 0.11014836, 0.1101724 ])
-Optimization time: 57.262463092803955 s
-Target equation: 0.7000000910444986
-Sum of optimizable facts = 1.0612109365877602
-Optimal probabilities
-[0.17014836 0.17014836 0.11014836 0.17014836 0.11014836 0.11014836
- 0.11014836 0.1101724 ]
+     fun: 3.994859215677735
+   maxcv: 0.21377006536018894
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 58
+  status: 4
+ success: False
+       x: array([0.63622993, 0.36245987, 0.63622993, 0.36245987, 0.63622993,
+       0.36245987, 0.63622993, 0.36255987])
+Optimization time: 43.65945482254028 s
+Target equation: 0.9745339347953352
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m58.536s
-user	0m58.050s
-sys	0m0.269s
+real	0m44.884s
+user	0m44.316s
+sys	0m0.227s
 instance 9
 Computing answer sets
-Answer set generation time: 0.10376834869384766 s
+Answer set generation time: 0.10378313064575195 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 1.0956694368543207
-   maxcv: 1.3877787807814457e-17
- message: 'Optimization terminated successfully.'
-    nfev: 87
-  status: 1
- success: True
-       x: array([0.15499134, 0.15499134, 0.15499134, 0.15499134, 0.09499134,
-       0.09499134, 0.09573869, 0.09499134, 0.09499134])
-Optimization time: 93.54414582252502 s
-Target equation: 0.7000000036991056
-Sum of optimizable facts = 1.0956694368543207
-Optimal probabilities
-[0.15499134 0.15499134 0.15499134 0.15499134 0.09499134 0.09499134
- 0.09573869 0.09499134 0.09499134]
+     fun: 4.636666666666667
+   maxcv: 0.21333333333333337
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 63
+  status: 4
+ success: False
+       x: array([0.63666667, 0.36333333, 0.63666667, 0.36333333, 0.63666667,
+       0.36333333, 0.63666667, 0.36333333, 0.63666667])
+Optimization time: 71.57372379302979 s
+Target equation: 0.983328266975938
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	1m34.797s
-user	1m34.214s
-sys	0m0.275s
+real	1m12.991s
+user	1m12.212s
+sys	0m0.316s
 Ended at: 
-Mon Dec 11 08:23:10 CET 2023
+Mon Dec 11 16:31:05 CET 2023

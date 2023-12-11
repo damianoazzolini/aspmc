@@ -1,203 +1,180 @@
 Started at: 
-Mon Dec 11 08:18:59 CET 2023
+Mon Dec 11 16:27:41 CET 2023
 instance 2
 Computing answer sets
-Answer set generation time: 0.10560822486877441 s
+Answer set generation time: 0.10248208045959473 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.5
+     fun: 1.0
      jac: array([1., 1.])
  message: 'Positive directional derivative for linesearch'
-    nfev: 126
-     nit: 20
-    njev: 16
-  status: 8
- success: False
-       x: array([0.25, 0.25])
-Optimization time: 27.915276527404785 s
-Target equation: 0.5591443603162874
-[93mWarning: Unable to solve the optimization problem.[0m
-
-real	0m29.336s
-user	0m29.009s
-sys	0m0.195s
-instance 3
-Computing answer sets
-Answer set generation time: 0.11016249656677246 s
-number of sums: 1022
-number of prods: 9207
-Starting optimization
-     fun: 0.75
-     jac: array([1., 1., 1.])
- message: 'Positive directional derivative for linesearch'
-    nfev: 41
+    nfev: 56
      nit: 10
     njev: 6
   status: 8
  success: False
-       x: array([0.25, 0.25, 0.25])
-Optimization time: 23.441592693328857 s
-Target equation: 0.6591322373579768
+       x: array([0.85, 0.15])
+Optimization time: 11.254102230072021 s
+Target equation: 0.4337454228062686
 [93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m25.176s
-user	0m24.433s
-sys	0m0.224s
+real	0m12.633s
+user	0m12.344s
+sys	0m0.185s
+instance 3
+Computing answer sets
+Answer set generation time: 0.10790491104125977 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 1.8499999999999999
+     jac: array([1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 56
+     nit: 10
+    njev: 6
+  status: 8
+ success: False
+       x: array([0.85, 0.15, 0.85])
+Optimization time: 25.35737156867981 s
+Target equation: 0.5037975354487922
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m26.764s
+user	0m26.335s
+sys	0m0.230s
 instance 4
 Computing answer sets
-Answer set generation time: 0.10642266273498535 s
+Answer set generation time: 0.10467839241027832 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.9012773713838542
+     fun: 1.999999999999996
      jac: array([1., 1., 1., 1.])
- message: 'Optimization terminated successfully'
-    nfev: 4
-     nit: 4
-    njev: 4
-  status: 0
- success: True
-       x: array([0.22531934, 0.22531934, 0.22531934, 0.22531934])
-Optimization time: 24.508560180664062 s
-Target equation: 0.6999999999731082
-Sum of optimizable facts = 0.9012773713838542
-Optimal probabilities
-[0.22531934 0.22531934 0.22531934 0.22531934]
+ message: 'Positive directional derivative for linesearch'
+    nfev: 68
+     nit: 12
+    njev: 8
+  status: 8
+ success: False
+       x: array([0.85, 0.15, 0.85, 0.15])
+Optimization time: 56.47811985015869 s
+Target equation: 0.5651834073520245
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m25.886s
-user	0m25.471s
-sys	0m0.226s
+real	0m57.928s
+user	0m57.452s
+sys	0m0.245s
 instance 5
 Computing answer sets
-Answer set generation time: 0.10524678230285645 s
+Answer set generation time: 0.10226655006408691 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.9484377031098175
+     fun: 2.849999999999998
      jac: array([1., 1., 1., 1., 1.])
- message: 'Optimization terminated successfully'
-    nfev: 5
-     nit: 4
-    njev: 4
-  status: 0
- success: True
-       x: array([0.18968754, 0.18968754, 0.18968754, 0.18968754, 0.18968754])
-Optimization time: 47.6222927570343 s
-Target equation: 0.6999999999998611
-Sum of optimizable facts = 0.9484377031098175
-Optimal probabilities
-[0.18968754 0.18968754 0.18968754 0.18968754 0.18968754]
+ message: 'Positive directional derivative for linesearch'
+    nfev: 123
+     nit: 18
+    njev: 14
+  status: 8
+ success: False
+       x: array([0.85, 0.15, 0.85, 0.15, 0.85])
+Optimization time: 184.18459010124207 s
+Target equation: 0.6189751507723976
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	0m49.016s
-user	0m48.602s
-sys	0m0.210s
+real	3m5.856s
+user	3m5.145s
+sys	0m0.330s
 instance 6
 Computing answer sets
-Answer set generation time: 0.10649943351745605 s
+Answer set generation time: 0.10357165336608887 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 0.9901625261901214
+     fun: 2.9999999999999942
      jac: array([1., 1., 1., 1., 1., 1.])
- message: 'Optimization terminated successfully'
-    nfev: 5
-     nit: 5
-    njev: 5
-  status: 0
- success: True
-       x: array([0.16502709, 0.16502709, 0.16502709, 0.16502709, 0.16502709,
-       0.16502709])
-Optimization time: 99.43589305877686 s
-Target equation: 0.6999999987105003
-Sum of optimizable facts = 0.9901625261901214
-Optimal probabilities
-[0.16502709 0.16502709 0.16502709 0.16502709 0.16502709 0.16502709]
+ message: 'Positive directional derivative for linesearch'
+    nfev: 133
+     nit: 18
+    njev: 14
+  status: 8
+ success: False
+       x: array([0.85, 0.15, 0.85, 0.15, 0.85, 0.15])
+Optimization time: 314.7331533432007 s
+Target equation: 0.6661122455222097
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	1m40.930s
-user	1m40.424s
-sys	0m0.260s
+real	5m16.448s
+user	5m15.310s
+sys	0m0.427s
 instance 7
 Computing answer sets
-Answer set generation time: 0.10679078102111816 s
+Answer set generation time: 0.11024689674377441 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 1.0286801688404092
+     fun: 3.85
      jac: array([1., 1., 1., 1., 1., 1., 1.])
- message: 'Optimization terminated successfully'
-    nfev: 6
-     nit: 5
-    njev: 5
-  status: 0
- success: True
-       x: array([0.14695431, 0.14695431, 0.14695431, 0.14695431, 0.14695431,
-       0.14695431, 0.14695431])
-Optimization time: 183.894357919693 s
-Target equation: 0.6999999999995343
-Sum of optimizable facts = 1.0286801688404092
-Optimal probabilities
-[0.14695431 0.14695431 0.14695431 0.14695431 0.14695431 0.14695431
- 0.14695431]
+ message: 'Positive directional derivative for linesearch'
+    nfev: 58
+     nit: 11
+    njev: 7
+  status: 8
+ success: False
+       x: array([0.85, 0.15, 0.85, 0.15, 0.85, 0.15, 0.85])
+Optimization time: 289.90046548843384 s
+Target equation: 0.7074179471070927
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	3m5.488s
-user	3m4.849s
-sys	0m0.326s
+real	4m51.811s
+user	4m50.430s
+sys	0m0.556s
 instance 8
-/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
-  warnings.warn("Values in x were outside bounds during a "
 Computing answer sets
-Answer set generation time: 0.10645771026611328 s
+Answer set generation time: 0.10520219802856445 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 1.0651477849837614
+     fun: 4.0
      jac: array([1., 1., 1., 1., 1., 1., 1., 1.])
- message: 'Optimization terminated successfully'
-    nfev: 9
-     nit: 7
-    njev: 7
-  status: 0
- success: True
-       x: array([0.13314347, 0.13314347, 0.13314347, 0.13314347, 0.13314347,
-       0.13314347, 0.13314347, 0.13314347])
-Optimization time: 415.88736152648926 s
-Target equation: 0.6999999987755816
-Sum of optimizable facts = 1.0651477849837614
-Optimal probabilities
-[0.13314347 0.13314347 0.13314347 0.13314347 0.13314347 0.13314347
- 0.13314347 0.13314347]
+ message: 'Positive directional derivative for linesearch'
+    nfev: 53
+     nit: 10
+    njev: 6
+  status: 8
+ success: False
+       x: array([0.85, 0.15, 0.85, 0.15, 0.85, 0.15, 0.85, 0.15])
+Optimization time: 402.3913824558258 s
+Target equation: 0.7436136649907491
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	6m57.590s
-user	6m56.622s
-sys	0m0.453s
+real	6m44.326s
+user	6m42.911s
+sys	0m0.513s
 instance 9
-/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
-  warnings.warn("Values in x were outside bounds during a "
 Computing answer sets
-Answer set generation time: 0.10120439529418945 s
+Answer set generation time: 0.1013498306274414 s
 number of sums: 1022
 number of prods: 9207
 Starting optimization
-     fun: 1.1002257899260888
+     fun: 4.8499999999999845
      jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1.])
- message: 'Optimization terminated successfully'
-    nfev: 9
-     nit: 7
-    njev: 7
-  status: 0
- success: True
-       x: array([0.12224731, 0.12224731, 0.12224731, 0.12224731, 0.12224731,
-       0.12224731, 0.12224731, 0.12224731, 0.12224731])
-Optimization time: 786.0816123485565 s
-Target equation: 0.6999999989901105
-Sum of optimizable facts = 1.1002257899260888
-Optimal probabilities
-[0.12224731 0.12224731 0.12224731 0.12224731 0.12224731 0.12224731
- 0.12224731 0.12224731 0.12224731]
+ message: 'Positive directional derivative for linesearch'
+    nfev: 12
+     nit: 6
+    njev: 2
+  status: 8
+ success: False
+       x: array([0.85, 0.15, 0.85, 0.15, 0.85, 0.15, 0.85, 0.15, 0.85])
+Optimization time: 245.4296374320984 s
+Target equation: 0.7753315621052871
+[93mWarning: Unable to solve the optimization problem.[0m
 
-real	13m7.877s
-user	13m6.347s
-sys	0m0.738s
+real	4m6.956s
+user	4m5.949s
+sys	0m0.368s
 Ended at: 
-Mon Dec 11 08:46:00 CET 2023
+Mon Dec 11 16:53:24 CET 2023

@@ -1,0 +1,69 @@
+Started at: 
+Mon Dec 11 17:10:17 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 4.302638053894043 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 1.0
+     jac: array([1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 1
+     nit: 5
+    njev: 1
+  status: 8
+ success: False
+       x: array([0.11, 0.89])
+Optimization time: 1.6166770458221436 s
+Target equation: 0.972371090286629
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m7.096s
+user	0m6.810s
+sys	0m0.190s
+instance 3
+Computing answer sets
+Answer set generation time: 4.24393630027771 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 1.1099999999999988
+     jac: array([1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 75
+     nit: 13
+    njev: 9
+  status: 8
+ success: False
+       x: array([0.11, 0.89, 0.11])
+Optimization time: 14.253552436828613 s
+Target equation: 0.9587899026785752
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m19.645s
+user	0m19.311s
+sys	0m0.202s
+instance 4
+Computing answer sets
+Answer set generation time: 4.439873218536377 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 2.0
+     jac: array([1., 1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 1
+     nit: 5
+    njev: 1
+  status: 8
+ success: False
+       x: array([0.11, 0.89, 0.11, 0.89])
+Optimization time: 3.86285138130188 s
+Target equation: 0.9372703596141245
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m9.412s
+user	0m9.117s
+sys	0m0.173s
+instance 5

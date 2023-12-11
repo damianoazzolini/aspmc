@@ -1,0 +1,83 @@
+Started at: 
+Mon Dec 11 17:10:16 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 5.025205135345459 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 1.0
+   maxcv: 0.24000000000000005
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 15
+  status: 4
+ success: False
+       x: array([0.35, 0.65])
+Optimization time: 1.529879093170166 s
+Target equation: 0.8470519410331302
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m8.010s
+user	0m7.381s
+sys	0m0.306s
+instance 3
+Computing answer sets
+Answer set generation time: 4.966549634933472 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 1.3499999999999999
+   maxcv: 0.2400000000000001
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 20
+  status: 4
+ success: False
+       x: array([0.35, 0.65, 0.35])
+Optimization time: 2.3632307052612305 s
+Target equation: 0.7663140148375301
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m8.519s
+user	0m8.144s
+sys	0m0.223s
+instance 4
+Computing answer sets
+Answer set generation time: 4.81653094291687 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 2.0
+   maxcv: 0.24000000000000005
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 27
+  status: 4
+ success: False
+       x: array([0.35, 0.65, 0.35, 0.65])
+Optimization time: 3.152846097946167 s
+Target equation: 0.6397451849554008
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m9.145s
+user	0m8.799s
+sys	0m0.186s
+instance 5
+Computing answer sets
+Answer set generation time: 4.985194683074951 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 2.35
+   maxcv: 0.24000000000000005
+ message: 'Did not converge to a solution satisfying the constraints. See `maxcv` for magnitude of violation.'
+    nfev: 35
+  status: 4
+ success: False
+       x: array([0.35, 0.65, 0.35, 0.65, 0.35])
+Optimization time: 4.871201515197754 s
+Target equation: 0.5580243342314614
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	0m10.996s
+user	0m10.596s
+sys	0m0.234s
+instance 6

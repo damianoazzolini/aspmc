@@ -1,0 +1,187 @@
+Started at: 
+Mon Dec 11 10:25:29 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 0.10268712043762207 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 0.9400782613562805
+   maxcv: 2.348408582708572e-06
+ message: 'Optimization terminated successfully.'
+    nfev: 13
+  status: 1
+ success: True
+       x: array([0.44003913, 0.50003913])
+Optimization time: 0.200150728225708 s
+Target equation: 0.6999976515914176
+Sum of optimizable facts = 0.9400782613562805
+Optimal probabilities
+[0.44003913 0.50003913]
+
+real	0m1.490s
+user	0m1.227s
+sys	0m0.142s
+instance 3
+Computing answer sets
+Answer set generation time: 0.0980217456817627 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 1.69001305557854
+   maxcv: 3.2642688545525544e-06
+ message: 'Optimization terminated successfully.'
+    nfev: 20
+  status: 1
+ success: True
+       x: array([0.54333769, 0.60333769, 0.54333769])
+Optimization time: 0.22626519203186035 s
+Target equation: 0.6999967357311445
+Sum of optimizable facts = 1.69001305557854
+Optimal probabilities
+[0.54333769 0.60333769 0.54333769]
+
+real	0m1.385s
+user	0m1.136s
+sys	0m0.103s
+instance 4
+Computing answer sets
+Answer set generation time: 0.09850311279296875 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 2.7239529402477363
+   maxcv: 5.551115123125783e-17
+ message: 'Optimization terminated successfully.'
+    nfev: 30
+  status: 1
+ success: True
+       x: array([0.65098824, 0.71098824, 0.65098824, 0.71098824])
+Optimization time: 0.2579469680786133 s
+Target equation: 0.7000000822449296
+Sum of optimizable facts = 2.7239529402477363
+Optimal probabilities
+[0.65098824 0.71098824 0.65098824 0.71098824]
+
+real	0m1.434s
+user	0m1.150s
+sys	0m0.128s
+instance 5
+Computing answer sets
+Answer set generation time: 0.09984564781188965 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 3.594638328209112
+   maxcv: 5.551115123125783e-17
+ message: 'Optimization terminated successfully.'
+    nfev: 38
+  status: 1
+ success: True
+       x: array([0.69492698, 0.75492698, 0.69499796, 0.75485944, 0.69492698])
+Optimization time: 0.29794836044311523 s
+Target equation: 0.7000000022419021
+Sum of optimizable facts = 3.594638328209112
+Optimal probabilities
+[0.69492698 0.75492698 0.69499796 0.75485944 0.69492698]
+
+real	0m1.466s
+user	0m1.204s
+sys	0m0.115s
+instance 6
+Computing answer sets
+Answer set generation time: 0.0962686538696289 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 4.621016641896778
+   maxcv: 5.551115123125783e-17
+ message: 'Optimization terminated successfully.'
+    nfev: 46
+  status: 1
+ success: True
+       x: array([0.80016944, 0.74016944, 0.80016944, 0.74016944, 0.80016944,
+       0.74016944])
+Optimization time: 0.342348575592041 s
+Target equation: 0.7000000006269815
+Sum of optimizable facts = 4.621016641896778
+Optimal probabilities
+[0.80016944 0.74016944 0.80016944 0.74016944 0.80016944 0.74016944]
+
+real	0m1.496s
+user	0m1.219s
+sys	0m0.131s
+instance 7
+Computing answer sets
+Answer set generation time: 0.10096597671508789 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 5.525696240368831
+   maxcv: 1.3985257856452549e-05
+ message: 'Optimization terminated successfully.'
+    nfev: 49
+  status: 1
+ success: True
+       x: array([0.76367089, 0.82367089, 0.76367089, 0.82367089, 0.76367089,
+       0.82367089, 0.76367089])
+Optimization time: 0.404552698135376 s
+Target equation: 0.699986014742143
+Sum of optimizable facts = 5.525696240368831
+Optimal probabilities
+[0.76367089 0.82367089 0.76367089 0.82367089 0.76367089 0.82367089
+ 0.76367089]
+
+real	0m1.558s
+user	0m1.292s
+sys	0m0.128s
+instance 8
+Computing answer sets
+Answer set generation time: 0.09774446487426758 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 6.549748626589267
+   maxcv: 7.865785315530616e-06
+ message: 'Optimization terminated successfully.'
+    nfev: 62
+  status: 1
+ success: True
+       x: array([0.84871858, 0.78871858, 0.84871858, 0.78871858, 0.84871858,
+       0.78871858, 0.84871858, 0.78871858])
+Optimization time: 0.4692964553833008 s
+Target equation: 0.6999921342146846
+Sum of optimizable facts = 6.549748626589267
+Optimal probabilities
+[0.84871858 0.78871858 0.84871858 0.78871858 0.84871858 0.78871858
+ 0.84871858 0.78871858]
+
+real	0m1.632s
+user	0m1.346s
+sys	0m0.120s
+instance 9
+Computing answer sets
+Answer set generation time: 0.09749341011047363 s
+number of sums: 62
+number of prods: 567
+Starting optimization
+     fun: 7.4681459350378105
+   maxcv: 1.6653345369377348e-16
+ message: 'Optimization terminated successfully.'
+    nfev: 68
+  status: 1
+ success: True
+       x: array([0.80312733, 0.86312733, 0.80312733, 0.86312733, 0.80312733,
+       0.86312733, 0.80312733, 0.86312733, 0.80312733])
+Optimization time: 0.5768790245056152 s
+Target equation: 0.7000000006138664
+Sum of optimizable facts = 7.4681459350378105
+Optimal probabilities
+[0.80312733 0.86312733 0.80312733 0.86312733 0.80312733 0.86312733
+ 0.80312733 0.86312733 0.80312733]
+
+real	0m1.736s
+user	0m1.450s
+sys	0m0.122s
+Ended at: 
+Mon Dec 11 10:25:42 CET 2023

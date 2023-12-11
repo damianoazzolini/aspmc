@@ -146,3 +146,58 @@ sys	0m0.337s
 instance 8
 /home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
   warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 0.10190677642822266 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 1.0651477849837614
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 9
+     nit: 7
+    njev: 7
+  status: 0
+ success: True
+       x: array([0.13314347, 0.13314347, 0.13314347, 0.13314347, 0.13314347,
+       0.13314347, 0.13314347, 0.13314347])
+Optimization time: 410.60955715179443 s
+Target equation: 0.6999999987755816
+Sum of optimizable facts = 1.0651477849837614
+Optimal probabilities
+[0.13314347 0.13314347 0.13314347 0.13314347 0.13314347 0.13314347
+ 0.13314347 0.13314347]
+
+real	6m52.553s
+user	6m51.439s
+sys	0m0.440s
+instance 9
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 0.1034555435180664 s
+number of sums: 1022
+number of prods: 9207
+Starting optimization
+     fun: 1.1002257899260888
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 9
+     nit: 7
+    njev: 7
+  status: 0
+ success: True
+       x: array([0.12224731, 0.12224731, 0.12224731, 0.12224731, 0.12224731,
+       0.12224731, 0.12224731, 0.12224731, 0.12224731])
+Optimization time: 772.5836701393127 s
+Target equation: 0.6999999989901105
+Sum of optimizable facts = 1.1002257899260888
+Optimal probabilities
+[0.12224731 0.12224731 0.12224731 0.12224731 0.12224731 0.12224731
+ 0.12224731 0.12224731 0.12224731]
+
+real	12m54.816s
+user	12m52.964s
+sys	0m0.758s
+Ended at: 
+Mon Dec 11 08:44:44 CET 2023

@@ -1,0 +1,101 @@
+Started at: 
+Mon Dec 11 17:10:17 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 4.269752502441406 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 0.9000000000000004
+     jac: array([1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89])
+Optimization time: 2.0880157947540283 s
+Target equation: 0.987478254030418
+Sum of optimizable facts = 0.9000000000000004
+Optimal probabilities
+[0.01 0.89]
+
+real	0m7.557s
+user	0m7.294s
+sys	0m0.167s
+instance 3
+Computing answer sets
+Answer set generation time: 4.244827032089233 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 0.9100000000000007
+     jac: array([1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01])
+Optimization time: 3.674365520477295 s
+Target equation: 0.987478254030418
+Sum of optimizable facts = 0.9100000000000007
+Optimal probabilities
+[0.01 0.89 0.01]
+
+real	0m9.037s
+user	0m8.748s
+sys	0m0.168s
+instance 4
+Computing answer sets
+Answer set generation time: 4.254574298858643 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 1.8000000000000003
+     jac: array([1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89])
+Optimization time: 5.735834836959839 s
+Target equation: 0.9809395106362269
+Sum of optimizable facts = 1.8000000000000003
+Optimal probabilities
+[0.01 0.89 0.01 0.89]
+
+real	0m11.125s
+user	0m10.824s
+sys	0m0.164s
+instance 5
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 4.384627103805542 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 1.810000000000001
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 10.196788311004639 s
+Target equation: 0.9809395106362269
+Sum of optimizable facts = 1.810000000000001
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01]
+
+real	0m15.707s
+user	0m15.348s
+sys	0m0.223s
+instance 6
