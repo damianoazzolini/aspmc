@@ -99,3 +99,233 @@ real	0m15.707s
 user	0m15.348s
 sys	0m0.223s
 instance 6
+Computing answer sets
+Answer set generation time: 4.311752796173096 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 2.7000000000000046
+     jac: array([1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89])
+Optimization time: 15.492151737213135 s
+Target equation: 0.9750612463727619
+Sum of optimizable facts = 2.7000000000000046
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89]
+
+real	0m20.965s
+user	0m20.640s
+sys	0m0.180s
+instance 7
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 4.221857070922852 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 2.7100000000000004
+     jac: array([1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 23.999067783355713 s
+Target equation: 0.9750612463727638
+Sum of optimizable facts = 2.7100000000000004
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01]
+
+real	0m29.506s
+user	0m28.999s
+sys	0m0.235s
+instance 8
+Computing answer sets
+Answer set generation time: 4.262862682342529 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 3.600000000000003
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89])
+Optimization time: 34.20927977561951 s
+Target equation: 0.9697767461763112
+Sum of optimizable facts = 3.600000000000003
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89]
+
+real	0m39.665s
+user	0m39.283s
+sys	0m0.197s
+instance 9
+Computing answer sets
+Answer set generation time: 4.219373941421509 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 3.610000000000005
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 52.99259352684021 s
+Target equation: 0.9697767461763112
+Sum of optimizable facts = 3.610000000000005
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01]
+
+real	0m58.369s
+user	0m57.940s
+sys	0m0.232s
+instance 10
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 4.272057294845581 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 4.5
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89])
+Optimization time: 71.96610569953918 s
+Target equation: 0.9650260338784987
+Sum of optimizable facts = 4.5
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89]
+
+real	1m17.428s
+user	1m16.964s
+sys	0m0.232s
+instance 11
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 4.2540507316589355 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 4.5100000000000025
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 107.82508540153503 s
+Target equation: 0.9650260338784983
+Sum of optimizable facts = 4.5100000000000025
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01]
+
+real	1m53.294s
+user	1m52.800s
+sys	0m0.224s
+instance 12
+Computing answer sets
+Answer set generation time: 4.195856332778931 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 5.400000000000019
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01,
+       0.89])
+Optimization time: 146.73328256607056 s
+Target equation: 0.9607551915097475
+Sum of optimizable facts = 5.400000000000019
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89]
+
+real	2m32.142s
+user	2m31.553s
+sys	0m0.245s
+instance 13
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 4.412725448608398 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 5.409999999999999
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01,
+       0.89, 0.01])
+Optimization time: 215.3866217136383 s
+Target equation: 0.9607551915097503
+Sum of optimizable facts = 5.409999999999999
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01]
+
+real	3m41.234s
+user	3m40.359s
+sys	0m0.291s
+instance 14
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 4.136584520339966 s
+number of sums: 382
+number of prods: 5362
+Starting optimization
+     fun: 6.299999999999999
+     jac: array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01, 0.89, 0.01,
+       0.89, 0.01, 0.89])
+Optimization time: 267.7161612510681 s
+Target equation: 0.9569157473600711
+Sum of optimizable facts = 6.299999999999999
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89 0.01 0.89]
+
+real	4m33.076s
+user	4m32.310s
+sys	0m0.297s
+Ended at: 
+Mon Dec 11 17:27:26 CET 2023

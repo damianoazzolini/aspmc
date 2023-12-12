@@ -67,3 +67,26 @@ real	114m28.774s
 user	114m2.376s
 sys	0m22.648s
 instance 5
+Computing answer sets
+Answer set generation time: 6787.148010492325 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 3.7134651256657465
+   maxcv: 1.6653345369377348e-16
+ message: 'Optimization terminated successfully.'
+    nfev: 41
+  status: 1
+ success: True
+       x: array([0.71869303, 0.77869303, 0.71869303, 0.77869303, 0.71869303])
+Optimization time: 48.16652798652649 s
+Target equation: 0.7000020588270117
+Sum of optimizable facts = 3.7134651256657465
+Optimal probabilities
+[0.71869303 0.77869303 0.71869303 0.77869303 0.71869303]
+
+real	114m14.193s
+user	113m51.683s
+sys	0m20.017s
+instance 6
+slurmstepd: error: *** JOB 2097300 ON node03 CANCELLED AT 2023-12-11T18:25:49 DUE TO TIME LIMIT ***
