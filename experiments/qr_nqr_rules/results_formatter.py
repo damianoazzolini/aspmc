@@ -17,7 +17,7 @@ def pretty_print(filename : str):
                 ll.append(l)
             l = []
             # print(line)
-            l.append(line.split("Instance: ")[1])
+            l.append(line.split("Instance ")[1])
         elif line.startswith("nnf_construction_time"):
             # print(line)
             l.append(line.split("nnf_construction_time: ")[1])
@@ -26,6 +26,9 @@ def pretty_print(filename : str):
         elif line.startswith("number of sums"):
             # print(line)
             l.append(line.split("number of sums: ")[1])
+        elif line.startswith("number of subs"):
+            # print(line)
+            l.append(line.split("number of subs: ")[1])
         elif line.startswith("number of prods"):
             # print(line)
             l.append(line.split("number of prods: ")[1])

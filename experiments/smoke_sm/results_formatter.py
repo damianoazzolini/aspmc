@@ -2,7 +2,7 @@
 
 # filename = sys.argv[1]
 
-def pretty_print(filename : str):
+def pretty_print(filename : str, fp_out):
     fp = open(filename, "r")
     lines = fp.readlines()
     fp.close()
@@ -26,6 +26,9 @@ def pretty_print(filename : str):
         elif line.startswith("number of sums"):
             # print(line)
             l.append(line.split("number of sums: ")[1])
+        elif line.startswith("number of sub"):
+            # print(line)
+            l.append(line.split("number of sub: ")[1])
         elif line.startswith("number of prods"):
             # print(line)
             l.append(line.split("number of prods: ")[1])
@@ -49,66 +52,65 @@ def pretty_print(filename : str):
 
     ll.append(l)
 
-    fp = open(f"{filename}.cleaned","w")
-    for l in ll:
-        to_p = ','.join(l)
-        print(to_p)
-        fp.write(to_p + '\n')
-    fp.close()
+    # fp = open(f"{filename}.cleaned","w")
+    # for l in ll:
+    to_p = ','.join(l)
+    print(to_p)
+    fp_out.write(to_p + '\n')
+    # fp.close()
     
 #######################
 
-filenames_list = [
-"graph_5_c.log",
-"graph_5_no_constr_c.log",
-"graph_5_no_constr_s.log",
-"graph_5_s.log",
-"graph_6_c.log",
-"graph_6_no_constr_c.log",
-"graph_6_no_constr_s.log",
-"graph_6_s.log",
-"graph_7_c.log",
-"graph_7_no_constr_c.log",
-"graph_7_no_constr_s.log",
-"graph_7_s.log",
-"graph_8_c.log",
-"graph_8_no_constr_c.log",
-"graph_8_no_constr_s.log",
-"graph_8_s.log",
-"graph_9_c.log",
-"graph_9_no_constr_c.log",
-"graph_9_no_constr_s.log",
-"graph_9_s.log",
-"graph_10_no_constr_c.log",
-"graph_10_no_constr_s.log",
-"graph_10_s.log",
-"graph_11_c.log",
-"graph_11_no_constr_c.log",
-"graph_11_no_constr_s.log",
-"graph_11_s.log",
-"graph_12_c.log",
-"graph_12_no_constr_c.log",
-"graph_12_no_constr_s.log",
-"graph_12_s.log",
-"graph_13_c.log",
-"graph_13_no_constr_c.log",
-"graph_13_no_constr_s.log",
-"graph_13_s.log",
-"graph_14_c.log",
-"graph_14_no_constr_c.log",
-"graph_14_no_constr_s.log",
-"graph_14_s.log",
-"graph_15_c.log",
-"graph_15_no_constr_c.log",
-"graph_15_no_constr_s.log",
-"graph_15_s.log"
+fn_cobyla_constr = [
+"sm_1_c.log",
+"sm_2_c.log",
+"sm_3_c.log",
+"sm_4_c.log",
+"sm_5_c.log",
+"sm_6_c.log"
 ]
 
-for fname in filenames_list:
-    print(f"Cleaning {fname}")
-    pretty_print(fname)
+fn_slsqp_constr = [
+"sm_1_s.log",
+"sm_2_s.log",
+"sm_3_s.log",
+"sm_4_s.log",
+"sm_5_s.log",
+"sm_6_s.log"
+]
 
-print("run: zip res_graph.zip *.cleaned")
+fn_cobyla_no_constr = [
+"sm_1_no_constr_c.log",
+"sm_2_no_constr_c.log",
+"sm_3_no_constr_c.log",
+"sm_4_no_constr_c.log",
+"sm_5_no_constr_c.log",
+"sm_6_no_constr_c.log"
+]
+
+fn_slsqp_no_constr = [
+"sm_1_no_constr_s.log",
+"sm_2_no_constr_s.log",
+"sm_3_no_constr_s.log",
+"sm_4_no_constr_s.log",
+"sm_5_no_constr_s.log",
+"sm_6_no_constr_s.log"
+]
+
+# for fname in filenames_list:
+#     print(f"Cleaning {fname}")
+#     pretty_print(fname)
+
+# print("run: zip res_graph.zip *.cleaned")
+
+l_out = ["smk_cobyla_no_constr.cleaned","smk_slsqp_no_constr.cleaned", "smk_cobyla_constr.cleaned", "smk_slsqp_constr.cleaned"]
+l_in = [fn_cobyla_no_constr, fn_slsqp_no_constr, fn_cobyla_constr, fn_slsqp_constr]
+
+for f_out, fn in zip(l_out, l_in):
+    f = open(f_out, "w")
+    for fll in fn:
+        pretty_print(fll, f)
+    f.close()
 
 # import subprocess
 # subprocess.call(["zip", "res_graph.zip", "*.cleaned"])

@@ -1,5 +1,6 @@
 Started at: 
 Sat Dec  9 12:04:45 CET 2023
+Instance 7
 /home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
   warnings.warn("Values in x were outside bounds during a "
 Computing answer sets

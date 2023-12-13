@@ -26,6 +26,9 @@ def pretty_print(filename : str):
         elif line.startswith("number of sums"):
             # print(line)
             l.append(line.split("number of sums: ")[1])
+        elif line.startswith("number of subs"):
+            # print(line)
+            l.append(line.split("number of subs: ")[1])
         elif line.startswith("number of prods"):
             # print(line)
             l.append(line.split("number of prods: ")[1])
@@ -79,6 +82,7 @@ filenames_list = [
 "graph_9_no_constr_c.log",
 "graph_9_no_constr_s.log",
 "graph_9_s.log",
+"graph_10_c.log",
 "graph_10_no_constr_c.log",
 "graph_10_no_constr_s.log",
 "graph_10_s.log",

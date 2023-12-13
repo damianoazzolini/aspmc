@@ -26,6 +26,9 @@ def pretty_print(filename : str):
         elif line.startswith("number of sums"):
             # print(line)
             l.append(line.split("number of sums: ")[1])
+        elif line.startswith("number of subs"):
+            # print(line)
+            l.append(line.split("number of subs: ")[1])
         elif line.startswith("number of prods"):
             # print(line)
             l.append(line.split("number of prods: ")[1])
@@ -66,8 +69,8 @@ filenames_list = [
 "qr_nqr_clauses_not_COBYLA_20_no_constr.log",
 "qr_nqr_clauses_not_COBYLA_25_constr.log",
 "qr_nqr_clauses_not_COBYLA_25_no_constr.log",
-"qr_nqr_clauses_not_COBYLA_30_constr.log",
-"qr_nqr_clauses_not_COBYLA_30_no_constr.log",
+# "qr_nqr_clauses_not_COBYLA_30_constr.log",
+# "qr_nqr_clauses_not_COBYLA_30_no_constr.log",
 "qr_nqr_clauses_not_SLSQP_10_constr.log",
 "qr_nqr_clauses_not_SLSQP_10_no_constr.log",
 "qr_nqr_clauses_not_SLSQP_15_constr.log",
@@ -75,9 +78,9 @@ filenames_list = [
 "qr_nqr_clauses_not_SLSQP_20_constr.log",
 "qr_nqr_clauses_not_SLSQP_20_no_constr.log",
 "qr_nqr_clauses_not_SLSQP_25_constr.log",
-"qr_nqr_clauses_not_SLSQP_25_no_constr.log",
-"qr_nqr_clauses_not_SLSQP_30_constr.log",
-"qr_nqr_clauses_not_SLSQP_30_no_constr.log"
+"qr_nqr_clauses_not_SLSQP_25_no_constr.log"
+# "qr_nqr_clauses_not_SLSQP_30_constr.log",
+# "qr_nqr_clauses_not_SLSQP_30_no_constr.log"
 ]
 
 
