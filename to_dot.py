@@ -11,7 +11,7 @@
 #     // [style=invis] hides a node.
 # }
 
-filename = "nnf.vcg"
+filename = "smoothed_nnf.vcg"
 outfile = "to_dot.dot"
 
 fp = open(filename)
