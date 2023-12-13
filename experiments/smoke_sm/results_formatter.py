@@ -26,9 +26,9 @@ def pretty_print(filename : str, fp_out):
         elif line.startswith("number of sums"):
             # print(line)
             l.append(line.split("number of sums: ")[1])
-        elif line.startswith("number of sub"):
+        elif line.startswith("number of subs"):
             # print(line)
-            l.append(line.split("number of sub: ")[1])
+            l.append(line.split("number of subs: ")[1])
         elif line.startswith("number of prods"):
             # print(line)
             l.append(line.split("number of prods: ")[1])
@@ -37,6 +37,8 @@ def pretty_print(filename : str, fp_out):
         elif line.startswith("symp_time"):
             # print(line)
             l.append(line.split("symp_time: ")[1])
+        elif line.startswith("opt_time:"):
+            l.append(line.split("opt_time: ")[1])
         elif line.startswith(" success:"):
             # print(line)
             res = '1' if line.split(" success: ")[1] == "True" else '0'

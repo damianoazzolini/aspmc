@@ -37,6 +37,8 @@ def pretty_print(filename : str):
         elif line.startswith("symp_time"):
             # print(line)
             l.append(line.split("symp_time: ")[1])
+        elif line.startswith("opt_time:"):
+            l.append(line.split("opt_time: ")[1])
         elif line.startswith(" success:"):
             # print(line)
             res = '1' if line.split(" success: ")[1] == "True" else '0'
