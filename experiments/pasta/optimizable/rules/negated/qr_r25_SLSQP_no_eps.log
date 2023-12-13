@@ -1,0 +1,27 @@
+Started at: 
+Wed Dec 13 12:10:41 CET 2023
+instance 2
+Computing answer sets
+Answer set generation time: 5574.474141359329 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 0.9000000000000004
+     jac: array([1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89])
+Optimization time: 20.74768328666687 s
+Target equation: 0.9751185239708127
+Sum of optimizable facts = 0.9000000000000004
+Optimal probabilities
+[0.01 0.89]
+
+real	93m31.372s
+user	93m7.110s
+sys	0m17.946s
+instance 3

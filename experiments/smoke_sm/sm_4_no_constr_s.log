@@ -1,28 +1,29 @@
 Started at: 
-Sat Dec  9 10:36:53 CET 2023
+Wed Dec 13 12:28:24 CET 2023
 Instance 4
 [INFO] aspmc: Tree Decomposition #bags: 112 unfolded treewidth: 6 #vertices: 126
 [INFO] aspmc: Preprocessing disabled
 [INFO] aspmc:    Stats Compilation
 [INFO] aspmc: ------------------------------------------------------------
 [INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 110 treewidth: 19 #vertices: 138
-[INFO] aspmc: Dtree time:               1.0754191875457764
-[INFO] aspmc: Compilation time:         0.07154345512390137
+[INFO] aspmc: Dtree time:               1.0750422477722168
+[INFO] aspmc: Compilation time:         0.07240915298461914
 [INFO] aspmc: Preparation time:         0.0001838207244873047
-[INFO] aspmc: Counting time:            1.1192386150360107
+[INFO] aspmc: Counting time:            1.115105390548706
 [INFO] aspmc: ------------------------------------------------------------
 [0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., query(qr).]
 tracc
-nnf_construction_time: 3.4195213317871094
+nnf_construction_time: 3.408625602722168
 Pre simplification
 number of sums: 14237
 number of prods: 15725
 0.011856*v_39 + 0.012
 Post simplification
-symp_time: 3.644022226333618
+symp_time: 3.597689390182495
 number of sums: 1
+number of subs: 0
 number of prods: 1
-opt_time: 0.02944016456604004
+opt_time: 0.03028702735900879
      fun: 0.15000000000000047
      jac: array([1., 1., 1.])
  message: 'Optimization terminated successfully'
@@ -34,7 +35,7 @@ opt_time: 0.02944016456604004
        x: array([0.05, 0.05, 0.05])
 
 real	0m8.395s
-user	0m7.741s
-sys	0m0.415s
+user	0m7.705s
+sys	0m0.465s
 Ended at: 
-Sat Dec  9 10:37:02 CET 2023
+Wed Dec 13 12:28:33 CET 2023

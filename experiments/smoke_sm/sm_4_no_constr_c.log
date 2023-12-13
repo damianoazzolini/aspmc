@@ -1,28 +1,29 @@
 Started at: 
-Sat Dec  9 10:36:52 CET 2023
+Wed Dec 13 12:28:26 CET 2023
 Instance 4
 [INFO] aspmc: Tree Decomposition #bags: 112 unfolded treewidth: 6 #vertices: 126
 [INFO] aspmc: Preprocessing disabled
 [INFO] aspmc:    Stats Compilation
 [INFO] aspmc: ------------------------------------------------------------
 [INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 110 treewidth: 19 #vertices: 138
-[INFO] aspmc: Dtree time:               1.074934482574463
-[INFO] aspmc: Compilation time:         0.07181596755981445
-[INFO] aspmc: Preparation time:         0.0001957416534423828
-[INFO] aspmc: Counting time:            1.1338436603546143
+[INFO] aspmc: Dtree time:               1.0745115280151367
+[INFO] aspmc: Compilation time:         0.07191014289855957
+[INFO] aspmc: Preparation time:         0.00017976760864257812
+[INFO] aspmc: Counting time:            1.141711950302124
 [INFO] aspmc: ------------------------------------------------------------
 [0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., query(qr).]
 tracc
-nnf_construction_time: 3.43574857711792
+nnf_construction_time: 3.4261221885681152
 Pre simplification
 number of sums: 14237
 number of prods: 15725
 0.011856*v_39 + 0.012
 Post simplification
-symp_time: 3.5353970527648926
+symp_time: 3.3909752368927
 number of sums: 1
+number of subs: 0
 number of prods: 1
-opt_time: 0.0037593841552734375
+opt_time: 0.0034661293029785156
      fun: 0.14999999999999997
    maxcv: 1.3877787807814457e-17
  message: 'Optimization terminated successfully.'
@@ -31,8 +32,8 @@ opt_time: 0.0037593841552734375
  success: True
        x: array([0.05, 0.05, 0.05])
 
-real	0m8.211s
-user	0m7.548s
-sys	0m0.458s
+real	0m8.008s
+user	0m7.432s
+sys	0m0.424s
 Ended at: 
-Sat Dec  9 10:37:00 CET 2023
+Wed Dec 13 12:28:34 CET 2023

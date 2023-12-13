@@ -1,61 +1,43 @@
 Started at: 
-Sat Dec  9 10:36:51 CET 2023
+Wed Dec 13 12:28:26 CET 2023
 Instance 6
-Traceback (most recent call last):
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lexer.py", line 590, in lex
-    yield lexer.next_token(lexer_state, parser_state)
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lexer.py", line 528, in next_token
-    raise UnexpectedCharacters(lex_state.text, line_ctr.char_pos, line_ctr.line, line_ctr.column,
-lark.exceptions.UnexpectedCharacters: No terminal matches 'n' in the current parser context, at line 33 col 39
+[INFO] aspmc: Tree Decomposition #bags: 225 unfolded treewidth: 11 #vertices: 260
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 242 treewidth: 27 #vertices: 285
+[INFO] aspmc: Dtree time:               1.0961132049560547
+[INFO] aspmc: Compilation time:         1.1307497024536133
+[INFO] aspmc: Preparation time:         0.0002942085266113281
+[INFO] aspmc: Counting time:            15.124934434890747
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., 0.5::influences(3,4)., 0.5::influences(4,1)., query(qr).]
+tracc
+nnf_construction_time: 18.478521585464478
+Pre simplification
+number of sums: 211052
+number of prods: 227924
+-0.011573163264*v_39*v_40*v_41*v_42 - 0.000140564736*v_39*v_40*v_41 + 0.011573163264*v_39*v_40*v_42 + 0.011713728*v_39*v_40 - 0.000142272000000001*v_39*v_41 + 0.011856*v_39 + 0.011856*v_41 + 0.012
+Post simplification
+symp_time: 59.18936824798584
+number of sums: 5
+number of subs: 3
+number of prods: 16
+opt_time: 0.5622060298919678
+     fun: 0.25000000000000033
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.05, 0.05, 0.05, 0.05, 0.05])
 
-smokes(X):- asthma_and_stress(X), not no_smokes(X).
-                                      ^
-Expected one of: 
-	* DOT
-	* COMMA
-	* LPAR
-	* SEMICOLON
-	* RPAR
-	* ":-"
-
-Previous tokens: Token('__ANON_2', 'not')
-
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/smoke_sm/runner_with_pair_constr.py", line 34, in <module>
-    res = compute_optimal_probability(
-  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/smoke_sm/a.py", line 166, in compute_optimal_probability
-    lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
-  File "/home/dazzolin/test/2023aspmc/aspmc/experiments/smoke_sm/a.py", line 81, in get_eq
-    program = SMProblogProgram(program_str, program_files)
-  File "/home/dazzolin/test/2023aspmc/aspmc/aspmc/programs/smprogram.py", line 47, in __init__
-    program = parser.parse(program_str)
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lark.py", line 645, in parse
-    return self.parser.parse(text, start=start, on_error=on_error)
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parser_frontends.py", line 96, in parse
-    return self.parser.parse(stream, chosen_start, **kw)
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 41, in parse
-    return self.parser.parse(lexer, start)
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 171, in parse
-    return self.parse_from_state(parser_state)
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 193, in parse_from_state
-    raise e
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/parsers/lalr_parser.py", line 183, in parse_from_state
-    for token in state.lexer.lex(state):
-  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/lark/lexer.py", line 599, in lex
-    raise UnexpectedToken(token, e.allowed, state=parser_state, token_history=[last_token], terminals_by_name=self.root_lexer.terminals_by_name)
-lark.exceptions.UnexpectedToken: Unexpected token Token('__ANON_2', 'no_smokes') at line 33, column 39.
-Expected one of: 
-	* LPAR
-	* DOT
-	* COMMA
-Previous tokens: [Token('__ANON_2', 'not')]
-
-
-real	0m1.212s
-user	0m0.925s
-sys	0m0.153s
+real	1m19.935s
+user	1m16.444s
+sys	0m3.273s
 Ended at: 
-Sat Dec  9 10:36:52 CET 2023
+Wed Dec 13 12:29:46 CET 2023
