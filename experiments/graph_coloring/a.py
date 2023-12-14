@@ -191,6 +191,7 @@ def compute_optimal_probability(
             constraints_list.append(f"P({k}) - {v[0]}")
             constraints_list.append(f"{v[1]} - P({k})")
     
+    print(constraints_list)
     # 3.1: initial values for the parameters
     initial_guesses : 'list[float]' = [0.5]*len(optimizable_facts)
     
@@ -226,7 +227,8 @@ def compute_optimal_probability(
                 'fun' : current_problem.eval_fn,
                 'jac' : current_problem.jac_fn    
             })
-    
+    print(constraints)
+    print(problem_to_solve)
     start_time = time.time()
     if method == "SLSQP":
         res = minimize(

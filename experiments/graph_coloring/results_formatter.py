@@ -37,6 +37,8 @@ def pretty_print(filename : str, fp_out):
         elif line.startswith("symp_time"):
             # print(line)
             l.append(line.split("symp_time: ")[1])
+        elif line.startswith("opt_time:"):
+            l.append(line.split("opt_time: ")[1])
         elif line.startswith(" success:"):
             # print(line)
             res = '1' if line.split(" success: ")[1] == "True" else '0'
@@ -63,7 +65,7 @@ def pretty_print(filename : str, fp_out):
 
 fn_cobyla_constr = [
 "sm_6_c.log",
-"sm_7_s.log",
+"sm_7_c.log",
 "sm_8_c.log",
 "sm_9_c.log",
 "sm_10_c.log",
