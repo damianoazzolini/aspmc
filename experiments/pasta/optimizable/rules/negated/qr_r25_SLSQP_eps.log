@@ -23,3 +23,70 @@ real	95m27.269s
 user	95m9.601s
 sys	0m11.549s
 instance 3
+Computing answer sets
+Answer set generation time: 5580.951206922531 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 1.1099999999999988
+     jac: array([1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 75
+     nit: 13
+    njev: 9
+  status: 8
+ success: False
+       x: array([0.11, 0.89, 0.11])
+Optimization time: 52.22034764289856 s
+Target equation: 0.9409237624119062
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	94m8.837s
+user	93m47.931s
+sys	0m13.245s
+instance 4
+Computing answer sets
+Answer set generation time: 5584.957809448242 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 2.0
+     jac: array([1., 1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 1
+     nit: 5
+    njev: 1
+  status: 8
+ success: False
+       x: array([0.11, 0.89, 0.11, 0.89])
+Optimization time: 39.057881593704224 s
+Target equation: 0.9175170622892237
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	94m2.386s
+user	93m40.229s
+sys	0m15.227s
+instance 5
+Computing answer sets
+Answer set generation time: 6735.874505519867 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 2.11
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Positive directional derivative for linesearch'
+    nfev: 93
+     nit: 15
+    njev: 11
+  status: 8
+ success: False
+       x: array([0.11, 0.89, 0.11, 0.89, 0.11])
+Optimization time: 187.1857967376709 s
+Target equation: 0.8971982723220531
+[93mWarning: Unable to solve the optimization problem.[0m
+
+real	115m42.724s
+user	115m9.813s
+sys	0m23.813s
+instance 6
+slurmstepd: error: *** JOB 2097450 ON node01 CANCELLED AT 2023-12-13T20:11:02 DUE TO TIME LIMIT ***

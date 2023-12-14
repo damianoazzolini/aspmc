@@ -25,3 +25,78 @@ real	93m31.372s
 user	93m7.110s
 sys	0m17.946s
 instance 3
+Computing answer sets
+Answer set generation time: 5613.429446220398 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 0.9100000000000007
+     jac: array([1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01])
+Optimization time: 29.709257125854492 s
+Target equation: 0.9751185239708128
+Sum of optimizable facts = 0.9100000000000007
+Optimal probabilities
+[0.01 0.89 0.01]
+
+real	94m18.813s
+user	93m52.635s
+sys	0m18.058s
+instance 4
+Computing answer sets
+Answer set generation time: 5872.846968412399 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 1.8000000000000003
+     jac: array([1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89])
+Optimization time: 43.289724349975586 s
+Target equation: 0.9652601905393168
+Sum of optimizable facts = 1.8000000000000003
+Optimal probabilities
+[0.01 0.89 0.01 0.89]
+
+real	98m54.363s
+user	98m28.542s
+sys	0m17.667s
+instance 5
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/optimize.py:282: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+Computing answer sets
+Answer set generation time: 6882.280982494354 s
+number of sums: 12286
+number of prods: 294888
+Starting optimization
+     fun: 1.810000000000001
+     jac: array([1., 1., 1., 1., 1.])
+ message: 'Optimization terminated successfully'
+    nfev: 2
+     nit: 2
+    njev: 2
+  status: 0
+ success: True
+       x: array([0.01, 0.89, 0.01, 0.89, 0.01])
+Optimization time: 65.78079390525818 s
+Target equation: 0.9652601905393168
+Sum of optimizable facts = 1.810000000000001
+Optimal probabilities
+[0.01 0.89 0.01 0.89 0.01]
+
+real	116m7.890s
+user	115m33.821s
+sys	0m24.864s
+instance 6
+slurmstepd: error: *** JOB 2097449 ON node01 CANCELLED AT 2023-12-13T20:11:02 DUE TO TIME LIMIT ***
