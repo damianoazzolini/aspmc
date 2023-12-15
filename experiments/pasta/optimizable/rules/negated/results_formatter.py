@@ -74,7 +74,9 @@ filenames_list = [
 "qr_r20_SLSQP_eps.log",
 "qr_r20_SLSQP_no_eps.log",
 "qr_r25_COBYLA_eps.log",
-"qr_r25_COBYLA_no_eps.log"
+"qr_r25_COBYLA_no_eps.log",
+"qr_r25_SLSQP_eps.log",
+"qr_r25_SLSQP_no_eps.log"
 ]
 
 
