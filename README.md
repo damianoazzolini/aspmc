@@ -141,3 +141,8 @@ b :- a.
 query(b).
 ```
 Evaluates the given simple program over the MaxPlus semiring.
+
+
+## Constrained Optimization
+The folder `aspmc/experiments` contains a zip with the code and the results of the experiments for the constrained optimization approach.
+Bash `.sh` files helps running them (using the slurm manager).

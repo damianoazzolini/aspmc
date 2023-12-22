@@ -1,4 +1,0 @@
-Started at: 
-Mon Dec 11 08:18:05 CET 2023
-instance 2
-slurmstepd: error: *** JOB 2097264 ON node01 CANCELLED AT 2023-12-11T16:18:20 DUE TO TIME LIMIT ***
