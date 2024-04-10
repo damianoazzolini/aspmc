@@ -33,14 +33,16 @@ class Problem:
         else:
             s = str(other_to_eval)
         
-        # print("pre s")
-        # print(s)
+        print("pre s")
+        print(s)
+        # print(x)
         for idx, val in enumerate(self.symbolic_variables):
             s = s.replace(val, str(x[idx]))
         # # return sympify(s)
         # return simplify_chunk(s)
         # print(self.symbolic_variables)
-        # print(s)
+        print("post s")
+        print(s)
         return eval(s)
 
 
@@ -52,7 +54,7 @@ class Problem:
         s = self.function_to_opt
         for symbolic_var in self.symbolic_variables:
             d = diff(s,symbolic_var)
-            # print(f"diff {s}:")
+            print(f"diff {s}:")
             # print(str(d))
             j.append(self.eval_fn(x,str(d).replace(' ','')))
         return j
@@ -163,7 +165,7 @@ def compute_optimal_probability(
         program : str,
         query : 'str',
         optimizable_facts: 'dict[str, tuple[float, float]]',
-        target : str = "UP",
+        constraints_list : 'list[str]' = [],
         method : str = "SLSQP"
     ):
     '''
@@ -176,17 +178,19 @@ def compute_optimal_probability(
     current_prog = program + f"\nquery({query}).\n"
     lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
     symb_vars = dict(sorted(symb_vars.items(), reverse = True))
-    print(symb_vars)
+    # print(symb_vars)
     for k_nnf, name in symb_vars.items():
         lq = lq.replace(f"v_{k_nnf}",name)
         uq = uq.replace(f"v_{k_nnf}",name)
     eq_lp = lq
     eq_up = uq
+
+    print(eq_up)
     
 
     # 3: generate the bounds
     bounds : 'list[tuple[float,float]]' = []
-    constraints_list = []
+    # constraints_list = []
     symb_vars_list = sorted(list(optimizable_facts.keys()),reverse=True)
 
     if method == "SLSQP":
@@ -197,9 +201,12 @@ def compute_optimal_probability(
             # print(bounds)
     else:
         # cobyla: convert bounds into constraints
+        idx = 0
         for k, v in optimizable_facts.items():
-            constraints_list.append(f"P({k}) - {v[0]}")
-            constraints_list.append(f"{v[1]} - P({k})")
+            if idx > 0:
+                constraints_list.append(f"P({k}) - {v[0]}")
+                constraints_list.append(f"{v[1]} - P({k})")
+            idx += 1
 
     initial_guesses : 'list[float]' = [0.5]*len(optimizable_facts)
 
@@ -248,7 +255,8 @@ def compute_optimal_probability(
                 initial_guesses,
                 bounds=bounds,
                 jac=pts.jac_fn,
-                method=method
+                method=method,
+                constraints=constraints
             )
             all_res.append(res)
     else:

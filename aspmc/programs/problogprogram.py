@@ -84,15 +84,6 @@ class ProblogProgram(Program):
         # 2. give the asp rules to the grounder
         clingo_str = '\n'.join([ str(r) for r in program ])
         
-        # print("----- AGGIUNGO LT/2 -----")
-        # clingo_str += "\n:- #count{X:fly(X),bird(X)} = FB, #count{X:bird(X)} = B, 10*FB<6*B.\n"
-        # clingo_str += "\nlt(X,Y):- index(X), index(Y), X < Y.\n"
-        # print(clingo_str)
-        
-        
-        # import sys
-        # sys.exit()
-        
         grounder.ground(clingo_control, program_str = clingo_str, program_files = [])
         # 3. take care of possible extras
         self._process_grounding(clingo_control)
@@ -213,7 +204,7 @@ class ProblogProgram(Program):
             for variables in self.annotated_disjunctions[idx]:
                 rules = self.annotated_disjunctions[idx][variables]
                 if len(rules) == 0:
-                    logger.error("There must be at least one probabilistic atom in an annotated disjuntion.")
+                    logger.error("There must be at least one probabilistic atom in an annotated disjunction.")
                     exit(-1)
                 if len(rules) > 1: # handle proper annotated disjunctions
                     rest = self.semiring.one()

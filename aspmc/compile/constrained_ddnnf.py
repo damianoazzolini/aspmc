@@ -39,7 +39,9 @@ class ConstrainedDDNNF(object):
         # print(f_transform_lp)
         # print(f_transform_up)
         
+        # stampa mapping id - valore
         # print(mapping_id_val)
+        extract_eqs = len(mapping_id_val) > 0
         # variables id to keep symbolically
         keep_symbolic_list = mapping_id_val.keys()
         
@@ -81,20 +83,21 @@ class ConstrainedDDNNF(object):
                 val_type = abs(int(line[1])) in P
                 
                 # print(f"({val_lp,val_up})")
-                if abs(int(line[1])) in keep_symbolic_list:
-                    # print("symbolic")
-                    v_to_consider = abs(int(line[1]))
-                    if int(line[1]) > 0:
-                        to_add = f"v_{v_to_consider}"
+                if extract_eqs:
+                    if abs(int(line[1])) in keep_symbolic_list:
+                        # print("symbolic")
+                        v_to_consider = abs(int(line[1]))
+                        if int(line[1]) > 0:
+                            to_add = f"v_{v_to_consider}"
+                        else:
+                            to_add = f"(1-v_{v_to_consider})"
                     else:
-                        to_add = f"(1-v_{v_to_consider})"
-                else:
-                    to_add = f"{weights[to_pos(int(line[1]))]}"
-                
+                        to_add = f"{weights[to_pos(int(line[1]))]}"
+                    
+                    extracted_eq_lp = f"{to_add}"
+                    extracted_eq_up = f"{to_add}"
                 # print(extracted_eq_lp)
                 # print(extracted_eq_up)
-                extracted_eq_lp = f"{to_add}"
-                extracted_eq_up = f"{to_add}"
             else:
                 if line[0] == 'A':
                     val = None
@@ -119,9 +122,10 @@ class ConstrainedDDNNF(object):
                                     val_up[:] = first_semiring.one()
                                     val_up *= mem_up[child]
                                     
-                                    extracted_eq_lp = f"{eq_lp_list[child]}"
-                                    extracted_eq_up = f"{eq_up_list[child]}"
-                                    
+                                    if extract_eqs:
+                                        extracted_eq_lp = f"{eq_lp_list[child]}"
+                                        extracted_eq_up = f"{eq_up_list[child]}"
+                                        
                                     # print("val lp, extracted eq - 0")
                                     # print(val_lp)
                                     # print(val_up)
@@ -149,12 +153,10 @@ class ConstrainedDDNNF(object):
                                     # print(mem_up[child])
                                     # print(val_up)
                                     # print(mem_up[child])
-                                    
-                                    extracted_eq_lp = f"{eq_lp_list[child]}"
-                                    # extracted_eq_lp = extracted_eq_lp + f"*{1}"
-                                    extracted_eq_up = f"{eq_up_list[child]}"
-                                    # extracted_eq_up = extracted_eq_up + f"*{1}"
-                                    
+                                    if extract_eqs:
+                                        extracted_eq_lp = f"{eq_lp_list[child]}"
+                                        extracted_eq_up = f"{eq_up_list[child]}"
+                                        
                                     # print("val lp, extracted eq - 1")
                                     # print(val_lp)
                                     # print(val_up)
@@ -184,15 +186,31 @@ class ConstrainedDDNNF(object):
                                     val_up = np.copy(v1)
                                     val_up *= mem_up[child]
                                     
-                                    extracted_eq_lp = f"({np.copy(v0)})*({eq_lp_list[child]})"
-                                    extracted_eq_up = f"({np.copy(v1)})*({eq_up_list[child]})"
-                                    
-                                    # print(val_lp)
-                                    # print(val_up)
-                                    # print(f"v0: {v0}")
-                                    # print(f"v1: {v1}")
-                                    # print(extracted_eq_lp)
-                                    # print(extracted_eq_up)
+                                    if extract_eqs:
+                                        # for LP
+                                        if len(v0) == 1:
+                                            extracted_eq_lp = f"({v0[0]})*({eq_lp_list[child]})"
+                                        elif len(v0) == 2 and v0[0] == v0[1]:
+                                            if v0[0] == 1.0:
+                                                extracted_eq_lp = f"({eq_lp_list[child]})"
+                                            else:
+                                                extracted_eq_lp = f"({v0[0]})*({eq_lp_list[child]})"
+                                        else:
+                                            print("This should not happen - 1")
+                                        
+                                        # for UP
+                                        if len(v1) == 1:
+                                            extracted_eq_up = f"({v1[0]})*({eq_up_list[child]})"
+                                        elif len(v1) == 2 and v1[0] == v1[1]:
+                                            if v1[0] == 1.0:
+                                                extracted_eq_up = f"({eq_up_list[child]})"
+                                            else:
+                                                extracted_eq_up = f"({v1[0]})*({eq_up_list[child]})"
+                                        else:
+                                            print("This should not happen - 2")
+                                        
+                                        # extracted_eq_lp = f"({np.copy(v0)})*({eq_lp_list[child]})"
+                                        # extracted_eq_up = f"({np.copy(v1)})*({eq_up_list[child]})"
 
                                 else:
                                     val *= np.array([ transform(w) for w in mem[child] ], dtype = first_semiring.dtype)
@@ -202,28 +220,39 @@ class ConstrainedDDNNF(object):
                                     v_lp = np.array([ transform_lp(w) for w in mem_lp[child] ], dtype = first_semiring.dtype)
                                     v_up = np.array([ transform_up(w) for w in mem_up[child] ], dtype = first_semiring.dtype)
                                     
-                                    # print(v_lp)
-                                    # print(v_up)
-                                    
-                                    # if int(v_lp) != 1:
-                                    extracted_eq_lp = f"({extracted_eq_lp})*({v_lp})"
-                                    # if int(v_up) != 1:
-                                    extracted_eq_up = f"({extracted_eq_up})*({v_up})"
-                                    
-                                    # print("val lp, extracted eq  - 3")
-                                    # print(val_lp)
-                                    # print(v_lp)
-                                    # print(val_up)
-                                    # print(v_up)
-                                    # print(extracted_eq_lp)
-                                    # print(extracted_eq_up)
+                                    if extract_eqs:
+                                        if len(v_lp) == 1:
+                                            extracted_eq_lp = f"({extracted_eq_lp})*({v_lp[0]})"
+                                        elif len(v_lp) == 2 and v_lp[0] == v_lp[1]:
+                                            if v_lp[0] == 1.0:
+                                                extracted_eq_lp = f"({extracted_eq_lp})"
+                                            else:
+                                                extracted_eq_lp = f"({extracted_eq_lp})*({v_lp[0]})"
+                                        else:
+                                            print("This should not happen - 3")
+                                        
+                                        # for UP
+                                        if len(v_up) == 1:
+                                            extracted_eq_up = f"({extracted_eq_up})*({v_up[0]})"
+                                        elif len(v_up) == 2 and v_up[0] == v_up[1]:
+                                            if v_up[0] == 1.0:
+                                                extracted_eq_up = f"({extracted_eq_up})"
+                                            else:
+                                                extracted_eq_up = f"({extracted_eq_up})*({v_up[0]})"
+                                        else:
+                                            print("This should not happen - 4")
+
+                                        # extracted_eq_lp = f"({extracted_eq_lp})*({v_lp})"
+                                        # extracted_eq_up = f"({extracted_eq_up})*({v_up})"
+
                         else:
                             val *= mem[child]
                             val_lp *= mem_lp[child]
                             val_up *= mem_up[child]
                             
-                            extracted_eq_lp = f"({extracted_eq_lp})*({eq_lp_list[child]})"
-                            extracted_eq_up = f"({extracted_eq_up})*({eq_up_list[child]})"
+                            if extract_eqs:
+                                extracted_eq_lp = f"({extracted_eq_lp})*({eq_lp_list[child]})"
+                                extracted_eq_up = f"({extracted_eq_up})*({eq_up_list[child]})"
                             
                             # print("val lp, extracted eq - 4")
                             # print(val_lp)
@@ -253,8 +282,9 @@ class ConstrainedDDNNF(object):
                                     val_up[:] = first_semiring.zero()
                                     val_up += mem_up[child]
                                     
-                                    extracted_eq_lp = f"{eq_lp_list[child]}"
-                                    extracted_eq_up = f"{eq_up_list[child]}"
+                                    if extract_eqs:
+                                        extracted_eq_lp = f"{eq_lp_list[child]}"
+                                        extracted_eq_up = f"{eq_up_list[child]}"
                                     
                                     # print("val lp, extracted eq - 5")
                                     # print(val_lp)
@@ -275,8 +305,9 @@ class ConstrainedDDNNF(object):
                                     val_up[:] = second_semiring.zero()
                                     val_up += mem_up[child]
                                     
-                                    extracted_eq_lp = f"{eq_lp_list[child]}"
-                                    extracted_eq_up = f"{eq_up_list[child]}"
+                                    if extract_eqs:
+                                        extracted_eq_lp = f"{eq_lp_list[child]}"
+                                        extracted_eq_up = f"{eq_up_list[child]}"
                                     
                                     # print("val lp, extracted eq - 6")
                                     # print(val_lp)
@@ -298,8 +329,34 @@ class ConstrainedDDNNF(object):
                                     val_up = np.copy(v1)
                                     val_up += mem_up[child]
                                     
-                                    extracted_eq_lp = f"({np.copy(v0)})+({eq_lp_list[child]})"
-                                    extracted_eq_up = f"({np.copy(v1)})+({eq_up_list[child]})"
+                                    if extract_eqs:
+                                        # for LP
+                                        if len(v0) == 1:
+                                            if v0 != 0:
+                                                extracted_eq_lp = f"({v0[0]})+({eq_lp_list[child]})"
+                                            else:
+                                                extracted_eq_lp = f"({eq_lp_list[child]})"
+                                        elif len(v0) == 2 and v0[0] == v0[1]:
+                                            if v0[0] == 0:
+                                                extracted_eq_lp = f"({eq_lp_list[child]})"
+                                            else:
+                                                extracted_eq_lp = f"({v0[0]})+({eq_lp_list[child]})"
+                                        else:
+                                            print("This should not happen - 5")
+                                        
+                                        # for UP
+                                        if len(v1) == 1:
+                                            extracted_eq_up = f"({v1[0]})+({eq_up_list[child]})"
+                                        elif len(v1) == 2 and v1[0] == v1[1]:
+                                            if v1[0] == 0:
+                                                extracted_eq_up = f"({eq_up_list[child]})"
+                                            else:
+                                                extracted_eq_up = f"({v1[0]})+({eq_up_list[child]})"
+                                        else:
+                                            print("This should not happen - 6")
+                                        
+                                        # extracted_eq_lp = f"({np.copy(v0)})+({eq_lp_list[child]})"
+                                        # extracted_eq_up = f"({np.copy(v1)})+({eq_up_list[child]})"
                                     
                                     # print("val lp, extracted eq - 7")
                                     # print(val_lp)
@@ -316,10 +373,30 @@ class ConstrainedDDNNF(object):
                                     v_lp = np.array([ transform_lp(w) for w in mem_lp[child] ], dtype = first_semiring.dtype)
                                     v_up = np.array([ transform_up(w) for w in mem_up[child] ], dtype = first_semiring.dtype)
                                     
-                                    if v_lp != np.array([0]):
-                                        extracted_eq_lp = f"({extracted_eq_lp})+({v_lp})"
-                                    if v_up != np.array([0]):
-                                        extracted_eq_up = f"({extracted_eq_up})+({v_up})"
+                                    if extract_eqs:
+                                        if len(v_lp) == 1:
+                                            if v_lp[0] != 0:
+                                                extracted_eq_lp = f"({extracted_eq_lp})+({v_lp[0]})"
+                                        elif len(v_lp) == 2 and v_lp[0] == v_lp[1]:
+                                            if v_lp[0] != 0:
+                                                extracted_eq_lp = f"({extracted_eq_lp})+({v_lp[0]})"
+                                        else:
+                                            print("This should not happen - 7")
+                                        
+                                        # for UP
+                                        if len(v_up) == 1:
+                                            if v_up[0] != 1:
+                                                extracted_eq_up = f"({extracted_eq_up})+({v_up[0]})"
+                                        elif len(v_up) == 2 and v_up[0] == v_up[1]:
+                                            if v_up[0] != 0:
+                                                extracted_eq_up = f"({extracted_eq_up})+({v_up[0]})"
+                                        else:
+                                            print("This should not happen - 8")
+                                        
+                                        # if v_lp != np.array([0]):
+                                        #     extracted_eq_lp = f"({extracted_eq_lp})+({v_lp})"
+                                        # if v_up != np.array([0]):
+                                        #     extracted_eq_up = f"({extracted_eq_up})+({v_up})"
                                     
                                     # print("val lp, extracted eq - 8")
                                     # print(val_lp)
@@ -330,9 +407,11 @@ class ConstrainedDDNNF(object):
                             val += mem[child]
                             val_lp += mem_lp[child]
                             val_up += mem_up[child]
-                            extracted_eq_lp = f"({extracted_eq_lp})+({eq_lp_list[child]})"
-                            extracted_eq_up = f"({extracted_eq_up})+({eq_up_list[child]})"
-                        
+
+                            if extract_eqs:
+                                extracted_eq_lp = f"({extracted_eq_lp})+({eq_lp_list[child]})"
+                                extracted_eq_up = f"({extracted_eq_up})+({eq_up_list[child]})"
+                            
                             # print("val lp, extracted eq - 9")
                             # print(val_lp)
                             # print(val_up)

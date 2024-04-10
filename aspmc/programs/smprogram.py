@@ -47,7 +47,7 @@ class SMProblogProgram(TwoAlgebraicProgram, ProblogProgram):
         program = parser.parse(program_str)
 
         self.program_decoded = program
-        print(program)
+        # print(program)
         # add parsing for optimizable
         
         # ground the program

@@ -819,7 +819,7 @@ class CNF(object):
             weights.append(self.weights[to_dimacs(i)])
         if config.config["knowledge_compiler"] == "c2d":
             circ = ConstrainedDDNNF
-            print("tracc")
+            # print("tracc")
         else:
             circ = ConstrainedSDD(path = None, v3 = v3)
         end = time.time()

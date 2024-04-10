@@ -11,6 +11,8 @@ import time
 
 import sys
 
+# the old a.py file
+
 class Problem:
     '''
     Optimizable problem
@@ -79,26 +81,17 @@ def get_eq(
     
     program = SMProblogProgram(program_str, program_files)
     program._decomposeGraph()
-    # print(program.annotated_disjunctions)
+
     program.tpUnfold()
     program.td_guided_both_clark_completion(adaptive=False, latest=False)
 
     cnf = program.get_cnf()
     # print(program.get_weights())
-    # print(program._nameMap)
 
     keep_symbolic : 'dict[int,str]' = {}
     for el in program._nameMap:
-        # print(el)
-        # print(program._nameMap[el])
         if program._nameMap[el] in opt_var_dict:
             keep_symbolic[el] = program._nameMap[el]
-        # elif program._nameMap[el].startswith("internal_algebraic"):
-        #     # this for annotated disjunctions, since are represented as
-        #     # internal_algebraic(0,0,0,set(none),red,"0.1")
-        #     n = program._nameMap[el].split(',')[4]
-        #     print(n)
-        #     keep_symbolic[el] = n
 
     # added to keep track of the variables
     cnf.mapping_id_val = keep_symbolic
@@ -124,7 +117,7 @@ def get_eq(
     eq_up = results[4]
 
     eq_lp = eq_lp.replace('[0.]','0').replace('[1.]','1').replace('[','').replace(']','').replace('(1)*','').replace('*(1)','')
-    eq_up = eq_up.replace('[0.]','0').replace('[1.]','1').replace('[','').replace(']','').replace('(1)*','').replace('*(1)','')
+    # eq_up = eq_up.replace('[0.]','0').replace('[1.]','1').replace('[','').replace(']','').replace('(1)*','').replace('*(1)','')
 
     # for the simplification
     # symplified = simplify_chunk(initial_equation, chunk_size)
@@ -143,10 +136,10 @@ def get_eq(
     print(f"number of prods: {eq_lp.count('*')}")
     
     start_time = time.time()
+    # sup = str(simplify(sympify(eq_up)))
     slp = str(simplify(sympify(eq_lp)))
-    sup = str(simplify(sympify(eq_up)))
-    # print(slp)
     # print(sup)
+    print(slp)
     symp_time = time.time() - start_time
     print("Post simplification")
     print(f"symp_time: {symp_time}")
@@ -155,14 +148,16 @@ def get_eq(
     print(f"number of sub: {slp.count('-')}")
     print(f"number of prods: {slp.count('*')}")
     
-    return slp, sup, keep_symbolic
+    return slp, "", keep_symbolic
     # s = (0.502*v_6*1)/0.99+((1-v_6)*1*0.4*1)/0.01+(0.6*1*1*v_6)/0.99+((1-v_6)*0.5*1*1*1*1)/0.01+(0.4*v_6*1*0)/0.99+(0.01*(1-v_6)*1*1*1)/0.01+(0*0.6*1*1*1*1*v_6)/0.99+(1-v_6)*0.5*1/0.001
 
 
 def compute_optimal_probability(
         program : str,
-        query : 'str',
+        query_list : 'list[str]',
         optimizable_facts: 'dict[str, tuple[float, float]]',
+        target_equation : str,
+        constraints_list : 'list[str]',
         target : str = "UP",
         method : str = "SLSQP"
     ):
@@ -173,20 +168,21 @@ def compute_optimal_probability(
     constraints_from_queries : 'dict[str,str]' = {}
 
     # 1 extract the queries
-    current_prog = program + f"\nquery({query}).\n"
-    lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
-    symb_vars = dict(sorted(symb_vars.items(), reverse = True))
-    print(symb_vars)
-    for k_nnf, name in symb_vars.items():
-        lq = lq.replace(f"v_{k_nnf}",name)
-        uq = uq.replace(f"v_{k_nnf}",name)
-    eq_lp = lq
-    eq_up = uq
-    
+    for query in query_list:
+        current_prog = program + f"\nquery({query}).\n"
+        lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
+        symb_vars = dict(sorted(symb_vars.items(), reverse = True))
+        for k_nnf, name in symb_vars.items():
+            lq = lq.replace(f"v_{k_nnf}",name)
+            uq = uq.replace(f"v_{k_nnf}",name)
+        # print(symb_vars)
+        if target == "UP":
+            constraints_from_queries[query] = uq
+        else:
+            constraints_from_queries[query] = lq
 
     # 3: generate the bounds
     bounds : 'list[tuple[float,float]]' = []
-    constraints_list = []
     symb_vars_list = sorted(list(optimizable_facts.keys()),reverse=True)
 
     if method == "SLSQP":
@@ -194,22 +190,23 @@ def compute_optimal_probability(
             # this since the bounds should appear in the same order of the 
             # optimizable variables
             bounds.append((optimizable_facts[sv][0],optimizable_facts[sv][1]))
-            # print(bounds)
     else:
         # cobyla: convert bounds into constraints
         for k, v in optimizable_facts.items():
             constraints_list.append(f"P({k}) - {v[0]}")
             constraints_list.append(f"{v[1]} - P({k})")
-
-    initial_guesses : 'list[float]' = [0.5]*len(optimizable_facts)
-
-    problem_to_solve_lp = None
-    problem_to_solve_up = None
     
+    # print(constraints_list)
+    # 3.1: initial values for the parameters
+    initial_guesses : 'list[float]' = [0.5]*len(optimizable_facts)
+    
+    # 4: generate the target equation and all the non linear constraints 
+    # for the queries provided constraints of the form
+    # P(q) - P(v) > 0
     # constraints : 'list[dict]' = []
     constraints = []
     # current_problem_list : 'list[Problem]' = []
-    for idx, constr in enumerate([eq_lp] + [eq_up] + constraints_list):
+    for idx, constr in enumerate([target_equation] + constraints_list):
         current_constr = constr
         for c_query, c_eq in constraints_from_queries.items():
             to_find = f"P({c_query})"
@@ -222,14 +219,12 @@ def compute_optimal_probability(
                 current_constr = current_constr.replace(to_find, f"({sv})")
         
         # add the constraint
-        # print(f"constraint: {current_constr}")
         if idx == 0:
             # this is the target equation
             # print(f"Target equation: {current_constr}")
-            problem_to_solve_lp = Problem(current_constr, symb_vars_list)
-        elif idx == 1:
-            problem_to_solve_up = Problem(f"-({current_constr})", symb_vars_list)
+            problem_to_solve = Problem(current_constr, symb_vars_list)
         else:
+            # print(f"constraint: {current_constr}")
             current_problem = Problem(current_constr, symb_vars_list)
 
             constraints.append({
@@ -237,32 +232,28 @@ def compute_optimal_probability(
                 'fun' : current_problem.eval_fn,
                 'jac' : current_problem.jac_fn    
             })
-    
-    
+    # print(constraints)
+    # print(problem_to_solve)
     start_time = time.time()
-    all_res = []
     if method == "SLSQP":
-        for idx, pts in enumerate([problem_to_solve_lp, problem_to_solve_up]):
-            res = minimize(
-                pts.eval_fn,
-                initial_guesses,
-                bounds=bounds,
-                jac=pts.jac_fn,
-                method=method
-            )
-            all_res.append(res)
+        res = minimize(
+            problem_to_solve.eval_fn,
+            initial_guesses,
+            bounds=bounds,
+            jac=problem_to_solve.jac_fn,
+            method=method,
+            options={'ftol': 1e-9},
+            constraints=constraints
+        )
     else:
         # COBYLA
-        for idx, pts in enumerate([problem_to_solve_lp, problem_to_solve_up]):
-            res = minimize(
-                pts.eval_fn,
-                initial_guesses,
-                method=method,
-                constraints=constraints
-            )
-            all_res.append(res)
-
+        res = minimize(
+            problem_to_solve.eval_fn,
+            initial_guesses,
+            method=method,
+            constraints=constraints
+        )
     opt_time = time.time() - start_time
     print(f"opt_time: {opt_time}")
     
-    return all_res
+    return res

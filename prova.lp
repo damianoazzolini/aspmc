@@ -1,38 +1,35 @@
-red(X) :- node(X), \+ green(X), \+ blue(X).
-green(X) :- node(X), \+ red(X), \+ blue(X).
-blue(X) :- node(X), \+ red(X), \+ green(X).
+% [0,1]::v1.
+% [0,1]::v2.
+% [0,1]::v3.
+% 
+% v(1) :- v1, v2, v3.
+% v(2) :- not v1, v2, v3.
+% v(3) :- v1, not v2, v3.
+% v(4) :- not v1, not v2, v3.
+% v(5) :- v1, v2, not v3.
+% v(6) :- not v1, v2, not v3.
+% v(6) :- not v2, not v3.
+% 
+% 0.1::w1(1);0.3::w2(1);0.6::w3(1).
+% 0.1::w1(2);0.4::w2(2);0.5::w3(2).
+% 0.3::w1(3);0.2::w2(3);0.5::w3(3).
+% 0.2::w1(4);0.2::w2(4);0.6::w3(4).
+% 0.2::w1(5);0.4::w2(5);0.4::w3(5).
+% 0.3::w1(6);0.3::w2(6);0.4::w3(6).
+% 
+% red :- w1(X), v(X).
+% green :- not w1(X), w2(X), v(X).
+% blue :- not w1(X), not w2(X), w3(X), v(X).
+% 
+% qr:- green.
 
-e(X,Y) :- edge(X,Y).
-e(Y,X) :- edge(Y,X).
+[0.1,0.3]::r.
+[0.25,0.5]::g.
 
-node(1).
-node(2).
-node(3).
-node(4).
-node(5).
-node(6).
+k0 :- r.
+k1 :- not r, g.
+k2 :- not r, not g.
 
-:- e(X,Y), red(X), red(Y).
-:- e(X,Y), green(X), green(Y).
-:- e(X,Y), blue(X), blue(Y).
+qr:- k2.
 
-red(1).
-green(4).
-green(6).
-
-0.6::edge(1, 2).
-0.1::edge(1, 3).
-0.4::edge(2, 5).
-0.3::edge(2, 6).
-0.3::edge(3, 4).
-0.8::edge(4, 5).
-0.2::edge(5, 6).
-
-query(blue(3)).
-
-% 0.4::a.
-% 0.5::b.
-
-% q:- a, \+ b.
-
-% query(q).
+#query(qr).

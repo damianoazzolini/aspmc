@@ -13,9 +13,15 @@ with open(filename,"r") as f:
 
 method = sys.argv[2]
 
+optimizable_facts["a"] = (0.3,0.4)
+optimizable_facts["b"] = (0.4,0.9)
+# optimizable_facts["green"] = (0.2,0.4)
+# optimizable_facts["blue"] = (0.4,0.6)
+
 for i in range(3, len(sys.argv)):
     optimizable_facts_list.append(sys.argv[i])
-    optimizable_facts[sys.argv[i]] = (0.01,0.99)
+    # optimizable_facts[sys.argv[i]] = (0.3,0.6)
+    # optimizable_facts[sys.argv[i]] = (0,1)
 
 query_list = "qr"
 
@@ -27,4 +33,6 @@ res = compute_optimal_probability(
     method=method
 )
 
-print(res)
+for e, b in zip(res,["LP","UP"]):
+    print(f"{b} result")
+    print(e)
