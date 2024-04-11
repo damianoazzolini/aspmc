@@ -336,11 +336,11 @@ def main():
     if len(results) > 0:
         # added
         print(results)
-        lp_res = results[0][0]
-        up_res = results[1][0]
-        query = queries[0]
-        logger.result(f"Lower Probabiility: {query}: {' '*max(1,(20 - len(query)))}{lp_res}")
-        logger.result(f"Upper Probabiility: {query}: {' '*max(1,(20 - len(query)))}{up_res}")
+        for idx, query in enumerate(program.get_queries()):
+            lp_res = results[0][idx]
+            up_res = results[1][idx]
+            logger.result(f"Lower Probabiility: {query}: {' '*max(1,(20 - len(query)))}{lp_res}")
+            logger.result(f"Upper Probabiility: {query}: {' '*max(1,(20 - len(query)))}{up_res}")
     else:
         if len(queries) > 0:
             for i,query in enumerate(queries):
