@@ -224,7 +224,7 @@ class ConstrainedDDNNF(object):
                                                 if v0[nq] != 1.0:
                                                     extracted_eq_lp[nq] = f"({v0[nq]})*({eq_lp_list[child][nq]})"
                                                 else:
-                                                    extracted_eq_lp[nq] = f"({eq_lp_list[child][nq]})"
+                                                    extracted_eq_lp[nq] = f"{eq_lp_list[child][nq]}"
                                             else:
                                                 extracted_eq_lp[nq] = "0"
                                             # UP
@@ -232,7 +232,7 @@ class ConstrainedDDNNF(object):
                                                 if v1[nq] != 1.0:
                                                     extracted_eq_up[nq] = f"({v1[nq]})*({eq_up_list[child][nq]})"
                                                 else:
-                                                    extracted_eq_up[nq] = f"({eq_up_list[child][nq]})"
+                                                    extracted_eq_up[nq] = f"{eq_up_list[child][nq]}"
                                             else:
                                                 extracted_eq_up[nq] = "0"
                                         # # for LP
@@ -278,7 +278,7 @@ class ConstrainedDDNNF(object):
                                                 if v_lp[nq] != 1.0:
                                                     extracted_eq_lp[nq] = f"({v_lp[nq]})*({extracted_eq_lp[nq]})"
                                                 else:
-                                                    extracted_eq_lp[nq] = f"({extracted_eq_lp[nq]})"
+                                                    extracted_eq_lp[nq] = f"{extracted_eq_lp[nq]}"
                                             else:
                                                 # simplify: multiplication by 0
                                                 extracted_eq_lp[nq] = "0"
@@ -287,7 +287,7 @@ class ConstrainedDDNNF(object):
                                                 if v_up[nq] != 1.0:
                                                     extracted_eq_up[nq] = f"({v_up[nq]})*({extracted_eq_up[nq]})"
                                                 else:
-                                                    extracted_eq_up[nq] = f"({extracted_eq_up[nq]})"
+                                                    extracted_eq_up[nq] = f"{extracted_eq_up[nq]}"
                                             else:
                                                     extracted_eq_up[nq] = f"0"
 
@@ -418,14 +418,14 @@ class ConstrainedDDNNF(object):
                                         for nq in range(n_queries):
                                             # LP
                                             if v0[nq] != 0:
-                                                extracted_eq_lp[nq] = f"({v0[nq]})+({eq_lp_list[child][nq]})"
+                                                extracted_eq_lp[nq] = f"{v0[nq]} + {eq_lp_list[child][nq]}"
                                             else:
-                                                extracted_eq_lp[nq] = f"({eq_lp_list[child][nq]})"
+                                                extracted_eq_lp[nq] = f"{eq_lp_list[child][nq]}"
                                             # UP
                                             if v1[nq] != 0:
-                                                extracted_eq_up[nq] = f"({v1[nq]})+({eq_up_list[child][nq]})"
+                                                extracted_eq_up[nq] = f"{v1[nq]} + {eq_up_list[child][nq]}"
                                             else:
-                                                extracted_eq_up[nq] = f"({eq_up_list[child][nq]})"
+                                                extracted_eq_up[nq] = f"{eq_up_list[child][nq]}"
 
 
                                         # # for LP
@@ -478,14 +478,14 @@ class ConstrainedDDNNF(object):
                                         for nq in range(n_queries):
                                             # LP
                                             if v_lp[nq] != 0:
-                                                extracted_eq_lp[nq] = f"({extracted_eq_lp[nq]})+({v_lp[nq]})"
+                                                extracted_eq_lp[nq] = f"{extracted_eq_lp[nq]} + {v_lp[nq]}"
                                             else:
-                                                extracted_eq_lp[nq] = f"({extracted_eq_lp[nq]})"
+                                                extracted_eq_lp[nq] = f"{extracted_eq_lp[nq]}"
                                             # UP
                                             if v_up[nq] != 0:
-                                                extracted_eq_up[nq] = f"({extracted_eq_up[nq]})+({v_up[nq]})"
+                                                extracted_eq_up[nq] = f"{extracted_eq_up[nq]} + {v_up[nq]}"
                                             else:
-                                                extracted_eq_up[nq] = f"({extracted_eq_up[nq]})"
+                                                extracted_eq_up[nq] = f"{extracted_eq_up[nq]}"
 
 
 
@@ -528,8 +528,8 @@ class ConstrainedDDNNF(object):
 
                             if extract_eqs:
                                 for nq in range(n_queries):
-                                    extracted_eq_lp[nq] = f"({extracted_eq_lp[nq]})+({eq_lp_list[child][nq]})"
-                                    extracted_eq_up[nq] = f"({extracted_eq_up[nq]})+({eq_up_list[child][nq]})"
+                                    extracted_eq_lp[nq] = f"{extracted_eq_lp[nq]} + {eq_lp_list[child][nq]}"
+                                    extracted_eq_up[nq] = f"{extracted_eq_up[nq]} + {eq_up_list[child][nq]}"
                             
                             # print("val lp, extracted eq - 9")
                             # print(val_lp)
