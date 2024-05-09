@@ -149,3 +149,6 @@ Bash `.sh` files helps running them (using the slurm manager).
 
 ## Residual Program
 Content available in the `residual_program` folder.
+
+## Parameter Learning
+Content available in the `parameter_learning` folder.

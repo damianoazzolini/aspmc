@@ -1,0 +1,162 @@
+% Dataset shop of size 8 and 15 interpretations with seed 120
+
+bought(spaghetti,john) :- shops(john), \+ bought(steak,john).
+bought(steak,john)     :- shops(john), \+ bought(spaghetti,john).
+
+bought(spaghetti,mary) :- shops(mary), \+ bought(beans,mary).
+bought(beans,mary)     :- shops(mary), \+ bought(spaghetti,mary).
+
+bought(tomato,carl) :- shops(carl), \+ bought(onions,carl).
+bought(onions,carl) :- shops(carl), \+ bought(tomato,carl).
+
+bought(steak,louis)  :- shops(louis), \+ bought(onions,louis).
+bought(onions,louis) :- shops(louis), \+ bought(steak,louis).
+
+bought(pizza,e)  :- shops(e), \+ bought(nails,e), \+ bought(onions,e).
+bought(nails,e)  :- shops(e), \+ bought(pizza,e), \+ bought(onions,e).
+bought(onions,e) :- shops(e), \+ bought(pizza,e), \+ bought(nails,e).
+
+bought(spaghetti,f) :- shops(f), \+ bought(beans,f),     \+ bought(nails,f).
+bought(beans,f)     :- shops(f), \+ bought(spaghetti,f), \+ bought(nails,f).
+bought(nails,f)     :- shops(f), \+ bought(spaghetti,f), \+ bought(beans,f).
+
+bought(tomato,g) :- shops(g), \+ bought(onions,g), \+ bought(socks,g).
+bought(onions,g) :- shops(g), \+ bought(tomato,g), \+ bought(socks,g).
+bought(socks,g)  :- shops(g), \+ bought(tomato,g), \+ bought(onions,g).
+
+bought(tuna,h)     :- shops(h), \+ bought(onions,h), \+ bought(zucchini,h).
+bought(onions,h)   :- shops(h), \+ bought(tuna,h), \+ bought(zucchini,h).
+bought(zucchini,h) :- shops(h), \+ bought(tuna,h), \+ bought(onions,h).
+
+bought(spaghetti):-  bought(spaghetti,_).
+bought(steak):- bought(steak,_).
+bought(beans):- bought(beans,_).
+bought(onions):- bought(onions,_).
+bought(tomato):- bought(tomato,_).
+bought(pizza):- bought(pizza,_).
+bought(nails):- bought(nails,_).
+bought(socks):- bought(socks,_).
+bought(tuna):- bought(tuna,_).
+bought(zucchini):- bought(zucchini,_).
+
+
+#learnable(shops(john)).
+#learnable(shops(mary)).
+#learnable(shops(carl)).
+#learnable(shops(louis)).
+#learnable(shops(e)).
+#learnable(shops(f)).
+#learnable(shops(g)).
+#learnable(shops(h)).
+
+
+
+:- bought(zucchini),bought(socks).
+:- bought(steak),bought(nails).
+:- bought(onions),bought(tomato).
+:- bought(tomato),bought(nails).
+:- bought(pizza),bought(beans).
+:- bought(steak),bought(nails).
+:- bought(tomato),bought(beans).
+:- bought(tomato),bought(pizza).
+:- bought(tomato),bought(onions).
+:- bought(onions),bought(zucchini).
+
+#negative(1,bought(steak)).
+#positive(1,bought(tomato)).
+#negative(1,bought(beans)).
+#positive(1,bought(nails)).
+#positive(1,bought(socks)).
+#negative(1,bought(zucchini)).
+#positive(1,bought(tuna)).
+#negative(1,bought(pizza)).
+#negative(1,bought(spaghetti)).
+
+#positive(2,bought(tomato)).
+#negative(2,bought(onions)).
+#positive(2,bought(tuna)).
+#negative(2,bought(beans)).
+#negative(2,bought(pizza)).
+#negative(2,bought(socks)).
+
+#positive(3,bought(tomato)).
+#negative(3,bought(zucchini)).
+#positive(3,bought(nails)).
+#positive(3,bought(pizza)).
+#negative(3,bought(beans)).
+#positive(3,bought(tuna)).
+#negative(3,bought(onions)).
+
+#negative(4,bought(steak)).
+#negative(4,bought(nails)).
+#positive(4,bought(beans)).
+#negative(4,bought(zucchini)).
+#positive(4,bought(pizza)).
+#positive(4,bought(spaghetti)).
+#positive(4,bought(tuna)).
+#negative(4,bought(tomato)).
+#negative(4,bought(onions)).
+#negative(4,bought(socks)).
+
+#positive(5,bought(onions)).
+#positive(5,bought(zucchini)).
+#negative(5,bought(beans)).
+#positive(5,bought(steak)).
+#positive(5,bought(nails)).
+#positive(5,bought(socks)).
+#negative(5,bought(tuna)).
+#positive(5,bought(tomato)).
+
+#negative(6,bought(spaghetti)).
+#negative(6,bought(socks)).
+#positive(6,bought(steak)).
+#negative(6,bought(nails)).
+#positive(6,bought(pizza)).
+
+#positive(7,bought(beans)).
+#negative(7,bought(zucchini)).
+#positive(7,bought(onions)).
+#negative(7,bought(spaghetti)).
+#negative(7,bought(steak)).
+#positive(7,bought(tuna)).
+#negative(7,bought(nails)).
+#positive(7,bought(pizza)).
+
+#negative(8,bought(steak)).
+#negative(8,bought(socks)).
+
+#positive(9,bought(socks)).
+#positive(9,bought(tomato)).
+#negative(9,bought(pizza)).
+#negative(9,bought(nails)).
+#negative(9,bought(steak)).
+#positive(9,bought(onions)).
+#negative(9,bought(tuna)).
+#negative(9,bought(zucchini)).
+
+#negative(10,bought(steak)).
+#positive(10,bought(onions)).
+#positive(10,bought(spaghetti)).
+#positive(10,bought(zucchini)).
+#positive(10,bought(socks)).
+
+#negative(11,bought(beans)).
+
+#negative(12,bought(tomato)).
+
+#negative(13,bought(nails)).
+#negative(13,bought(tuna)).
+#positive(13,bought(tomato)).
+#positive(13,bought(socks)).
+#positive(13,bought(onions)).
+#positive(13,bought(pizza)).
+#negative(13,bought(spaghetti)).
+
+#positive(14,bought(zucchini)).
+#negative(14,bought(beans)).
+
+#negative(15,bought(beans)).
+
+
+#train(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15).
+#test(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15).
