@@ -26,6 +26,9 @@ class ConstrainedDDNNF(object):
         second_shape = (np.shape(weights[0])[0], ) + np.shape(second_semiring.one())
         
         n_queries = len(weights[0])
+        # print(f"N queries: {n_queries}")
+        # print(f"weights: {weights}")
+        # print(f"weights[0]: {weights[0]}")
         # print(first_shape)
         # print(second_shape)
         # per LP
@@ -325,8 +328,14 @@ class ConstrainedDDNNF(object):
                             
                             if extract_eqs:
                                 for nq in range(n_queries):
-                                    extracted_eq_lp[nq] = f"({extracted_eq_lp[nq]})*({eq_lp_list[child][nq]})"
-                                    extracted_eq_up[nq] = f"({extracted_eq_up[nq]})*({eq_up_list[child][nq]})"
+                                    if eq_lp_list[child][nq] == "0":
+                                        extracted_eq_lp[nq] = "0"
+                                    else:
+                                        extracted_eq_lp[nq] = f"({extracted_eq_lp[nq]})*({eq_lp_list[child][nq]})"
+                                    if eq_up_list[child][nq] == "0":
+                                        extracted_eq_up[nq] = "0"
+                                    else:
+                                        extracted_eq_up[nq] = f"({extracted_eq_up[nq]})*({eq_up_list[child][nq]})"
                             
                             # print("val lp, extracted eq - 4")
                             # print(val_lp)
@@ -528,9 +537,15 @@ class ConstrainedDDNNF(object):
 
                             if extract_eqs:
                                 for nq in range(n_queries):
-                                    extracted_eq_lp[nq] = f"{extracted_eq_lp[nq]} + {eq_lp_list[child][nq]}"
-                                    extracted_eq_up[nq] = f"{extracted_eq_up[nq]} + {eq_up_list[child][nq]}"
-                            
+                                    if eq_lp_list[child][nq] != "0":
+                                        extracted_eq_lp[nq] = f"{extracted_eq_lp[nq]} + {eq_lp_list[child][nq]}"
+                                    else:
+                                        extracted_eq_lp[nq] = extracted_eq_lp[nq] # can be removed
+                                    
+                                    if eq_up_list[child][nq] != "0":
+                                        extracted_eq_up[nq] = f"{extracted_eq_up[nq]} + {eq_up_list[child][nq]}"
+                                    else:
+                                        extracted_eq_up[nq] = extracted_eq_up[nq]
                             # print("val lp, extracted eq - 9")
                             # print(val_lp)
                             # print(val_up)
@@ -545,9 +560,15 @@ class ConstrainedDDNNF(object):
             # print(f"len(eq_lp_list): {len(eq_lp_list)}")
             # print(f"len(eq_up_list): {len(eq_up_list)}")
             # eq_lp_list.append(extracted_eq_lp)
+            # print("appending")
+            # print(extracted_eq_lp)
             eq_lp_list.append(copy.deepcopy(extracted_eq_lp)) # copy: crucial
             eq_up_list.append(copy.deepcopy(extracted_eq_up)) # copy: crucial
 
+        # print(f"eq_lp_list: {len(eq_lp_list)}")
+        # print(eq_lp_list)
+        # print(f"eq_lp_list[idx-1]: {eq_up_list[idx-1]}")
+        # print(eq_up_list[idx-1])
         # print('here')
         # print(mem)
         # return mem[idx - 1]

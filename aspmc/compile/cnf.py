@@ -753,10 +753,8 @@ class CNF(object):
         p.wait()
         p.stdout.close()
         
-        # print('quiiiiiiiiii')
-
         if p.returncode != 0:
-            logger.error(f"Knowledge compilation failed with exit code {p.exitcode}.")
+            logger.error(f"Knowledge compilation failed with exit code {p}.")
             exit(-1) 
 
     def solve_compilation_two(self):
