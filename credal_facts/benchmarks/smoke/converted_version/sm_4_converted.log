@@ -1,0 +1,35 @@
+Started at: 
+Mon Jan 15 10:17:42 CET 2024
+[INFO] aspmc:    Stats Original
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 50 initial treewidth: 4 #vertices: 69
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc:    Cycle Breaking Done
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc:    Stats After Cycle Breaking
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Tree Decomposition #bags: 161 unfolded treewidth: 6 #vertices: 186
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 161 treewidth: 25 #vertices: 198
+[INFO] aspmc: Dtree time:               31.100783348083496
+[INFO] aspmc: Compilation time:         0.5322303771972656
+[INFO] aspmc: Preparation time:         0.0002636909484863281
+[INFO] aspmc: Counting time:            1.5267808437347412
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc:    Results
+[INFO] aspmc: ------------------------------------------------------------
+[RESULT] aspmc: Lower Probabiility: qr:                   0.0
+[RESULT] aspmc: Upper Probabiility: qr:                   0.018520800000000004
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.45::ainfluences(1,2);0.45::binfluences(1,2);0.1::cinfluences(1,2)., influences(1,2):-ainfluences(1,2)., n_influences(1,2):-binfluences(1,2)., influences(1,2):-cinfluences(1,2),not n_influences(1,2)., n_influences(1,2):-cinfluences(1,2),not influences(1,2)., 0.45::ainfluences(2,1);0.45::binfluences(2,1);0.1::cinfluences(2,1)., influences(2,1):-ainfluences(2,1)., n_influences(2,1):-binfluences(2,1)., influences(2,1):-cinfluences(2,1),not n_influences(2,1)., n_influences(2,1):-cinfluences(2,1),not influences(2,1)., 0.45::ainfluences(2,3);0.45::binfluences(2,3);0.1::cinfluences(2,3)., influences(2,3):-ainfluences(2,3)., n_influences(2,3):-binfluences(2,3)., influences(2,3):-cinfluences(2,3),not n_influences(2,3)., n_influences(2,3):-cinfluences(2,3),not influences(2,3)., person(3)., person(4)., qr:-smokes(1)., query(qr).]
+tracc
+{}
+(array([0.]), array([0.0185208]), array([0.]), '', '')
+
+real	0m35.299s
+user	0m34.859s
+sys	0m0.294s
+Ended at: 
+Mon Jan 15 10:18:18 CET 2024

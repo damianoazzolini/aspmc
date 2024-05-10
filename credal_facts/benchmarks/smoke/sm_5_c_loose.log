@@ -1,0 +1,47 @@
+Started at: 
+Tue Jan 16 11:47:43 CET 2024
+Instance 5
+[INFO] aspmc: Tree Decomposition #bags: 113 unfolded treewidth: 6 #vertices: 128
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 111 treewidth: 21 #vertices: 140
+[INFO] aspmc: Dtree time:               1.8269131183624268
+[INFO] aspmc: Compilation time:         8.875030755996704
+[INFO] aspmc: Preparation time:         0.0003993511199951172
+[INFO] aspmc: Counting time:            1.2873122692108154
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., 0.5::influences(3,4)., query(qr).]
+tracc
+nnf_construction_time: 13.108009338378906
+Pre simplification
+number of sums: 81099
+number of prods: 499263
+----- NO SIMPLIFICATION ---
+Post simplification
+symp_time: 1.430511474609375e-06
+number of sums: 81099
+number of sub: 67925
+number of prods: 499263
+{42: 'influences(1,2)', 41: 'influences(2,3)', 40: 'influences(2,1)', 39: 'influences(3,4)'}
+Running COBYLA
+opt_time: 138.33211493492126
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.0
+       x: [ 5.000e-01  5.000e-01  5.000e-01  5.000e-01]
+    nfev: 25
+   maxcv: 0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.023263199999999998
+       x: [ 5.005e-01  5.000e-01  9.500e-01  5.000e-01]
+    nfev: 26
+   maxcv: 0.0]
+
+real	2m32.886s
+user	1m58.473s
+sys	0m24.896s
+Ended at: 
+Tue Jan 16 11:50:16 CET 2024

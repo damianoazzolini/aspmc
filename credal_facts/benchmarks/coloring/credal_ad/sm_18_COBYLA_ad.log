@@ -1,0 +1,12 @@
+Started at: 
+Tue Jan 16 08:43:02 CET 2024
+Traceback (most recent call last):
+  File "/home/dazzolin/test/2024credal_facts/benchmarks/coloring/credal_ad/0_runner.py", line 11, in <module>
+    with open(filename,"r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'qr_inc_len_18_ad.lp'
+
+real	0m1.217s
+user	0m0.857s
+sys	0m0.183s
+Ended at: 
+Tue Jan 16 08:43:03 CET 2024

@@ -1,0 +1,65 @@
+Started at: 
+Mon Jan 22 15:45:39 CET 2024
+Instance: 25
+[INFO] aspmc: Tree Decomposition #bags: 50 unfolded treewidth: 4 #vertices: 64
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 73 treewidth: 16 #vertices: 97
+[INFO] aspmc: Dtree time:               2.1820833683013916
+[INFO] aspmc: Compilation time:         1.031256914138794
+[INFO] aspmc: Preparation time:         0.000152587890625
+[INFO] aspmc: Counting time:            7.063983917236328
+[INFO] aspmc: ------------------------------------------------------------
+slurmstepd: error: Job 2101366 exceeded memory limit (17458556 > 16777216), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 2101366 ON node02 CANCELLED AT 2024-01-22T18:28:39 ***
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., 0.03::a18., 0.03::a19., 0.03::a20., 0.03::a21., 0.03::a22., 0.03::a23., 0.03::a24., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., qr:-a20., qr:-a21,not nqr., nqr:-a21,not qr., qr:-a22., qr:-a23,not nqr., nqr:-a23,not qr., qr:-a24., query(qr).]
+tracc
+nnf_construction_time: 12.005436897277832
+Pre simplification
+number of sums: 204799
+number of prods: 2238031
+Traceback (most recent call last):
+  File "/home/dazzolin/test/2024credal_facts/benchmarks/qr_nqr_increasing_rules_number/runner.py", line 41, in <module>
+    res = compute_optimal_probability(
+  File "/home/dazzolin/test/2024credal_facts/benchmarks/qr_nqr_increasing_rules_number/a.py", line 177, in compute_optimal_probability
+    lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
+  File "/home/dazzolin/test/2024credal_facts/benchmarks/qr_nqr_increasing_rules_number/a.py", line 147, in get_eq
+    sup = str(simplify(sympify(eq_up)))
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/simplify/simplify.py", line 635, in simplify
+    _e = cancel(expr)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/polys/polytools.py", line 6700, in cancel
+    R, (F, G) = sring((p, q), *gens, **args)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/polys/rings.py", line 164, in sring
+    reps, opt = _parallel_dict_from_expr(exprs, opt)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/polys/polyutils.py", line 326, in _parallel_dict_from_expr
+    exprs = [ expr.expand() for expr in exprs ]
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/polys/polyutils.py", line 326, in <listcomp>
+    exprs = [ expr.expand() for expr in exprs ]
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/expr.py", line 3622, in expand
+    expr, hit = Expr._expand_hint(expr, hint, deep=deep, **hints)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/expr.py", line 3555, in _expand_hint
+    arg, arghit = Expr._expand_hint(arg, hint, **hints)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/expr.py", line 3555, in _expand_hint
+    arg, arghit = Expr._expand_hint(arg, hint, **hints)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/expr.py", line 3555, in _expand_hint
+    arg, arghit = Expr._expand_hint(arg, hint, **hints)
+  [Previous line repeated 4 more times]
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/expr.py", line 3563, in _expand_hint
+    newexpr = getattr(expr, hint)(**hints)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/mul.py", line 968, in _eval_expand_mul
+    return Add(*args)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/operations.py", line 85, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/add.py", line 282, in flatten
+    if s in terms:
+  File "/home/dazzolin/anaconda3/lib/python3.9/site-packages/sympy/core/expr.py", line 131, in __hash__
+    h = hash((type(self).__name__,) + self._hashable_content())
+  File "/home/dazzolin/test/2024credal_facts/aspmc/aspmc/signal_handling.py", line 17, in handler
+    raise KeyboardInterrupt("Received Control+C, cleaning up and shutting down.")
+KeyboardInterrupt: Received Control+C, cleaning up and shutting down.

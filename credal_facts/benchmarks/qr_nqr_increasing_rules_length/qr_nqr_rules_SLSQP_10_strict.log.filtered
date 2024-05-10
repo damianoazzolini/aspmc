@@ -1,0 +1,53 @@
+Instance 10
+[INFO] aspmc: Tree Decomposition #bags: 13 unfolded treewidth: 3 #vertices: 15
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 16 treewidth: 7 #vertices: 26
+[INFO] aspmc: Dtree time:               2.0182361602783203
+[INFO] aspmc: Compilation time:         0.014066219329833984
+[INFO] aspmc: Preparation time:         6.461143493652344e-05
+[INFO] aspmc: Counting time:            0.023120641708374023
+[INFO] aspmc: ------------------------------------------------------------
+[0.99::a0., 0.99::a1., 0.99::a2., 0.99::a3., 0.99::a4., 0.99::a5., 0.99::a6., 0.99::a7., 0.99::a8., 0.99::a9., qr:-a0,a2,a4,a6,a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1341195106506348
+Pre simplification
+number of sums: 119
+number of prods: 191
+Post simplification
+symp_time: 0.5344574451446533
+number of sums: 0
+number of sub: 0
+number of prods: 4
+{11: 'a1', 10: 'a3', 9: 'a5', 8: 'a7', 7: 'a9', 5: 'a0', 4: 'a2', 3: 'a4', 2: 'a6', 1: 'a8'}
+Running SLSQP
+Running SLSQP
+opt_time: 0.19813036918640137
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.018452812500000006
+       x: [ 5.000e-01  4.500e-01  5.000e-01  4.500e-01  5.000e-01
+            4.500e-01  5.000e-01  4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 0.000e+00  4.101e-02  0.000e+00  4.101e-02  0.000e+00
+            4.101e-02  0.000e+00  4.101e-02  0.000e+00  4.101e-02]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.09812392337880864
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01]
+     nit: 2
+     jac: [-8.690e-02 -8.690e-02 -8.690e-02 -8.690e-02 -8.690e-02
+           -8.690e-02 -8.690e-02 -8.690e-02 -8.690e-02 -8.690e-02]
+    nfev: 2
+    njev: 2]
+
+real	0m4.963s
+user	0m4.017s
+sys	0m0.787s
+Ended at: 
+Sat Jan 13 08:40:49 CET 2024

@@ -1,0 +1,55 @@
+Started at: 
+Tue Jan 23 08:58:27 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 35 unfolded treewidth: 3 #vertices: 45
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 35 treewidth: 5 #vertices: 48
+[INFO] aspmc: Dtree time:               2.019759178161621
+[INFO] aspmc: Compilation time:         0.01226043701171875
+[INFO] aspmc: Preparation time:         7.867813110351562e-05
+[INFO] aspmc: Counting time:            0.015954017639160156
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., qr:-a0,a2,a4., qr:-a1,a3,not nqr., nqr:-a1,a3,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.118201494216919
+Pre simplification
+number of sums: 78
+number of prods: 584
+----- NO SIMPLIFICATION -----
+Post simplification
+symp_time: 4.76837158203125e-07
+number of sums: 78
+number of sub: 106
+number of prods: 584
+opt_time: 7.755986452102661
+LP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.011428571429615918
+       x: [ 2.857e-01  3.861e-01  4.312e-01  3.861e-01  3.000e-01
+            3.000e-01  2.728e-01  2.968e-01  2.728e-01  1.429e-01]
+     nit: 4
+     jac: [ 4.000e-02  0.000e+00 -2.009e-02  0.000e+00  0.000e+00
+           -1.633e-02  0.000e+00 -1.625e-02  0.000e+00  8.000e-02]
+    nfev: 5
+    njev: 4
+UP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.18335999999936256
+       x: [ 4.784e-01  3.673e-01  2.868e-01  4.525e-01  3.000e-01
+            1.638e-01  3.000e-01  1.587e-01  1.160e-01  3.000e-01]
+     nit: 5
+     jac: [-1.325e-01  0.000e+00  8.884e-02 -2.461e-01  0.000e+00
+            7.577e-02 -3.712e-01  7.531e-02  1.260e-01 -2.112e-01]
+    nfev: 6
+    njev: 5
+
+real	0m12.438s
+user	0m11.096s
+sys	0m0.840s
+Ended at: 
+Tue Jan 23 08:58:39 CET 2024

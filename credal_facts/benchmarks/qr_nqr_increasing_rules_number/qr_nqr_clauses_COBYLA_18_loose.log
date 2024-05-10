@@ -1,0 +1,46 @@
+Started at: 
+Tue Jan 23 15:07:48 CET 2024
+Instance: 18
+[INFO] aspmc: Tree Decomposition #bags: 36 unfolded treewidth: 4 #vertices: 47
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 52 treewidth: 14 #vertices: 70
+[INFO] aspmc: Dtree time:               2.033740282058716
+[INFO] aspmc: Compilation time:         0.08672618865966797
+[INFO] aspmc: Preparation time:         0.00012636184692382812
+[INFO] aspmc: Counting time:            0.728057861328125
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.9366533756256104
+Pre simplification
+number of sums: 28671
+number of prods: 244814
+Post simplification
+symp_time: 4649.95482301712
+number of sums: 13
+number of sub: 90
+number of prods: 81
+{20: 'a17', 19: 'a15', 18: 'a13', 17: 'a11', 16: 'a9', 15: 'a7', 14: 'a5', 13: 'a3', 11: 'a1', 10: 'a16', 9: 'a14', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.8509335517883301
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.3697505902753897
+       x: [ 1.142e-01  5.000e-02 ...  2.983e-01  5.000e-02]
+    nfev: 223
+   maxcv: 1.8735013540549517e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -1.0
+       x: [ 3.014e-01  9.459e-01 ...  8.297e-01  3.853e-01]
+    nfev: 185
+   maxcv: 2.220446049250313e-16]
+
+real	77m44.237s
+user	77m16.537s
+sys	0m25.242s
+Ended at: 
+Tue Jan 23 16:25:32 CET 2024

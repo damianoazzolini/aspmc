@@ -1,0 +1,46 @@
+Started at: 
+Mon Jan 15 17:54:37 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 70 unfolded treewidth: 3 #vertices: 85
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 77 treewidth: 8 #vertices: 96
+[INFO] aspmc: Dtree time:               2.039091110229492
+[INFO] aspmc: Compilation time:         0.019235610961914062
+[INFO] aspmc: Preparation time:         0.00015544891357421875
+[INFO] aspmc: Counting time:            0.04391312599182129
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., 0.5::va5., 0.5::vb5., a05:-va5., a15:-not va5,vb5., a5:-not va5,not vb5., 0.5::va6., 0.5::vb6., a6:-va6., a16:-not va6,vb6., a26:-not va6,not vb6., 0.5::va7., 0.5::vb7., a07:-va7., a7:-not va7,vb7., a27:-not va7,not vb7., 0.5::va8., 0.5::vb8., a08:-va8., a18:-not va8,vb8., a8:-not va8,not vb8., 0.5::va9., 0.5::vb9., a9:-va9., a19:-not va9,vb9., a29:-not va9,not vb9., qr:-a0,a2,a4,a6,a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.19741153717041
+Pre simplification
+number of sums: 1352
+number of prods: 10376
+Post simplification
+symp_time: 17.584073543548584
+number of sums: 16
+number of sub: 16
+number of prods: 53
+opt_time: 2.86586332321167
+LP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.0004571428561396731
+       x: [ 4.011e-01  4.433e-01 ...  2.803e-01  1.429e-01]
+    nfev: 311
+   maxcv: 1.111735009606818e-09
+UP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.02148802556481802
+       x: [ 3.193e-01  2.758e-01 ...  1.995e-01  3.000e-01]
+    nfev: 350
+   maxcv: 1.3177350877136007e-09
+
+real	0m24.915s
+user	0m24.073s
+sys	0m0.639s
+Ended at: 
+Mon Jan 15 17:55:02 CET 2024

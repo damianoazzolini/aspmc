@@ -1,0 +1,50 @@
+Started at: 
+Tue Jan 23 08:51:21 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 96 unfolded treewidth: 4 #vertices: 123
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 112 treewidth: 11 #vertices: 138
+[INFO] aspmc: Dtree time:               2.1214513778686523
+[INFO] aspmc: Compilation time:         0.05500030517578125
+[INFO] aspmc: Preparation time:         0.00018906593322753906
+[INFO] aspmc: Counting time:            0.19442391395568848
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., 0.5::va5., 0.5::vb5., a05:-va5., a15:-not va5,vb5., a5:-not va5,not vb5., 0.5::va6., 0.5::vb6., a6:-va6., a16:-not va6,vb6., a26:-not va6,not vb6., 0.5::va7., 0.5::vb7., a07:-va7., a7:-not va7,vb7., a27:-not va7,not vb7., 0.5::va8., 0.5::vb8., a08:-va8., a18:-not va8,vb8., a8:-not va8,not vb8., 0.5::va9., 0.5::vb9., a9:-va9., a19:-not va9,vb9., a29:-not va9,not vb9., 0.5::va10., 0.5::vb10., a010:-va10., a10:-not va10,vb10., a210:-not va10,not vb10., 0.5::va11., 0.5::vb11., a011:-va11., a111:-not va11,vb11., a11:-not va11,not vb11., 0.5::va12., 0.5::vb12., a12:-va12., a112:-not va12,vb12., a212:-not va12,not vb12., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., query(qr).]
+tracc
+nnf_construction_time: 3.527221918106079
+Pre simplification
+number of sums: 32840
+number of prods: 232993
+Post simplification
+symp_time: 4679.189030170441
+number of sums: 216
+number of sub: 216
+number of prods: 2736
+opt_time: 1306.4444415569305
+LP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.9440128000160031
+       x: [ 3.666e-01  4.453e-01 ...  2.476e-01  1.845e-01]
+     nit: 6
+     jac: [ 0.000e+00 -6.729e-02 ...  0.000e+00  6.865e-02]
+    nfev: 6
+    njev: 6
+UP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9998555481714668
+       x: [ 3.611e-01  2.786e-01 ...  2.034e-01  3.000e-01]
+     nit: 9
+     jac: [ 0.000e+00  2.996e-04 ...  9.222e-05 -2.054e-04]
+    nfev: 10
+    njev: 9
+
+real	99m54.453s
+user	99m42.758s
+sys	0m9.918s
+Ended at: 
+Tue Jan 23 10:31:16 CET 2024

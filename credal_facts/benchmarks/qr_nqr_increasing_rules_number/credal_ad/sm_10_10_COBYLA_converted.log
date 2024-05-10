@@ -1,0 +1,46 @@
+Started at: 
+Mon Jan 22 15:45:40 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 75 unfolded treewidth: 4 #vertices: 97
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 86 treewidth: 10 #vertices: 108
+[INFO] aspmc: Dtree time:               2.2435038089752197
+[INFO] aspmc: Compilation time:         0.3297119140625
+[INFO] aspmc: Preparation time:         0.00021314620971679688
+[INFO] aspmc: Counting time:            0.09043097496032715
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., 0.5::va5., 0.5::vb5., a05:-va5., a15:-not va5,vb5., a5:-not va5,not vb5., 0.5::va6., 0.5::vb6., a6:-va6., a16:-not va6,vb6., a26:-not va6,not vb6., 0.5::va7., 0.5::vb7., a07:-va7., a7:-not va7,vb7., a27:-not va7,not vb7., 0.5::va8., 0.5::vb8., a08:-va8., a18:-not va8,vb8., a8:-not va8,not vb8., 0.5::va9., 0.5::vb9., a9:-va9., a19:-not va9,vb9., a29:-not va9,not vb9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 4.418524503707886
+Pre simplification
+number of sums: 3984
+number of prods: 28085
+Post simplification
+symp_time: 229.71523594856262
+number of sums: 55
+number of sub: 54
+number of prods: 504
+opt_time: 5.4104485511779785
+LP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.7778285713534141
+       x: [ 4.470e-01  4.287e-01 ...  2.705e-01  1.429e-01]
+    nfev: 329
+   maxcv: 4.184981250432429e-10
+UP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9966808575271525
+       x: [ 4.254e-01  2.781e-01 ...  1.533e-01  3.000e-01]
+    nfev: 328
+   maxcv: 1.6653345369377348e-16
+
+real	4m24.298s
+user	3m58.933s
+sys	0m1.312s
+Ended at: 
+Mon Jan 22 15:50:05 CET 2024

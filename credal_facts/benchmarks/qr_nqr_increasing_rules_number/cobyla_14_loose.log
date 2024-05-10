@@ -1,0 +1,44 @@
+Instance 14
+[INFO] aspmc: Tree Decomposition #bags: 28 unfolded treewidth: 4 #vertices: 37
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 40 treewidth: 12 #vertices: 54
+[INFO] aspmc: Dtree time:               2.0319204330444336
+[INFO] aspmc: Compilation time:         0.033005475997924805
+[INFO] aspmc: Preparation time:         0.0001163482666015625
+[INFO] aspmc: Counting time:            0.17208218574523926
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.3288090229034424
+Pre simplification
+number of sums: 5119
+number of prods: 33130
+Post simplification
+symp_time: 163.4323287010193
+number of sums: 14
+number of sub: 46
+number of prods: 61
+{16: 'a13', 15: 'a11', 14: 'a9', 13: 'a7', 12: 'a5', 11: 'a3', 9: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.4562382698059082
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.28696086609374993
+       x: [ 3.893e-01  5.000e-02 ...  5.118e-01  5.000e-02]
+    nfev: 158
+   maxcv: 1.3877787807814457e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999998
+       x: [ 9.500e-01  9.500e-01 ...  9.500e-01  3.848e-01]
+    nfev: 177
+   maxcv: 1.1102230246251565e-16]
+
+real	2m48.757s
+user	2m45.987s
+sys	0m1.153s
+Ended at: 
+Tue Jan 23 15:06:35 CET 2024

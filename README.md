@@ -152,3 +152,6 @@ Content available in the `residual_program` folder.
 
 ## Parameter Learning
 Content available in the `parameter_learning` folder.
+
+## Credal Facts
+Content available in the `credal_facts` folder.

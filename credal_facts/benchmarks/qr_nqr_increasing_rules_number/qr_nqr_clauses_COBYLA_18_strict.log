@@ -1,0 +1,46 @@
+Started at: 
+Tue Jan 23 15:07:47 CET 2024
+Instance: 18
+[INFO] aspmc: Tree Decomposition #bags: 36 unfolded treewidth: 4 #vertices: 47
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 52 treewidth: 14 #vertices: 70
+[INFO] aspmc: Dtree time:               2.0325939655303955
+[INFO] aspmc: Compilation time:         0.08651947975158691
+[INFO] aspmc: Preparation time:         0.00012421607971191406
+[INFO] aspmc: Counting time:            0.7354857921600342
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., 0.03::a17., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.9415283203125
+Pre simplification
+number of sums: 28671
+number of prods: 244814
+Post simplification
+symp_time: 4677.427041530609
+number of sums: 13
+number of sub: 90
+number of prods: 81
+{20: 'a17', 19: 'a15', 18: 'a13', 17: 'a11', 16: 'a9', 15: 'a7', 14: 'a5', 13: 'a3', 11: 'a1', 10: 'a16', 9: 'a14', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.5193772315979004
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.995394633416016
+       x: [ 4.688e-01  4.500e-01 ...  5.001e-01  4.500e-01]
+    nfev: 179
+   maxcv: -0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999994274344052
+       x: [ 5.500e-01  5.500e-01 ...  5.500e-01  5.500e-01]
+    nfev: 113
+   maxcv: 0.0]
+
+real	78m11.028s
+user	77m42.983s
+sys	0m25.553s
+Ended at: 
+Tue Jan 23 16:25:58 CET 2024

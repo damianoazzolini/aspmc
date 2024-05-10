@@ -1,0 +1,50 @@
+Started at: 
+Tue Jan 16 09:43:30 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 84 unfolded treewidth: 6 #vertices: 94
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 87 treewidth: 15 #vertices: 106
+[INFO] aspmc: Dtree time:               2.049302577972412
+[INFO] aspmc: Compilation time:         0.025531291961669922
+[INFO] aspmc: Preparation time:         0.0001595020294189453
+[INFO] aspmc: Counting time:            0.0925905704498291
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.3::stress(1)., 0.3::stress(2)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., smokes(X):-influences(Y,X),smokes(Y),k0(X),k1(Y)., 0.5::c0(1)., 0.5::c0(2)., 0.5::c1(1)., 0.5::c1(2)., person(1)., person(2)., k0(X):-c0(X),person(X)., k1(X):-not c0(X),c1(X),person(X)., k2(X):-not c0(X),not c1(X),person(X)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., qr:-smokes(1)., query(qr).]
+tracc
+nnf_construction_time: 3.269185781478882
+Pre simplification
+number of sums: 2506
+number of prods: 29137
+Post simplification
+symp_time: 5.15558385848999
+number of sums: 0
+number of sub: 0
+number of prods: 0
+opt_time: 1.4994609355926514
+LP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0
+       x: [ 4.000e-01  4.000e-01  3.000e-01  3.000e-01]
+     nit: 1
+     jac: [ 0.000e+00  0.000e+00  0.000e+00  0.000e+00]
+    nfev: 2
+    njev: 1
+UP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.01271136
+       x: [ 5.000e-01  3.898e-01  2.000e-01  3.000e-01]
+     nit: 8
+     jac: [-1.423e-03  0.000e+00  8.893e-04 -2.371e-03]
+    nfev: 9
+    njev: 8
+
+real	0m11.450s
+user	0m10.505s
+sys	0m0.616s
+Ended at: 
+Tue Jan 16 09:43:41 CET 2024

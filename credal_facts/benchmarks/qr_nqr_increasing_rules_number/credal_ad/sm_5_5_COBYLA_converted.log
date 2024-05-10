@@ -1,0 +1,48 @@
+Started at: 
+Tue Jan 23 08:47:40 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 37 unfolded treewidth: 4 #vertices: 49
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 41 treewidth: 6 #vertices: 52
+[INFO] aspmc: Dtree time:               2.0269522666931152
+[INFO] aspmc: Compilation time:         0.01517343521118164
+[INFO] aspmc: Preparation time:         9.417533874511719e-05
+[INFO] aspmc: Counting time:            0.024646520614624023
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., query(qr).]
+tracc
+nnf_construction_time: 3.1502602100372314
+Pre simplification
+number of sums: 137
+number of prods: 965
+Post simplification
+symp_time: 2.8605518341064453
+number of sums: 10
+number of sub: 9
+number of prods: 51
+opt_time: 0.42071008682250977
+LP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.5885714249308998
+       x: [ 2.506e-01  4.545e-01  4.996e-01  2.718e-01  3.000e-01
+            2.018e-01  2.649e-01  2.006e-01  2.641e-01  1.429e-01]
+    nfev: 138
+   maxcv: 3.8667726798280455e-09
+UP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9294399999999998
+       x: [ 5.000e-01  4.285e-01  2.500e-01  4.444e-01  2.858e-01
+            2.000e-01  3.000e-01  2.000e-01  1.000e-01  3.000e-01]
+    nfev: 103
+   maxcv: 1.1102230246251565e-16
+
+real	0m8.432s
+user	0m6.490s
+sys	0m1.054s
+Ended at: 
+Tue Jan 23 08:47:48 CET 2024

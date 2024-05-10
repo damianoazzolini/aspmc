@@ -1,0 +1,51 @@
+Started at: 
+Tue Jan 16 11:47:42 CET 2024
+Instance 6
+[INFO] aspmc: Tree Decomposition #bags: 225 unfolded treewidth: 11 #vertices: 260
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 242 treewidth: 27 #vertices: 285
+[INFO] aspmc: Dtree time:               2.17631459236145
+[INFO] aspmc: Compilation time:         44.70539164543152
+[INFO] aspmc: Preparation time:         0.0006670951843261719
+[INFO] aspmc: Counting time:            5.436595916748047
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., 0.5::influences(3,4)., 0.5::influences(4,1)., query(qr).]
+tracc
+nnf_construction_time: 53.42725610733032
+Pre simplification
+number of sums: 211052
+number of prods: 2817486
+----- NO SIMPLIFICATION ---
+Post simplification
+symp_time: 1.9073486328125e-06
+number of sums: 211052
+number of sub: 197800
+number of prods: 2817486
+{43: 'influences(1,2)', 42: 'influences(2,3)', 41: 'influences(2,1)', 40: 'influences(3,4)', 39: 'influences(4,1)'}
+Running SLSQP
+opt_time: 9515.525461673737
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.0
+       x: [ 5.000e-01  5.000e-01  5.000e-01  5.000e-01  5.000e-01]
+     nit: 1
+     jac: [ 0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00]
+    nfev: 1
+    njev: 1,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.04515242658620862
+       x: [ 9.500e-01  9.500e-01  5.808e-01  9.500e-01  5.000e-01]
+     nit: 8
+     jac: [-2.304e-02 -1.132e-02 -5.222e-04 -5.528e-03  0.000e+00]
+    nfev: 8
+    njev: 8]
+
+real	159m30.848s
+user	151m3.616s
+sys	7m36.394s
+Ended at: 
+Tue Jan 16 14:27:13 CET 2024

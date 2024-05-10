@@ -1,0 +1,46 @@
+Started at: 
+Sat Jan 13 09:02:57 CET 2024
+Instance 3
+[INFO] aspmc: Tree Decomposition #bags: 89 unfolded treewidth: 6 #vertices: 100
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 85 treewidth: 14 #vertices: 110
+[INFO] aspmc: Dtree time:               1.0609323978424072
+[INFO] aspmc: Compilation time:         0.021594524383544922
+[INFO] aspmc: Preparation time:         0.00015687942504882812
+[INFO] aspmc: Counting time:            0.23988890647888184
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., qr:-smokes(1)., query(qr).]
+tracc
+nnf_construction_time: 2.5028090476989746
+Pre simplification
+number of sums: 1207
+number of prods: 1951
+Post simplification
+symp_time: 0.8704514503479004
+number of sums: 0
+number of sub: 0
+number of prods: 0
+{30: 'influences(1,2)', 29: 'influences(2,1)'}
+Running COBYLA
+opt_time: 0.0034847259521484375
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.0
+       x: [ 5.000e-01  5.000e-01]
+    nfev: 13
+   maxcv: 0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.0185208
+       x: [ 5.500e-01  5.000e-01]
+    nfev: 13
+   maxcv: 0.0]
+
+real	0m4.815s
+user	0m4.030s
+sys	0m0.361s
+Ended at: 
+Sat Jan 13 09:03:01 CET 2024

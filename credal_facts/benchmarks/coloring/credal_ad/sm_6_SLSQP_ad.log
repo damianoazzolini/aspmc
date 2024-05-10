@@ -1,0 +1,58 @@
+Started at: 
+Tue Jan 16 11:29:26 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 94 unfolded treewidth: 5 #vertices: 112
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 95 treewidth: 11 #vertices: 114
+[INFO] aspmc: Dtree time:               2.519383192062378
+[INFO] aspmc: Compilation time:         0.038789987564086914
+[INFO] aspmc: Preparation time:         0.00017595291137695312
+[INFO] aspmc: Counting time:            0.14741063117980957
+[INFO] aspmc: ------------------------------------------------------------
+[red(X):-node(X),not green(X),not blue(X)., green(X):-node(X),not red(X),not blue(X)., blue(X):-node(X),not red(X),not green(X)., e(X,Y):-edge(X,Y)., e(Y,X):-edge(Y,X)., :-e(X,Y),red(X),red(Y)., :-e(X,Y),green(X),green(Y)., :-e(X,Y),blue(X),blue(Y),k2(X),k2(Y)., 0.5::c0(1)., 0.5::c0(2)., 0.5::c0(3)., 0.5::c0(4)., 0.5::c0(5)., 0.5::c0(6)., 0.5::c1(1)., 0.5::c1(2)., 0.5::c1(3)., 0.5::c1(4)., 0.5::c1(5)., 0.5::c1(6)., k0(X):-node(X),c0(X)., k1(X):-node(X),not c0(X),c1(X)., k2(X):-node(X),not c0(X),not c1(X)., 0.6::edge(1,2)., 0.1::edge(1,3)., 0.4::edge(2,5)., 0.3::edge(2,6)., 0.3::edge(3,4)., 0.8::edge(4,5)., 0.2::edge(5,6)., 0.3::edge(1,5)., qr:-blue(1)., qr:-blue(3)., qr:-blue(5)., red(1)., green(4)., green(6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., query(qr).]
+tracc
+nnf_construction_time: 3.812131404876709
+Pre simplification
+number of sums: 35063
+number of prods: 222410
+Post simplification
+symp_time: 39.537880420684814
+number of sums: 9
+number of sub: 7
+number of prods: 32
+opt_time: 10.333963632583618
+LP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.26790815999996015
+       x: [ 2.868e-01  3.405e-01  3.405e-01  2.868e-01  3.405e-01
+            3.000e-01  1.587e-01  2.046e-01  2.046e-01  1.587e-01
+            2.046e-01  3.000e-01]
+     nit: 6
+     jac: [ 9.159e-03  0.000e+00  0.000e+00  9.159e-03  0.000e+00
+            0.000e+00  7.764e-03  0.000e+00  0.000e+00  7.764e-03
+            0.000e+00  0.000e+00]
+    nfev: 7
+    njev: 6
+UP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.99709696
+       x: [ 4.286e-01  4.026e-01  4.026e-01  4.286e-01  4.026e-01
+            3.000e-01  3.000e-01  3.000e-01  3.000e-01  3.000e-01
+            3.000e-01  3.000e-01]
+     nit: 4
+     jac: [-5.080e-03  0.000e+00  0.000e+00 -5.080e-03  0.000e+00
+            0.000e+00 -4.147e-03  0.000e+00  0.000e+00 -4.147e-03
+            0.000e+00  0.000e+00]
+    nfev: 4
+    njev: 4
+
+real	0m55.151s
+user	0m52.818s
+sys	0m1.955s
+Ended at: 
+Tue Jan 16 11:30:22 CET 2024

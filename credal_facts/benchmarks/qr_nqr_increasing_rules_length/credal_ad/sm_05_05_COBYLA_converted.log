@@ -1,0 +1,49 @@
+Started at: 
+Tue Jan 23 08:58:33 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 35 unfolded treewidth: 3 #vertices: 45
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 35 treewidth: 5 #vertices: 48
+[INFO] aspmc: Dtree time:               2.019894599914551
+[INFO] aspmc: Compilation time:         0.011893272399902344
+[INFO] aspmc: Preparation time:         0.00011086463928222656
+[INFO] aspmc: Counting time:            0.013358354568481445
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., qr:-a0,a2,a4., qr:-a1,a3,not nqr., nqr:-a1,a3,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.11344051361084
+Pre simplification
+number of sums: 78
+number of prods: 584
+----- NO SIMPLIFICATION -----
+Post simplification
+symp_time: 4.76837158203125e-07
+number of sums: 78
+number of sub: 106
+number of prods: 584
+opt_time: 0.8269431591033936
+LP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.011428571234604981
+       x: [ 2.500e-01  4.144e-01  4.930e-01  4.641e-01  3.000e-01
+            2.002e-01  2.673e-01  2.111e-01  2.142e-01  1.429e-01]
+    nfev: 144
+   maxcv: 2.8760095416302534e-09
+UP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.18335999918423063
+       x: [ 4.462e-01  2.857e-01  2.500e-01  4.445e-01  2.857e-01
+            1.036e-01  3.000e-01  2.000e-01  1.000e-01  3.000e-01]
+    nfev: 119
+   maxcv: 1.1832730351102327e-09
+
+real	0m5.084s
+user	0m4.218s
+sys	0m0.707s
+Ended at: 
+Tue Jan 23 08:58:38 CET 2024

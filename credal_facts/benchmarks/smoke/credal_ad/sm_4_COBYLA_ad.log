@@ -1,0 +1,48 @@
+Started at: 
+Tue Jan 16 09:43:30 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 136 unfolded treewidth: 6 #vertices: 153
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 134 treewidth: 22 #vertices: 170
+[INFO] aspmc: Dtree time:               32.05502200126648
+[INFO] aspmc: Compilation time:         0.21303296089172363
+[INFO] aspmc: Preparation time:         0.0002269744873046875
+[INFO] aspmc: Counting time:            1.3680994510650635
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y),k0(X),k1(Y)., 0.5::c0(1)., 0.5::c0(2)., 0.5::c0(3)., 0.5::c1(1)., 0.5::c1(2)., 0.5::c1(3)., person(1)., person(2)., person(3)., k0(X):-c0(X),person(X)., k1(X):-not c0(X),c1(X),person(X)., k2(X):-not c0(X),not c1(X),person(X)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., query(qr).]
+tracc
+nnf_construction_time: 34.75448942184448
+Pre simplification
+number of sums: 514948
+number of prods: 2201709
+Post simplification
+symp_time: 372.22167921066284
+number of sums: 0
+number of sub: 0
+number of prods: 0
+opt_time: 0.08119320869445801
+LP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.0
+       x: [ 4.000e-01  4.000e-01  4.000e-01  3.000e-01  3.000e-01
+            3.000e-01]
+    nfev: 37
+   maxcv: 0.0
+UP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.01271136
+       x: [ 3.197e-01  5.000e-01  4.042e-01  3.000e-01  2.000e-01
+            3.000e-01]
+    nfev: 83
+   maxcv: 5.551115123125783e-17
+
+real	6m48.532s
+user	6m32.006s
+sys	0m15.917s
+Ended at: 
+Tue Jan 16 09:50:19 CET 2024

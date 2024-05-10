@@ -1,0 +1,50 @@
+Started at: 
+Mon Jan 15 17:54:37 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 70 unfolded treewidth: 3 #vertices: 85
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 77 treewidth: 8 #vertices: 96
+[INFO] aspmc: Dtree time:               2.039278268814087
+[INFO] aspmc: Compilation time:         0.019154071807861328
+[INFO] aspmc: Preparation time:         0.00015425682067871094
+[INFO] aspmc: Counting time:            0.044524431228637695
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., 0.5::va5., 0.5::vb5., a05:-va5., a15:-not va5,vb5., a5:-not va5,not vb5., 0.5::va6., 0.5::vb6., a6:-va6., a16:-not va6,vb6., a26:-not va6,not vb6., 0.5::va7., 0.5::vb7., a07:-va7., a7:-not va7,vb7., a27:-not va7,not vb7., 0.5::va8., 0.5::vb8., a08:-va8., a18:-not va8,vb8., a8:-not va8,not vb8., 0.5::va9., 0.5::vb9., a9:-va9., a19:-not va9,vb9., a29:-not va9,not vb9., qr:-a0,a2,a4,a6,a8., qr:-a1,a3,a5,a7,a9,not nqr., nqr:-a1,a3,a5,a7,a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1980910301208496
+Pre simplification
+number of sums: 1352
+number of prods: 10376
+Post simplification
+symp_time: 17.62027883529663
+number of sums: 16
+number of sub: 16
+number of prods: 53
+opt_time: 34.33185648918152
+LP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.00045714285716442365
+       x: [ 3.778e-01  4.418e-01 ...  2.646e-01  1.429e-01]
+     nit: 7
+     jac: [ 0.000e+00 -8.189e-04 ...  0.000e+00  3.200e-03]
+    nfev: 8
+    njev: 7
+UP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.02148802601468984
+       x: [ 3.613e-01  2.780e-01 ...  1.712e-01  3.000e-01]
+     nit: 8
+     jac: [ 0.000e+00  1.780e-02 ...  1.029e-02 -4.283e-02]
+    nfev: 8
+    njev: 8
+
+real	0m56.726s
+user	0m55.615s
+sys	0m0.648s
+Ended at: 
+Mon Jan 15 17:55:34 CET 2024

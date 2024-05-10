@@ -1,0 +1,15 @@
+Started at: 
+Mon Jan 22 15:46:09 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 155 unfolded treewidth: 4 #vertices: 185
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 150 treewidth: 15 #vertices: 211
+[INFO] aspmc: Dtree time:               5.5277321338653564
+[INFO] aspmc: Compilation time:         0.6437563896179199
+[INFO] aspmc: Preparation time:         0.00028228759765625
+[INFO] aspmc: Counting time:            2.4277265071868896
+[INFO] aspmc: ------------------------------------------------------------
+slurmstepd: error: Job 2101372 exceeded memory limit (16782084 > 16777216), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 2101372 ON node02 CANCELLED AT 2024-01-22T18:31:39 ***

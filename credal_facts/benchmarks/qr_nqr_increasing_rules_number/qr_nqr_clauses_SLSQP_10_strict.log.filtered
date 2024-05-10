@@ -1,0 +1,52 @@
+Instance: 10
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.022737503051758
+[INFO] aspmc: Compilation time:         0.018861770629882812
+[INFO] aspmc: Preparation time:         8.749961853027344e-05
+[INFO] aspmc: Counting time:            0.2918097972869873
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.4144821166992188
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 9.351601123809814
+number of sums: 3
+number of sub: 15
+number of prods: 12
+{12: 'a9', 11: 'a7', 10: 'a5', 9: 'a3', 7: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.9088752269744873
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.9496715625000001
+       x: [ 5.000e-01  4.500e-01  5.000e-01  4.500e-01  5.000e-01
+            4.500e-01  5.000e-01  4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 0.000e+00  9.151e-02  0.000e+00  9.151e-02  0.000e+00
+            9.151e-02  0.000e+00  9.151e-02  0.000e+00  9.151e-02]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9996594937108398
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01]
+     nit: 4
+     jac: [-7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04
+           -7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04]
+    nfev: 4
+    njev: 4]
+
+real	0m15.017s
+user	0m14.001s
+sys	0m0.681s
+Ended at: 
+Sat Jan 13 08:43:26 CET 2024

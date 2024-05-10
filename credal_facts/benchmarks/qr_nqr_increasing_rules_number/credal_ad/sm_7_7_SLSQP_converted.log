@@ -1,0 +1,50 @@
+Started at: 
+Tue Jan 23 08:51:21 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 53 unfolded treewidth: 4 #vertices: 68
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 58 treewidth: 8 #vertices: 74
+[INFO] aspmc: Dtree time:               2.0298855304718018
+[INFO] aspmc: Compilation time:         0.015630245208740234
+[INFO] aspmc: Preparation time:         0.00011038780212402344
+[INFO] aspmc: Counting time:            0.02663397789001465
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., 0.5::va5., 0.5::vb5., a05:-va5., a15:-not va5,vb5., a5:-not va5,not vb5., 0.5::va6., 0.5::vb6., a6:-va6., a16:-not va6,vb6., a26:-not va6,not vb6., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., query(qr).]
+tracc
+nnf_construction_time: 3.149911403656006
+Pre simplification
+number of sums: 618
+number of prods: 4287
+Post simplification
+symp_time: 14.308967590332031
+number of sums: 18
+number of sub: 18
+number of prods: 120
+opt_time: 12.154585361480713
+LP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.6297142857142861
+       x: [ 4.439e-01  3.899e-01 ...  2.760e-01  1.429e-01]
+     nit: 3
+     jac: [ 0.000e+00  0.000e+00 ...  0.000e+00  4.320e-01]
+    nfev: 3
+    njev: 3
+UP
+ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9802432023059119
+       x: [ 3.648e-01  2.776e-01 ...  1.766e-01  3.000e-01]
+     nit: 6
+     jac: [ 0.000e+00  4.102e-02 ...  1.600e-02 -2.822e-02]
+    nfev: 6
+    njev: 6
+
+real	0m30.901s
+user	0m30.067s
+sys	0m0.632s
+Ended at: 
+Tue Jan 23 08:51:52 CET 2024

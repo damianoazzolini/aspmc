@@ -1,0 +1,49 @@
+Instance 20
+[INFO] aspmc: Tree Decomposition #bags: 23 unfolded treewidth: 3 #vertices: 25
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 32 treewidth: 10 #vertices: 51
+[INFO] aspmc: Dtree time:               2.026921272277832
+[INFO] aspmc: Compilation time:         0.016314029693603516
+[INFO] aspmc: Preparation time:         0.00011539459228515625
+[INFO] aspmc: Counting time:            0.07451033592224121
+[INFO] aspmc: ------------------------------------------------------------
+[0.99::a0., 0.99::a1., 0.99::a2., 0.99::a3., 0.99::a4., 0.99::a5., 0.99::a6., 0.99::a7., 0.99::a8., 0.99::a9., 0.99::a10., 0.99::a11., 0.99::a12., 0.99::a13., 0.99::a14., 0.99::a15., 0.99::a16., 0.99::a17., 0.99::a18., 0.99::a19., qr:-a0,a2,a4,a6,a8,a10,a12,a14,a16,a18., qr:-a1,a3,a5,a7,a9,a11,a13,a15,a17,a19,not nqr., nqr:-a1,a3,a5,a7,a9,a11,a13,a15,a17,a19,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.198854684829712
+Pre simplification
+number of sums: 1791
+number of prods: 5087
+Post simplification
+symp_time: 3.031039237976074
+number of sums: 0
+number of sub: 0
+number of prods: 9
+{22: 'a11', 21: 'a13', 20: 'a15', 19: 'a17', 18: 'a19', 16: 'a1', 15: 'a3', 14: 'a5', 13: 'a7', 12: 'a9', 10: 'a0', 9: 'a2', 8: 'a4', 7: 'a6', 6: 'a8', 5: 'a10', 4: 'a12', 3: 'a14', 2: 'a16', 1: 'a18'}
+Running SLSQP
+Running SLSQP
+opt_time: 1.298999547958374
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 1.1051799121291433e-06
+       x: [ 5.000e-01  2.537e-01 ...  5.000e-01  2.537e-01]
+     nit: 11
+     jac: [ 0.000e+00  4.356e-06 ...  0.000e+00  4.356e-06]
+    nfev: 11
+    njev: 11,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.8389879560682154
+       x: [ 9.500e-01  9.500e-01 ...  9.500e-01  9.500e-01]
+     nit: 5
+     jac: [-2.529e-01 -2.529e-01 ... -2.529e-01 -2.529e-01]
+    nfev: 5
+    njev: 5]
+
+real	0m8.637s
+user	0m7.887s
+sys	0m0.599s
+Ended at: 
+Sat Jan 13 08:42:21 CET 2024

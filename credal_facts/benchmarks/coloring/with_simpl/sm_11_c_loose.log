@@ -1,0 +1,46 @@
+Started at: 
+Sat Jan 13 09:03:54 CET 2024
+Instance 11
+[INFO] aspmc: Tree Decomposition #bags: 113 unfolded treewidth: 5 #vertices: 128
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 121 treewidth: 14 #vertices: 138
+[INFO] aspmc: Dtree time:               32.045350313186646
+[INFO] aspmc: Compilation time:         0.2855031490325928
+[INFO] aspmc: Preparation time:         0.00021529197692871094
+[INFO] aspmc: Counting time:            1.61336350440979
+[INFO] aspmc: ------------------------------------------------------------
+[red(X):-node(X),not green(X),not blue(X)., green(X):-node(X),not red(X),not blue(X)., blue(X):-node(X),not red(X),not green(X)., e(X,Y):-edge(X,Y)., e(Y,X):-edge(Y,X)., :-e(X,Y),red(X),red(Y)., :-e(X,Y),green(X),green(Y)., :-e(X,Y),blue(X),blue(Y)., 0.6::edge(1,2)., 0.1::edge(1,3)., 0.4::edge(2,5)., 0.3::edge(2,6)., 0.3::edge(3,4)., 0.8::edge(4,5)., 0.2::edge(5,6)., 0.3::edge(3,10)., 0.3::edge(6,11)., 0.3::edge(2,11)., 0.3::edge(6,10)., 0.3::edge(2,8)., 0.3::edge(1,8)., qr:-blue(1)., qr:-blue(3)., qr:-blue(5)., qr:-blue(7)., qr:-blue(9)., qr:-blue(11)., red(1)., green(4)., green(6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., node(8)., node(9)., node(10)., node(11)., query(qr).]
+tracc
+nnf_construction_time: 35.04048418998718
+Pre simplification
+number of sums: 8191
+number of prods: 14334
+Post simplification
+symp_time: 10.272452592849731
+number of sums: 0
+number of sub: 0
+number of prods: 2
+{64: 'edge(1,2)', 62: 'edge(1,3)', 61: 'edge(2,5)', 59: 'edge(2,6)', 56: 'edge(3,4)', 54: 'edge(4,5)', 53: 'edge(5,6)', 51: 'edge(3,10)', 48: 'edge(6,11)', 46: 'edge(2,11)', 45: 'edge(6,10)', 43: 'edge(2,8)'}
+Running COBYLA
+opt_time: 0.1620771884918213
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.0025000000000000005
+       x: [ 5.027e-01  4.985e-01 ...  5.000e-02  5.035e-01]
+    nfev: 134
+   maxcv: -0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -1.0
+       x: [ 5.000e-01  5.000e-01 ...  5.000e-01  5.000e-01]
+    nfev: 79
+   maxcv: 0.0]
+
+real	0m46.778s
+user	0m45.875s
+sys	0m0.673s
+Ended at: 
+Sat Jan 13 09:04:40 CET 2024

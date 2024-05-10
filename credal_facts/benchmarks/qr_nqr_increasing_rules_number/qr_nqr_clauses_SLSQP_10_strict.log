@@ -1,0 +1,438 @@
+Started at: 
+Sat Jan 13 08:42:10 CET 2024
+Instance: 2
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.0214807987213135
+[INFO] aspmc: Compilation time:         0.01765894889831543
+[INFO] aspmc: Preparation time:         8.320808410644531e-05
+[INFO] aspmc: Counting time:            0.28551340103149414
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.404827117919922
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 0.6887340545654297
+number of sums: 1
+number of sub: 0
+number of prods: 1
+{7: 'a1', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.029199600219726562
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.5130889545
+       x: [ 5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 0.000e+00  8.853e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.8412919697138665
+       x: [ 5.500e-01  5.500e-01]
+     nit: 2
+     jac: [-3.527e-01 -3.527e-01]
+    nfev: 2
+    njev: 2]
+
+real	0m5.338s
+user	0m4.547s
+sys	0m0.670s
+Instance: 3
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.0225417613983154
+[INFO] aspmc: Compilation time:         0.01765155792236328
+[INFO] aspmc: Preparation time:         8.344650268554688e-05
+[INFO] aspmc: Counting time:            0.283123254776001
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.4040632247924805
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 0.7670497894287109
+number of sums: 2
+number of sub: 2
+number of prods: 3
+{7: 'a1', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.06342720985412598
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.7239164175
+       x: [ 4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 5.020e-01  0.000e+00  5.020e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9263725632693196
+       x: [ 5.500e-01  5.500e-01  5.500e-01]
+     nit: 2
+     jac: [-1.636e-01 -1.636e-01 -1.636e-01]
+    nfev: 2
+    njev: 2]
+
+real	0m5.365s
+user	0m4.575s
+sys	0m0.657s
+Instance: 4
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.0222554206848145
+[INFO] aspmc: Compilation time:         0.017604589462280273
+[INFO] aspmc: Preparation time:         8.916854858398438e-05
+[INFO] aspmc: Counting time:            0.27707862854003906
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.3973195552825928
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 0.8566854000091553
+number of sums: 2
+number of sub: 2
+number of prods: 3
+{9: 'a3', 7: 'a1', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.09274625778198242
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.7239164175000001
+       x: [ 5.000e-01  4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 0.000e+00  5.020e-01  0.000e+00  5.020e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9658429417228802
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01]
+     nit: 2
+     jac: [-7.590e-02 -7.590e-02 -7.590e-02 -7.590e-02]
+    nfev: 2
+    njev: 2]
+
+real	0m5.484s
+user	0m4.723s
+sys	0m0.644s
+Instance: 5
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.021488666534424
+[INFO] aspmc: Compilation time:         0.017645597457885742
+[INFO] aspmc: Preparation time:         8.153915405273438e-05
+[INFO] aspmc: Counting time:            0.2811272144317627
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.400310754776001
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 1.3182997703552246
+number of sums: 3
+number of sub: 5
+number of prods: 9
+{9: 'a3', 7: 'a1', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.18084311485290527
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.8434577624999999
+       x: [ 4.500e-01  5.000e-01  4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 2.846e-01  0.000e+00  2.846e-01  0.000e+00  2.846e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9841539420363877
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01]
+     nit: 2
+     jac: [-3.521e-02 -3.521e-02 -3.521e-02 -3.521e-02 -3.521e-02]
+    nfev: 2
+    njev: 2]
+
+real	0m6.012s
+user	0m5.263s
+sys	0m0.643s
+Instance: 6
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.0221095085144043
+[INFO] aspmc: Compilation time:         0.017688512802124023
+[INFO] aspmc: Preparation time:         8.058547973632812e-05
+[INFO] aspmc: Counting time:            0.28331804275512695
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.404879093170166
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 1.8057467937469482
+number of sums: 3
+number of sub: 5
+number of prods: 9
+{10: 'a5', 9: 'a3', 7: 'a1', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.2842855453491211
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.8434577624999999
+       x: [ 5.000e-01  4.500e-01  5.000e-01  4.500e-01  5.000e-01
+            4.500e-01]
+     nit: 2
+     jac: [ 0.000e+00  2.846e-01  0.000e+00  2.846e-01  0.000e+00
+            2.846e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9926487359962624
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01]
+     nit: 3
+     jac: [-1.634e-02 -1.634e-02 -1.634e-02 -1.634e-02 -1.634e-02
+           -1.634e-02]
+    nfev: 3
+    njev: 3]
+
+real	0m6.610s
+user	0m5.861s
+sys	0m0.624s
+Instance: 7
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.022217035293579
+[INFO] aspmc: Compilation time:         0.01795339584350586
+[INFO] aspmc: Preparation time:         8.630752563476562e-05
+[INFO] aspmc: Counting time:            0.28836536407470703
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.4099650382995605
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 2.498748540878296
+number of sums: 2
+number of sub: 11
+number of prods: 14
+{10: 'a5', 9: 'a3', 7: 'a1', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.46483874320983887
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.9112389375000001
+       x: [ 4.500e-01  5.000e-01  4.500e-01  5.000e-01  4.500e-01
+            5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 1.614e-01  0.000e+00  1.614e-01  0.000e+00  1.614e-01
+            0.000e+00  1.614e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9965896197920803
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01  5.500e-01]
+     nit: 3
+     jac: [-7.579e-03 -7.579e-03 -7.579e-03 -7.579e-03 -7.579e-03
+           -7.579e-03 -7.579e-03]
+    nfev: 3
+    njev: 3]
+
+real	0m7.495s
+user	0m6.712s
+sys	0m0.662s
+Instance: 8
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.0221107006073
+[INFO] aspmc: Compilation time:         0.01798391342163086
+[INFO] aspmc: Preparation time:         9.012222290039062e-05
+[INFO] aspmc: Counting time:            0.28296375274658203
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.4030604362487793
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 4.686382293701172
+number of sums: 2
+number of sub: 11
+number of prods: 14
+{11: 'a7', 10: 'a5', 9: 'a3', 7: 'a1', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.7809700965881348
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.9112389375000001
+       x: [ 5.000e-01  4.500e-01  5.000e-01  4.500e-01  5.000e-01
+            4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 0.000e+00  1.614e-01  0.000e+00  1.614e-01  0.000e+00
+            1.614e-01  0.000e+00  1.614e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9984178648519959
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01  5.500e-01  5.500e-01]
+     nit: 4
+     jac: [-3.516e-03 -3.516e-03 -3.516e-03 -3.516e-03 -3.516e-03
+           -3.516e-03 -3.516e-03 -3.516e-03]
+    nfev: 4
+    njev: 4]
+
+real	0m9.989s
+user	0m9.214s
+sys	0m0.629s
+Instance: 9
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.022313356399536
+[INFO] aspmc: Compilation time:         0.018068313598632812
+[INFO] aspmc: Preparation time:         8.487701416015625e-05
+[INFO] aspmc: Counting time:            0.2808051109313965
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.4024298191070557
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 9.095927953720093
+number of sums: 3
+number of sub: 15
+number of prods: 15
+{11: 'a7', 10: 'a5', 9: 'a3', 7: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.949641227722168
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.9496715625000001
+       x: [ 4.500e-01  5.000e-01  4.500e-01  5.000e-01  4.500e-01
+            5.000e-01  4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 9.151e-02  0.000e+00  9.151e-02  0.000e+00  9.151e-02
+            0.000e+00  9.151e-02  0.000e+00  9.151e-02]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9992660197766992
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01  5.500e-01  5.500e-01  5.500e-01]
+     nit: 4
+     jac: [-1.631e-03 -1.631e-03 -1.631e-03 -1.631e-03 -1.631e-03
+           -1.631e-03 -1.631e-03 -1.631e-03 -1.631e-03]
+    nfev: 4
+    njev: 4]
+
+real	0m14.619s
+user	0m13.775s
+sys	0m0.688s
+Instance: 10
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.022737503051758
+[INFO] aspmc: Compilation time:         0.018861770629882812
+[INFO] aspmc: Preparation time:         8.749961853027344e-05
+[INFO] aspmc: Counting time:            0.2918097972869873
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.4144821166992188
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 9.351601123809814
+number of sums: 3
+number of sub: 15
+number of prods: 12
+{12: 'a9', 11: 'a7', 10: 'a5', 9: 'a3', 7: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.9088752269744873
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.9496715625000001
+       x: [ 5.000e-01  4.500e-01  5.000e-01  4.500e-01  5.000e-01
+            4.500e-01  5.000e-01  4.500e-01  5.000e-01  4.500e-01]
+     nit: 2
+     jac: [ 0.000e+00  9.151e-02  0.000e+00  9.151e-02  0.000e+00
+            9.151e-02  0.000e+00  9.151e-02  0.000e+00  9.151e-02]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9996594937108398
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01]
+     nit: 4
+     jac: [-7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04
+           -7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04 -7.567e-04]
+    nfev: 4
+    njev: 4]
+
+real	0m15.017s
+user	0m14.001s
+sys	0m0.681s
+Ended at: 
+Sat Jan 13 08:43:26 CET 2024

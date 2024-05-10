@@ -1,0 +1,46 @@
+Instance 12
+[INFO] aspmc: Tree Decomposition #bags: 24 unfolded treewidth: 4 #vertices: 32
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 10 #vertices: 46
+[INFO] aspmc: Dtree time:               2.026747703552246
+[INFO] aspmc: Compilation time:         0.020001649856567383
+[INFO] aspmc: Preparation time:         0.00010037422180175781
+[INFO] aspmc: Counting time:            0.07271885871887207
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.208608388900757
+Pre simplification
+number of sums: 1279
+number of prods: 8679
+Post simplification
+symp_time: 71.20668935775757
+number of sums: 5
+number of sub: 32
+number of prods: 30
+{14: 'a11', 13: 'a9', 12: 'a7', 11: 'a5', 10: 'a3', 8: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.3809323310852051
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.26490810937499953
+       x: [ 7.152e-01  5.000e-02  5.752e-01  5.000e-02  2.026e-01
+            5.000e-02  2.588e-01  5.000e-02  7.338e-02  5.000e-02
+            7.597e-01  5.000e-02]
+    nfev: 147
+   maxcv: 1.249000902703301e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999998
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.462e-01
+            9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01]
+    nfev: 165
+   maxcv: 1.1102230246251565e-16]
+
+real	1m16.207s
+user	1m14.463s
+sys	0m0.824s

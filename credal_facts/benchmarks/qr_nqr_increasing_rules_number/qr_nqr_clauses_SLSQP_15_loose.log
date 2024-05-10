@@ -1,0 +1,704 @@
+Started at: 
+Sat Jan 13 08:42:12 CET 2024
+Instance: 2
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0285160541534424
+[INFO] aspmc: Compilation time:         0.02852773666381836
+[INFO] aspmc: Preparation time:         0.00010919570922851562
+[INFO] aspmc: Counting time:            0.7766122817993164
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.914607286453247
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 2.567894220352173
+number of sums: 1
+number of sub: 0
+number of prods: 1
+{11: 'a1', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.034097909927368164
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.2324162974579265
+       x: [ 5.000e-01  5.000e-02]
+     nit: 2
+     jac: [ 0.000e+00  8.080e-01]
+    nfev: 2
+    njev: 2,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.998317432274586
+       x: [ 9.500e-01  9.500e-01]
+     nit: 3
+     jac: [-3.365e-02 -3.365e-02]
+    nfev: 3
+    njev: 3]
+
+real	0m7.915s
+user	0m6.969s
+sys	0m0.669s
+Instance: 3
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0267138481140137
+[INFO] aspmc: Compilation time:         0.027193069458007812
+[INFO] aspmc: Preparation time:         0.00011157989501953125
+[INFO] aspmc: Counting time:            0.7082970142364502
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8468570709228516
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 2.7452383041381836
+number of sums: 3
+number of sub: 1
+number of prods: 4
+{11: 'a1', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.11226487159729004
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.2482427655515775
+       x: [ 5.000e-02  5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 7.913e-01  0.000e+00  7.913e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999132697048756
+       x: [ 9.500e-01  9.500e-01  9.500e-01]
+     nit: 6
+     jac: [-1.735e-03 -1.735e-03 -1.735e-03]
+    nfev: 6
+    njev: 6]
+
+real	0m7.824s
+user	0m7.074s
+sys	0m0.625s
+Instance: 4
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0267112255096436
+[INFO] aspmc: Compilation time:         0.027439117431640625
+[INFO] aspmc: Preparation time:         0.00012135505676269531
+[INFO] aspmc: Counting time:            0.6957054138183594
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8313565254211426
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 2.8949012756347656
+number of sums: 3
+number of sub: 1
+number of prods: 4
+{12: 'a3', 11: 'a1', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.30326247215270996
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.24824276555157998
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 0.000e+00  7.913e-01  0.000e+00  7.913e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999955293662307
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01]
+     nit: 10
+     jac: [-8.941e-05 -8.941e-05 -8.941e-05 -8.941e-05]
+    nfev: 10
+    njev: 10]
+
+real	0m8.112s
+user	0m7.335s
+sys	0m0.637s
+Instance: 5
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027956962585449
+[INFO] aspmc: Compilation time:         0.02810215950012207
+[INFO] aspmc: Preparation time:         0.00011801719665527344
+[INFO] aspmc: Counting time:            0.7212200164794922
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8588578701019287
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 3.2514703273773193
+number of sums: 4
+number of sub: 3
+number of prods: 12
+{12: 'a3', 11: 'a1', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 0.7636516094207764
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.2637429147154656
+       x: [ 5.000e-02  5.000e-01  5.000e-02  5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 7.750e-01  0.000e+00  7.750e-01  0.000e+00  7.750e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999994328717785
+       x: [ 9.401e-01  9.401e-01  9.401e-01  9.401e-01  9.401e-01]
+     nit: 11
+     jac: [-2.104e-05 -2.104e-05 -2.104e-05 -2.104e-05 -2.104e-05]
+    nfev: 12
+    njev: 11]
+
+real	0m9.001s
+user	0m8.248s
+sys	0m0.607s
+Instance: 6
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027919054031372
+[INFO] aspmc: Compilation time:         0.027260303497314453
+[INFO] aspmc: Preparation time:         0.00010919570922851562
+[INFO] aspmc: Counting time:            0.6995840072631836
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.9297850131988525
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 3.8398683071136475
+number of sums: 4
+number of sub: 3
+number of prods: 12
+{13: 'a5', 12: 'a3', 11: 'a1', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 1.2729849815368652
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.2637429147154625
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02  5.000e-01
+            5.000e-02]
+     nit: 3
+     jac: [ 0.000e+00  7.750e-01  0.000e+00  7.750e-01  0.000e+00
+            7.750e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999993228017178
+       x: [ 9.019e-01  9.019e-01  9.019e-01  9.019e-01  9.019e-01
+            9.019e-01]
+     nit: 12
+     jac: [-6.904e-06 -6.904e-06 -6.904e-06 -6.904e-06 -6.904e-06
+           -6.904e-06]
+    nfev: 12
+    njev: 12]
+
+real	0m10.174s
+user	0m9.267s
+sys	0m0.666s
+Instance: 7
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0276126861572266
+[INFO] aspmc: Compilation time:         0.028721094131469727
+[INFO] aspmc: Preparation time:         0.00011038780212402344
+[INFO] aspmc: Counting time:            0.7501480579376221
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8893203735351562
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 4.775968551635742
+number of sums: 9
+number of sub: 7
+number of prods: 32
+{13: 'a5', 12: 'a3', 11: 'a1', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 2.3367958068847656
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.2789234731749377
+       x: [ 5.000e-02  5.000e-01  5.000e-02  5.000e-01  5.000e-02
+            5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 7.590e-01  0.000e+00  7.590e-01  0.000e+00  7.590e-01
+            0.000e+00  7.590e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999992144117744
+       x: [ 8.610e-01  8.610e-01  8.610e-01  8.610e-01  8.610e-01
+            8.610e-01  8.610e-01]
+     nit: 12
+     jac: [-5.652e-06 -5.652e-06 -5.652e-06 -5.652e-06 -5.652e-06
+           -5.652e-06 -5.652e-06]
+    nfev: 12
+    njev: 12]
+
+real	0m12.200s
+user	0m11.311s
+sys	0m0.652s
+Instance: 8
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027575969696045
+[INFO] aspmc: Compilation time:         0.02843165397644043
+[INFO] aspmc: Preparation time:         9.989738464355469e-05
+[INFO] aspmc: Counting time:            0.7170045375823975
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8581693172454834
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 6.963518381118774
+number of sums: 9
+number of sub: 7
+number of prods: 32
+{14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 2.8871941566467285
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.27892347317493765
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02  5.000e-01
+            5.000e-02  5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 0.000e+00  7.590e-01  0.000e+00  7.590e-01  0.000e+00
+            7.590e-01  0.000e+00  7.590e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999992825640588
+       x: [ 8.248e-01  8.248e-01  8.248e-01  8.248e-01  8.248e-01
+            8.248e-01  8.248e-01  8.248e-01]
+     nit: 11
+     jac: [-8.652e-06 -8.652e-06 -8.652e-06 -8.652e-06 -8.652e-06
+           -8.652e-06 -8.652e-06 -8.652e-06]
+    nfev: 12
+    njev: 11]
+
+real	0m14.813s
+user	0m14.005s
+sys	0m0.655s
+Instance: 9
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0279431343078613
+[INFO] aspmc: Compilation time:         0.0282440185546875
+[INFO] aspmc: Preparation time:         0.00012159347534179688
+[INFO] aspmc: Counting time:            0.7890892028808594
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.9290528297424316
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 10.999510526657104
+number of sums: 9
+number of sub: 30
+number of prods: 37
+{14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 4.523827314376831
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.29379103042906246
+       x: [ 5.000e-02  5.000e-01  5.000e-02  5.000e-01  5.000e-02
+            5.000e-01  5.000e-02  5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 7.434e-01  0.000e+00  7.434e-01  0.000e+00  7.434e-01
+            0.000e+00  7.434e-01  0.000e+00  7.434e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999987582063321
+       x: [ 7.748e-01  7.748e-01  7.748e-01  7.748e-01  7.748e-01
+            7.748e-01  7.748e-01  7.748e-01  7.748e-01]
+     nit: 11
+     jac: [-5.514e-06 -5.514e-06 -5.514e-06 -5.514e-06 -5.514e-06
+           -5.514e-06 -5.514e-06 -5.514e-06 -5.514e-06]
+    nfev: 11
+    njev: 11]
+
+real	0m20.599s
+user	0m19.787s
+sys	0m0.645s
+Instance: 10
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0316267013549805
+[INFO] aspmc: Compilation time:         0.027702808380126953
+[INFO] aspmc: Preparation time:         0.00011801719665527344
+[INFO] aspmc: Counting time:            0.7540616989135742
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.896961212158203
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 20.240322828292847
+number of sums: 9
+number of sub: 30
+number of prods: 37
+{15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 5.78923225402832
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.29379103042906246
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02  5.000e-01
+            5.000e-02  5.000e-01  5.000e-02  5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 0.000e+00  7.434e-01  0.000e+00  7.434e-01  0.000e+00
+            7.434e-01  0.000e+00  7.434e-01  0.000e+00  7.434e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999989435361499
+       x: [ 7.436e-01  7.436e-01  7.436e-01  7.436e-01  7.436e-01
+            7.436e-01  7.436e-01  7.436e-01  7.436e-01  7.436e-01]
+     nit: 11
+     jac: [-4.120e-06 -4.120e-06 -4.120e-06 -4.120e-06 -4.120e-06
+           -4.120e-06 -4.120e-06 -4.120e-06 -4.120e-06 -4.120e-06]
+    nfev: 11
+    njev: 11]
+
+real	0m31.169s
+user	0m30.283s
+sys	0m0.704s
+Instance: 11
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027491331100464
+[INFO] aspmc: Compilation time:         0.028402090072631836
+[INFO] aspmc: Preparation time:         0.000110626220703125
+[INFO] aspmc: Counting time:            0.7072041034698486
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8490278720855713
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 34.37721228599548
+number of sums: 9
+number of sub: 32
+number of prods: 40
+{15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 6.140774965286255
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.3083520401109375
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02  5.000e-01
+            5.000e-02  5.000e-01  5.000e-02  5.000e-02  5.000e-01
+            5.000e-02]
+     nit: 4
+     jac: [ 0.000e+00  7.281e-01  0.000e+00  7.281e-01  0.000e+00
+            7.281e-01  0.000e+00  7.281e-01  7.281e-01  0.000e+00
+            7.281e-01]
+    nfev: 4
+    njev: 4,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999991961589896
+       x: [ 7.177e-01  7.177e-01  7.177e-01  7.177e-01  7.177e-01
+            7.177e-01  7.177e-01  7.177e-01  7.177e-01  7.177e-01
+            7.177e-01]
+     nit: 10
+     jac: [-5.913e-06 -5.913e-06 -5.913e-06 -5.913e-06 -5.913e-06
+           -5.913e-06 -5.913e-06 -5.913e-06 -5.913e-06 -5.913e-06
+           -5.913e-06]
+    nfev: 11
+    njev: 10]
+
+real	0m45.741s
+user	0m44.684s
+sys	0m0.766s
+Instance: 12
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.029017448425293
+[INFO] aspmc: Compilation time:         0.028240442276000977
+[INFO] aspmc: Preparation time:         0.00010728836059570312
+[INFO] aspmc: Counting time:            0.7413558959960938
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8842310905456543
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 66.01373767852783
+number of sums: 9
+number of sub: 32
+number of prods: 40
+{16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 7.643611669540405
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.3083520401109375
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02  5.000e-01
+            5.000e-02  5.000e-01  5.000e-02  5.000e-01  5.000e-02
+            5.000e-01  5.000e-02]
+     nit: 4
+     jac: [ 0.000e+00  7.281e-01  0.000e+00  7.281e-01  0.000e+00
+            7.281e-01  0.000e+00  7.281e-01  0.000e+00  7.281e-01
+            0.000e+00  7.281e-01]
+    nfev: 4
+    njev: 4,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999988230815625
+       x: [ 6.770e-01  6.770e-01  6.770e-01  6.770e-01  6.770e-01
+            6.770e-01  6.770e-01  6.770e-01  6.770e-01  6.770e-01
+            6.770e-01  6.770e-01]
+     nit: 10
+     jac: [-3.644e-06 -3.644e-06 -3.644e-06 -3.644e-06 -3.644e-06
+           -3.644e-06 -3.644e-06 -3.644e-06 -3.644e-06 -3.644e-06
+           -3.644e-06 -3.644e-06]
+    nfev: 10
+    njev: 10]
+
+real	1m18.856s
+user	1m17.885s
+sys	0m0.727s
+Instance: 13
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027409315109253
+[INFO] aspmc: Compilation time:         0.027871370315551758
+[INFO] aspmc: Preparation time:         0.00010776519775390625
+[INFO] aspmc: Counting time:            0.7132625579833984
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.850693464279175
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 123.73730635643005
+number of sums: 7
+number of sub: 48
+number of prods: 57
+{16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 2.234553337097168
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.3226128227890625
+       x: [ 5.000e-01  5.000e-02 ...  5.000e-01  5.000e-02]
+     nit: 4
+     jac: [ 0.000e+00  7.130e-01 ...  0.000e+00  7.130e-01]
+    nfev: 4
+    njev: 4,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9998851440429686
+       x: [ 5.000e-01  5.000e-01 ...  5.000e-01  5.000e-01]
+     nit: 1
+     jac: [-2.297e-04 -2.297e-04 ... -2.297e-04 -2.297e-04]
+    nfev: 1
+    njev: 1]
+
+real	2m11.169s
+user	2m10.031s
+sys	0m0.859s
+Instance: 14
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0274546146392822
+[INFO] aspmc: Compilation time:         0.028163433074951172
+[INFO] aspmc: Preparation time:         0.00010156631469726562
+[INFO] aspmc: Counting time:            0.7311182022094727
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.869478702545166
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 253.6918797492981
+number of sums: 7
+number of sub: 48
+number of prods: 55
+{17: 'a13', 16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 2.3758559226989746
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.3226128227890625
+       x: [ 5.000e-01  5.000e-02 ...  5.000e-01  5.000e-02]
+     nit: 4
+     jac: [ 0.000e+00  7.130e-01 ...  0.000e+00  7.130e-01]
+    nfev: 4
+    njev: 4,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999407958984374
+       x: [ 5.000e-01  5.000e-01 ...  5.000e-01  5.000e-01]
+     nit: 1
+     jac: [-1.184e-04 -1.184e-04 ... -1.184e-04 -1.184e-04]
+    nfev: 1
+    njev: 1]
+
+real	4m21.544s
+user	4m19.889s
+sys	0m1.137s
+Instance: 15
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.031151533126831
+[INFO] aspmc: Compilation time:         0.028310537338256836
+[INFO] aspmc: Preparation time:         0.00010204315185546875
+[INFO] aspmc: Counting time:            0.7188305854797363
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.863724946975708
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 225.04947423934937
+number of sums: 9
+number of sub: 58
+number of prods: 51
+{17: 'a13', 16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 9: 'a14', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 2.6239254474639893
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.3365795687131694
+       x: [ 5.000e-01  5.000e-02 ...  5.000e-01  5.000e-02]
+     nit: 5
+     jac: [ 0.000e+00  6.983e-01 ...  0.000e+00  6.983e-01]
+    nfev: 5
+    njev: 5,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.999969482421875
+       x: [ 5.000e-01  5.000e-01 ...  5.000e-01  5.000e-01]
+     nit: 1
+     jac: [-6.104e-05 -6.104e-05 ... -6.104e-05 -6.104e-05]
+    nfev: 1
+    njev: 1]
+
+real	3m52.890s
+user	3m51.504s
+sys	0m0.927s
+Ended at: 
+Sat Jan 13 08:56:44 CET 2024

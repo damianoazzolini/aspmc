@@ -1,0 +1,47 @@
+Started at: 
+Tue Jan 16 11:40:01 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 102 unfolded treewidth: 4 #vertices: 122
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 114 treewidth: 9 #vertices: 140
+[INFO] aspmc: Dtree time:               2.068821430206299
+[INFO] aspmc: Compilation time:         0.017702102661132812
+[INFO] aspmc: Preparation time:         0.0001697540283203125
+[INFO] aspmc: Counting time:            0.05618429183959961
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., 0.5::va5., 0.5::vb5., a05:-va5., a15:-not va5,vb5., a5:-not va5,not vb5., 0.5::va6., 0.5::vb6., a6:-va6., a16:-not va6,vb6., a26:-not va6,not vb6., 0.5::va7., 0.5::vb7., a07:-va7., a7:-not va7,vb7., a27:-not va7,not vb7., 0.5::va8., 0.5::vb8., a08:-va8., a18:-not va8,vb8., a8:-not va8,not vb8., 0.5::va9., 0.5::vb9., a9:-va9., a19:-not va9,vb9., a29:-not va9,not vb9., 0.5::va10., 0.5::vb10., a010:-va10., a10:-not va10,vb10., a210:-not va10,not vb10., 0.5::va11., 0.5::vb11., a011:-va11., a111:-not va11,vb11., a11:-not va11,not vb11., 0.5::va12., 0.5::vb12., a12:-va12., a112:-not va12,vb12., a212:-not va12,not vb12., 0.5::va13., 0.5::vb13., a013:-va13., a13:-not va13,vb13., a213:-not va13,not vb13., 0.5::va14., 0.5::vb14., a014:-va14., a114:-not va14,vb14., a14:-not va14,not vb14., qr:-a0,a2,a4,a6,a8,a10,a12,a14., qr:-a1,a3,a5,a7,a9,a11,a13,not nqr., nqr:-a1,a3,a5,a7,a9,a11,a13,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.235020637512207
+Pre simplification
+number of sums: 3039
+number of prods: 22486
+----- NO SIMPLIFICATION -----
+Post simplification
+symp_time: 7.152557373046875e-07
+number of sums: 3039
+number of sub: 4197
+number of prods: 22486
+opt_time: 135.3312633037567
+LP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 3.657142807215194e-06
+       x: [ 4.518e-01  4.994e-01 ...  2.963e-01  1.429e-01]
+    nfev: 508
+   maxcv: 3.032998519003627e-09
+UP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.0030047850065829038
+       x: [ 4.070e-01  3.170e-01 ...  1.645e-01  3.000e-01]
+    nfev: 540
+   maxcv: 5.551115123125783e-17
+
+real	2m19.768s
+user	1m55.157s
+sys	0m24.239s
+Ended at: 
+Tue Jan 16 11:42:21 CET 2024

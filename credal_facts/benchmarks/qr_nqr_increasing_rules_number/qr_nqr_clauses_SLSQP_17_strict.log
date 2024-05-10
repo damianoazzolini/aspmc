@@ -1,0 +1,50 @@
+Started at: 
+Tue Jan 23 15:07:47 CET 2024
+Instance: 17
+[INFO] aspmc: Tree Decomposition #bags: 34 unfolded treewidth: 4 #vertices: 44
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 32 treewidth: 13 #vertices: 65
+[INFO] aspmc: Dtree time:               2.0305898189544678
+[INFO] aspmc: Compilation time:         0.048078060150146484
+[INFO] aspmc: Preparation time:         0.0001277923583984375
+[INFO] aspmc: Counting time:            0.35741329193115234
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., 0.03::a16., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., query(qr).]
+tracc
+nnf_construction_time: 3.5220909118652344
+Pre simplification
+number of sums: 14335
+number of prods: 111842
+Post simplification
+symp_time: 2288.2137219905853
+number of sums: 17
+number of sub: 118
+number of prods: 105
+{19: 'a15', 18: 'a13', 17: 'a11', 16: 'a9', 15: 'a7', 14: 'a5', 13: 'a3', 11: 'a1', 10: 'a16', 9: 'a14', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 4.161944389343262
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.995394633416016
+       x: [ 5.000e-01  4.500e-01 ...  5.000e-01  4.500e-01]
+     nit: 4
+     jac: [ 0.000e+00  8.373e-03 ...  0.000e+00  8.373e-03]
+    nfev: 4
+    njev: 4,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999923706054688
+       x: [ 5.000e-01  5.000e-01 ...  5.000e-01  5.000e-01]
+     nit: 1
+     jac: [-1.526e-05 -1.526e-05 ... -1.526e-05 -1.526e-05]
+    nfev: 1
+    njev: 1]
+
+real	38m21.238s
+user	38m9.363s
+sys	0m9.543s
+Ended at: 
+Tue Jan 23 15:46:08 CET 2024

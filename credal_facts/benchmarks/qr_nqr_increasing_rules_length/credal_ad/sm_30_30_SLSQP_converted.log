@@ -1,0 +1,13 @@
+Started at: 
+Mon Jan 15 17:54:39 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 190 unfolded treewidth: 5 #vertices: 231
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 219 treewidth: 14 #vertices: 272
+[INFO] aspmc: Dtree time:               17.69569993019104
+[INFO] aspmc: Compilation time:         0.08482837677001953
+[INFO] aspmc: Preparation time:         0.00034999847412109375
+[INFO] aspmc: Counting time:            0.7080423831939697
+[INFO] aspmc: ------------------------------------------------------------
+slurmstepd: error: *** JOB 2100663 ON node02 CANCELLED AT 2024-01-16T01:54:48 DUE TO TIME LIMIT ***

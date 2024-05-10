@@ -1,0 +1,54 @@
+Instance: 10
+[INFO] aspmc: Tree Decomposition #bags: 20 unfolded treewidth: 4 #vertices: 27
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 28 treewidth: 10 #vertices: 38
+[INFO] aspmc: Dtree time:               2.022380828857422
+[INFO] aspmc: Compilation time:         0.017863750457763672
+[INFO] aspmc: Preparation time:         9.965896606445312e-05
+[INFO] aspmc: Counting time:            0.2994382381439209
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.4191198348999023
+Pre simplification
+number of sums: 767
+number of prods: 1086
+Post simplification
+symp_time: 9.074359655380249
+number of sums: 3
+number of sub: 15
+number of prods: 12
+{12: 'a9', 11: 'a7', 10: 'a5', 9: 'a3', 7: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 1.9706804752349854
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.2262190625
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02  5.000e-01
+            5.000e-02  5.000e-01  5.000e-02  5.000e-01  5.000e-02]
+     nit: 3
+     jac: [ 0.000e+00  8.145e-01  0.000e+00  8.145e-01  0.000e+00
+            8.145e-01  0.000e+00  8.145e-01  0.000e+00  8.145e-01]
+    nfev: 3
+    njev: 3,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999988948200879
+       x: [ 7.463e-01  7.463e-01  7.463e-01  7.463e-01  7.463e-01
+            7.463e-01  7.463e-01  7.463e-01  7.463e-01  7.463e-01]
+     nit: 11
+     jac: [-4.356e-06 -4.356e-06 -4.356e-06 -4.356e-06 -4.356e-06
+           -4.356e-06 -4.356e-06 -4.356e-06 -4.356e-06 -4.356e-06]
+    nfev: 11
+    njev: 11]
+
+real	0m15.628s
+user	0m14.773s
+sys	0m0.671s
+Ended at: 
+Sat Jan 13 08:43:30 CET 2024

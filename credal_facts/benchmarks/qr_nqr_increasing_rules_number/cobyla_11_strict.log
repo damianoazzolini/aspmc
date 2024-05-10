@@ -1,0 +1,48 @@
+Started at: 
+Tue Jan 23 14:59:10 CET 2024
+Instance 11
+[INFO] aspmc: Tree Decomposition #bags: 22 unfolded treewidth: 4 #vertices: 29
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 32 treewidth: 9 #vertices: 41
+[INFO] aspmc: Dtree time:               2.024756669998169
+[INFO] aspmc: Compilation time:         0.01582813262939453
+[INFO] aspmc: Preparation time:         9.751319885253906e-05
+[INFO] aspmc: Counting time:            0.0363771915435791
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., query(qr).]
+tracc
+nnf_construction_time: 3.1671204566955566
+Pre simplification
+number of sums: 703
+number of prods: 4115
+Post simplification
+symp_time: 34.968008279800415
+number of sums: 5
+number of sub: 28
+number of prods: 26
+{13: 'a9', 12: 'a7', 11: 'a5', 10: 'a3', 9: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.16181254386901855
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.9723193593750001
+       x: [ 5.008e-01  4.500e-01  5.016e-01  4.500e-01  4.950e-01
+            4.500e-01  5.027e-01  4.500e-01  4.500e-01  5.029e-01
+            4.500e-01]
+    nfev: 112
+   maxcv: -0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9998467721698782
+       x: [ 5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01  5.500e-01  5.500e-01  5.500e-01  5.500e-01
+            5.500e-01]
+    nfev: 71
+   maxcv: 0.0]
+
+real	0m39.860s
+user	0m38.533s
+sys	0m0.792s

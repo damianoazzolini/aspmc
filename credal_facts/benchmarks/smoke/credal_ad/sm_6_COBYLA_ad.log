@@ -1,0 +1,33 @@
+Started at: 
+Tue Jan 16 09:43:30 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 253 unfolded treewidth: 12 #vertices: 294
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 296 treewidth: 35 #vertices: 349
+[INFO] aspmc: Dtree time:               32.1142692565918
+[INFO] aspmc: Compilation time:         0.9335756301879883
+[INFO] aspmc: Preparation time:         0.0004551410675048828
+slurmstepd: error: Job 2100780 exceeded memory limit (32546848 > 16777216), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 2100780 ON node01 CANCELLED AT 2024-01-16T09:44:30 ***
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y),k0(X),k1(Y)., 0.5::c0(1)., 0.5::c0(2)., 0.5::c0(3)., 0.5::c0(4)., 0.5::c1(1)., 0.5::c1(2)., 0.5::c1(3)., 0.5::c1(4)., person(1)., person(2)., person(3)., person(4)., k0(X):-c0(X),person(X)., k1(X):-not c0(X),c1(X),person(X)., k2(X):-not c0(X),not c1(X),person(X)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., 0.5::influences(3,4)., 0.5::influences(4,1)., query(qr).]
+tracc
+Traceback (most recent call last):
+  File "/home/dazzolin/test/2024credal_facts/benchmarks/smoke/credal_ad/0_runner.py", line 50, in <module>
+    res = compute_optimal_probability(
+  File "/home/dazzolin/test/2024credal_facts/benchmarks/smoke/credal_ad/aconst.py", line 176, in compute_optimal_probability
+    lq, uq, symb_vars = get_eq(current_prog,query,optimizable_facts)
+  File "/home/dazzolin/test/2024credal_facts/benchmarks/smoke/credal_ad/aconst.py", line 108, in get_eq
+    results = cnf.evaluate(strategy = strategy, preprocessing = preprocessing)
+  File "/home/dazzolin/test/2024credal_facts/aspmc/aspmc/compile/cnf.py", line 904, in evaluate
+    return self.solve_compilation(preprocessing = preprocessing)
+  File "/home/dazzolin/test/2024credal_facts/aspmc/aspmc/compile/cnf.py", line 934, in solve_compilation
+    results = self.solve_compilation_two()
+  File "/home/dazzolin/test/2024credal_facts/aspmc/aspmc/compile/cnf.py", line 828, in solve_compilation_two
+    results = circ.parse_wmc(cnf_tmp + '.nnf', weights, P, self.semirings[0], self.semirings[1], self.transform, self.mapping_id_val)
+  File "/home/dazzolin/test/2024credal_facts/aspmc/aspmc/compile/constrained_ddnnf.py", line 424, in parse_wmc
+    extracted_eq_up = f"({extracted_eq_up})+({eq_up_list[child]})"
+  File "/home/dazzolin/test/2024credal_facts/aspmc/aspmc/signal_handling.py", line 17, in handler
+    raise KeyboardInterrupt("Received Control+C, cleaning up and shutting down.")
+KeyboardInterrupt: Received Control+C, cleaning up and shutting down.

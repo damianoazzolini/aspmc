@@ -1,0 +1,46 @@
+Started at: 
+Tue Jan 23 15:07:47 CET 2024
+Instance: 16
+[INFO] aspmc: Tree Decomposition #bags: 32 unfolded treewidth: 4 #vertices: 42
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 46 treewidth: 12 #vertices: 62
+[INFO] aspmc: Dtree time:               2.031996726989746
+[INFO] aspmc: Compilation time:         0.039700984954833984
+[INFO] aspmc: Preparation time:         0.00011730194091796875
+[INFO] aspmc: Counting time:            0.1465449333190918
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., 0.03::a15., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.304203987121582
+Pre simplification
+number of sums: 7167
+number of prods: 57701
+Post simplification
+symp_time: 1112.3338174819946
+number of sums: 8
+number of sub: 58
+number of prods: 52
+{18: 'a15', 17: 'a13', 16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 10: 'a1', 9: 'a14', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.7923011779785156
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.3365795687109371
+       x: [ 6.353e-02  5.000e-02 ...  3.230e-01  5.000e-02]
+    nfev: 210
+   maxcv: 1.1796119636642288e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999999
+       x: [ 9.500e-01  9.500e-01 ...  4.901e-01  1.151e-01]
+    nfev: 224
+   maxcv: 0.0]
+
+real	18m39.690s
+user	18m29.862s
+sys	0m4.418s
+Ended at: 
+Tue Jan 23 15:26:26 CET 2024

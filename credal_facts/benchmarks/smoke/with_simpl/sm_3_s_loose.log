@@ -1,0 +1,50 @@
+Started at: 
+Sat Jan 13 09:02:59 CET 2024
+Instance 3
+[INFO] aspmc: Tree Decomposition #bags: 108 unfolded treewidth: 6 #vertices: 124
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 108 treewidth: 17 #vertices: 135
+[INFO] aspmc: Dtree time:               2.732759714126587
+[INFO] aspmc: Compilation time:         0.05844545364379883
+[INFO] aspmc: Preparation time:         0.0001926422119140625
+[INFO] aspmc: Counting time:            0.5953350067138672
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., query(qr).]
+tracc
+nnf_construction_time: 4.497665166854858
+Pre simplification
+number of sums: 23420
+number of prods: 36995
+Post simplification
+symp_time: 14.833666801452637
+number of sums: 0
+number of sub: 0
+number of prods: 0
+{40: 'influences(1,2)', 39: 'influences(2,1)'}
+Running SLSQP
+opt_time: 0.02568531036376953
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0
+       x: [ 5.000e-01  5.000e-01]
+     nit: 1
+     jac: [ 0.000e+00  0.000e+00]
+    nfev: 1
+    njev: 1,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.023263199999999998
+       x: [ 9.500e-01  5.000e-01]
+     nit: 5
+     jac: [-1.186e-02  0.000e+00]
+    nfev: 5
+    njev: 5]
+
+real	0m20.617s
+user	0m19.541s
+sys	0m0.920s
+Ended at: 
+Sat Jan 13 09:03:20 CET 2024

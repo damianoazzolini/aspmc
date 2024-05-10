@@ -1,0 +1,48 @@
+Instance 13
+[INFO] aspmc: Tree Decomposition #bags: 26 unfolded treewidth: 4 #vertices: 34
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 36 treewidth: 11 #vertices: 49
+[INFO] aspmc: Dtree time:               2.0255777835845947
+[INFO] aspmc: Compilation time:         0.022681474685668945
+[INFO] aspmc: Preparation time:         9.965896606445312e-05
+[INFO] aspmc: Counting time:            0.10925149917602539
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., query(qr).]
+tracc
+nnf_construction_time: 3.2907509803771973
+Pre simplification
+number of sums: 2559
+number of prods: 17092
+Post simplification
+symp_time: 126.31860423088074
+number of sums: 4
+number of sub: 34
+number of prods: 31
+{15: 'a11', 14: 'a9', 13: 'a7', 12: 'a5', 11: 'a3', 9: 'a1', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 1.1900665760040283
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.30166270390625033
+       x: [ 5.000e-01  5.000e-02 ...  5.000e-01  5.000e-02]
+     nit: 4
+     jac: [ 0.000e+00  7.351e-01 ...  0.000e+00  7.351e-01]
+    nfev: 4
+    njev: 4,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9998779296875
+       x: [ 5.000e-01  5.000e-01 ...  5.000e-01  5.000e-01]
+     nit: 1
+     jac: [-2.441e-04 -2.441e-04 ... -2.441e-04 -2.441e-04]
+    nfev: 1
+    njev: 1]
+
+real	2m12.158s
+user	2m11.063s
+sys	0m0.762s

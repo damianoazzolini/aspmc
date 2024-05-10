@@ -1,0 +1,44 @@
+Instance: 15
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0245985984802246
+[INFO] aspmc: Compilation time:         0.02511906623840332
+[INFO] aspmc: Preparation time:         0.00010085105895996094
+[INFO] aspmc: Counting time:            0.6169464588165283
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.73891019821167
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 190.6863124370575
+number of sums: 9
+number of sub: 58
+number of prods: 51
+{17: 'a13', 16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 9: 'a14', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.5085091590881348
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.3365795687109371
+       x: [ 9.499e-01  5.000e-02 ...  2.244e-01  5.000e-02]
+    nfev: 181
+   maxcv: 1.1796119636642288e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -1.0
+       x: [ 9.291e-01  9.404e-01 ...  9.500e-01  9.125e-01]
+    nfev: 154
+   maxcv: 2.220446049250313e-16]
+
+real	3m16.156s
+user	3m15.069s
+sys	0m0.866s
+Ended at: 
+Sat Jan 13 08:54:17 CET 2024

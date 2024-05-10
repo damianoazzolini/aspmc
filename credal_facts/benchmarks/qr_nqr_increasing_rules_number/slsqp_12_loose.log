@@ -1,0 +1,56 @@
+Instance 12
+[INFO] aspmc: Tree Decomposition #bags: 24 unfolded treewidth: 4 #vertices: 32
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 34 treewidth: 10 #vertices: 46
+[INFO] aspmc: Dtree time:               2.0242419242858887
+[INFO] aspmc: Compilation time:         0.020170927047729492
+[INFO] aspmc: Preparation time:         0.00010180473327636719
+[INFO] aspmc: Counting time:            0.06656408309936523
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., query(qr).]
+tracc
+nnf_construction_time: 3.1907505989074707
+Pre simplification
+number of sums: 1279
+number of prods: 8679
+Post simplification
+symp_time: 68.48120951652527
+number of sums: 5
+number of sub: 32
+number of prods: 30
+{14: 'a11', 13: 'a9', 12: 'a7', 11: 'a5', 10: 'a3', 8: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Runnning SLSQP
+opt_time: 5.687664031982422
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.264908109375
+       x: [ 5.000e-01  5.000e-02  5.000e-01  5.000e-02  5.000e-01
+            5.000e-02  5.000e-01  5.000e-02  5.000e-01  5.000e-02
+            5.000e-01  5.000e-02]
+     nit: 4
+     jac: [ 0.000e+00  7.738e-01  0.000e+00  7.738e-01  0.000e+00
+            7.738e-01  0.000e+00  7.738e-01  0.000e+00  7.738e-01
+            0.000e+00  7.738e-01]
+    nfev: 4
+    njev: 4,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -0.9999987377988917
+       x: [ 6.776e-01  6.776e-01  6.776e-01  6.776e-01  6.776e-01
+            6.776e-01  6.776e-01  6.776e-01  6.776e-01  6.776e-01
+            6.776e-01  6.776e-01]
+     nit: 10
+     jac: [-3.915e-06 -3.915e-06 -3.915e-06 -3.915e-06 -3.915e-06
+           -3.915e-06 -3.915e-06 -3.915e-06 -3.915e-06 -3.915e-06
+           -3.915e-06 -3.915e-06]
+    nfev: 10
+    njev: 10]
+
+real	1m18.652s
+user	1m17.671s
+sys	0m0.737s

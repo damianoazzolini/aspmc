@@ -1,0 +1,47 @@
+Started at: 
+Tue Jan 16 11:47:44 CET 2024
+Instance 4
+[INFO] aspmc: Tree Decomposition #bags: 112 unfolded treewidth: 6 #vertices: 126
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 110 treewidth: 19 #vertices: 138
+[INFO] aspmc: Dtree time:               1.0758318901062012
+[INFO] aspmc: Compilation time:         0.072723388671875
+[INFO] aspmc: Preparation time:         0.0001876354217529297
+[INFO] aspmc: Counting time:            0.3261752128601074
+[INFO] aspmc: ------------------------------------------------------------
+[0.1::asthma_f(1)., 0.1::asthma_f(2)., 0.1::asthma_f(3)., 0.1::asthma_f(4)., 0.3::stress(1)., 0.3::stress(2)., 0.3::stress(3)., 0.3::stress(4)., 0.4::stress_fact(1)., 0.4::stress_fact(2)., 0.4::stress_fact(3)., 0.4::stress_fact(4)., smokes(X):-influences(Y,X),smokes(Y)., 0.4::asthma_fact(1)., 0.4::asthma_fact(2)., 0.4::asthma_fact(3)., 0.4::asthma_fact(4)., asthma_rule(X):-smokes(X),asthma_fact(X)., asthma(X):-asthma_f(X)., asthma(X):-asthma_rule(X)., asthma_and_stress(X):-stress(X),stress_fact(X),asthma(X)., smokes(X):-asthma_and_stress(X),not no_smokes(X)., no_smokes(X):-asthma_and_stress(X),not smokes(X)., 0.5::influences(1,2)., 0.5::influences(2,1)., person(3)., person(4)., qr:-smokes(1)., 0.5::influences(2,3)., query(qr).]
+tracc
+nnf_construction_time: 2.5844109058380127
+Pre simplification
+number of sums: 14237
+number of prods: 91970
+----- NO SIMPLIFICATION ---
+Post simplification
+symp_time: 7.152557373046875e-06
+number of sums: 14237
+number of sub: 9556
+number of prods: 91970
+{41: 'influences(1,2)', 40: 'influences(2,3)', 39: 'influences(2,1)'}
+Running COBYLA
+opt_time: 18.1923725605011
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.0
+       x: [ 5.000e-01  5.000e-01  5.000e-01]
+    nfev: 19
+   maxcv: 0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.018520800000000004
+       x: [ 5.000e-01  5.500e-01  5.000e-01]
+    nfev: 19
+   maxcv: 0.0]
+
+real	0m21.991s
+user	0m18.366s
+sys	0m3.440s
+Ended at: 
+Tue Jan 16 11:48:06 CET 2024

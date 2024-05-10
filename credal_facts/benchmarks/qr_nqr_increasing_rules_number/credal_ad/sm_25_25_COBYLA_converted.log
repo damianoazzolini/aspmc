@@ -1,0 +1,49 @@
+Started at: 
+Mon Jan 22 15:46:09 CET 2024
+[INFO] aspmc: Tree Decomposition #bags: 171 unfolded treewidth: 5 #vertices: 228
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+<block>:1426:4-12: info: atom does not occur in any rule head:
+  right(X)
+
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 219 treewidth: 8 #vertices: 261
+[INFO] aspmc: Dtree time:               1.0720937252044678
+[INFO] aspmc: Compilation time:         0.022402048110961914
+[INFO] aspmc: Preparation time:         0.00032258033752441406
+[INFO] aspmc: Counting time:            0.06799125671386719
+[INFO] aspmc: ------------------------------------------------------------
+[0.5::va0., 0.5::vb0., a0:-va0., a10:-not va0,vb0., a20:-not va0,not vb0., 0.5::va1., 0.5::vb1., a01:-va1., a1:-not va1,vb1., a21:-not va1,not vb1., 0.5::va2., 0.5::vb2., a02:-va2., a12:-not va2,vb2., a2:-not va2,not vb2., 0.5::va3., 0.5::vb3., a3:-va3., a13:-not va3,vb3., a23:-not va3,not vb3., 0.5::va4., 0.5::vb4., a04:-va4., a4:-not va4,vb4., a24:-not va4,not vb4., 0.5::va5., 0.5::vb5., a05:-va5., a15:-not va5,vb5., a5:-not va5,not vb5., 0.5::va6., 0.5::vb6., a6:-va6., a16:-not va6,vb6., a26:-not va6,not vb6., 0.5::va7., 0.5::vb7., a07:-va7., a7:-not va7,vb7., a27:-not va7,not vb7., 0.5::va8., 0.5::vb8., a08:-va8., a18:-not va8,vb8., a8:-not va8,not vb8., 0.5::va9., 0.5::vb9., a9:-va9., a19:-not va9,vb9., a29:-not va9,not vb9., 0.5::va10., 0.5::vb10., a010:-va10., a10:-not va10,vb10., a210:-not va10,not vb10., 0.5::va11., 0.5::vb11., a011:-va11., a111:-not va11,vb11., a11:-not va11,not vb11., 0.5::va12., 0.5::vb12., a12:-va12., a112:-not va12,vb12., a212:-not va12,not vb12., 0.5::va13., 0.5::vb13., a013:-va13., a13:-not va13,vb13., a213:-not va13,not vb13., 0.5::va14., 0.5::vb14., a014:-va14., a114:-not va14,vb14., a14:-not va14,not vb14., 0.5::va15., 0.5::vb15., a15:-va15., a115:-not va15,vb15., a215:-not va15,not vb15., 0.5::va16., 0.5::vb16., a016:-va16., a16:-not va16,vb16., a216:-not va16,not vb16., 0.5::va17., 0.5::vb17., a017:-va17., a117:-not va17,vb17., a17:-not va17,not vb17., 0.5::va18., 0.5::vb18., a18:-va18., a118:-not va18,vb18., a218:-not va18,not vb18., 0.5::va19., 0.5::vb19., a019:-va19., a19:-not va19,vb19., a219:-not va19,not vb19., 0.5::va20., 0.5::vb20., a020:-va20., a120:-not va20,vb20., a20:-not va20,not vb20., 0.5::va21., 0.5::vb21., a21:-va21., a121:-not va21,vb21., a221:-not va21,not vb21., 0.5::va22., 0.5::vb22., a022:-va22., a22:-not va22,vb22., a222:-not va22,not vb22., 0.5::va23., 0.5::vb23., a023:-va23., a123:-not va23,vb23., a23:-not va23,not vb23., 0.5::va24., 0.5::vb24., a24:-va24., a124:-not va24,vb24., a224:-not va24,not vb24., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., qr:-a15,not nqr., nqr:-a15,not qr., qr:-a16., qr:-a17,not nqr., nqr:-a17,not qr., qr:-a18., qr:-a19,not nqr., nqr:-a19,not qr., qr:-a20., qr:-a21,not nqr., nqr:-a21,not qr., qr:-a22., qr:-a23,not nqr., nqr:-a23,not qr., qr:-a24., query(qr).]
+tracc
+nnf_construction_time: 2.3011984825134277
+Pre simplification
+number of sums: 2728
+number of prods: 18225
+Post simplification
+symp_time: 18.814170122146606
+number of sums: 0
+number of sub: 0
+number of prods: 0
+opt_time: 10.865269422531128
+LP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 1.0
+       x: [ 4.197e-01  4.197e-01 ...  3.000e-01  3.000e-01]
+    nfev: 303
+   maxcv: 0.0
+UP
+ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -1.0
+       x: [ 4.197e-01  4.197e-01 ...  3.000e-01  3.000e-01]
+    nfev: 303
+   maxcv: 0.0
+
+real	0m33.456s
+user	0m31.752s
+sys	0m0.460s
+Ended at: 
+Mon Jan 22 15:46:42 CET 2024

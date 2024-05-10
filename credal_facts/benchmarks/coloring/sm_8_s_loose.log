@@ -1,0 +1,57 @@
+Started at: 
+Tue Jan 16 11:53:49 CET 2024
+Instance 8
+[INFO] aspmc: Tree Decomposition #bags: 80 unfolded treewidth: 7 #vertices: 86
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 89 treewidth: 11 #vertices: 99
+[INFO] aspmc: Dtree time:               2.7977828979492188
+[INFO] aspmc: Compilation time:         0.055551767349243164
+[INFO] aspmc: Preparation time:         0.00015974044799804688
+[INFO] aspmc: Counting time:            0.12875938415527344
+[INFO] aspmc: ------------------------------------------------------------
+/home/dazzolin/anaconda3/lib/python3.9/site-packages/scipy/optimize/_optimize.py:404: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  warnings.warn("Values in x were outside bounds during a "
+[red(X):-node(X),not green(X),not blue(X)., green(X):-node(X),not red(X),not blue(X)., blue(X):-node(X),not red(X),not green(X)., e(X,Y):-edge(X,Y)., e(Y,X):-edge(Y,X)., :-e(X,Y),red(X),red(Y)., :-e(X,Y),green(X),green(Y)., :-e(X,Y),blue(X),blue(Y)., 0.6::edge(1,2)., 0.1::edge(1,3)., 0.4::edge(2,5)., 0.3::edge(2,6)., 0.3::edge(3,4)., 0.8::edge(4,5)., 0.2::edge(5,6)., 0.3::edge(5,7)., 0.3::edge(3,7)., 0.3::edge(3,5)., qr:-blue(1)., qr:-blue(3)., qr:-blue(5)., qr:-blue(7)., red(1)., green(4)., green(6)., node(1)., node(2)., node(3)., node(4)., node(5)., node(6)., node(7)., query(qr).]
+tracc
+nnf_construction_time: 4.0708537101745605
+Pre simplification
+number of sums: 1023
+number of prods: 9742
+----- NO SIMPLIFICATION ----
+Post simplification
+symp_time: 7.152557373046875e-07
+number of sums: 1023
+number of sub: 1023
+number of prods: 9742
+{42: 'edge(1,2)', 40: 'edge(1,3)', 38: 'edge(2,5)', 37: 'edge(2,6)', 35: 'edge(3,4)', 33: 'edge(4,5)', 31: 'edge(5,6)', 28: 'edge(5,7)', 26: 'edge(3,7)', 24: 'edge(3,5)'}
+Running SLSQP
+opt_time: 111.90548157691956
+[ message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: 0.0028666703125000003
+       x: [ 5.000e-02  5.000e-02  5.000e-02  5.000e-02  5.000e-02
+            5.000e-02  5.000e-01  5.000e-01  5.000e-02  5.000e-01]
+     nit: 11
+     jac: [ 2.702e-03  2.358e-03  2.358e-03  2.702e-03  7.102e-03
+            5.460e-02  0.000e+00  0.000e+00  4.997e-02  0.000e+00]
+    nfev: 11
+    njev: 11,  message: Optimization terminated successfully
+ success: True
+  status: 0
+     fun: -1.0
+       x: [ 5.000e-01  5.000e-01  5.000e-01  5.000e-01  5.000e-01
+            5.000e-01  5.000e-01  5.000e-01  5.000e-01  5.000e-01]
+     nit: 1
+     jac: [ 0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00
+            0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00]
+    nfev: 1
+    njev: 1]
+
+real	1m57.192s
+user	1m55.181s
+sys	0m1.813s
+Ended at: 
+Tue Jan 16 11:55:46 CET 2024

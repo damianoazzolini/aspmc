@@ -1,0 +1,610 @@
+Started at: 
+Sat Jan 13 08:42:10 CET 2024
+Instance: 2
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0271294116973877
+[INFO] aspmc: Compilation time:         0.02852654457092285
+[INFO] aspmc: Preparation time:         0.00010561943054199219
+[INFO] aspmc: Counting time:            0.7246499061584473
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.866490364074707
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 2.5907578468322754
+number of sums: 1
+number of sub: 0
+number of prods: 1
+{11: 'a1', 1: 'a0'}
+Running COBYLA
+opt_time: 0.004405498504638672
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.2324162974579265
+       x: [ 7.500e-01  5.000e-02]
+    nfev: 14
+   maxcv: 1.3877787807814457e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.998317432274586
+       x: [ 9.500e-01  9.500e-01]
+    nfev: 16
+   maxcv: 2.220446049250313e-16]
+
+real	0m7.770s
+user	0m6.916s
+sys	0m0.632s
+Instance: 3
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.029341220855713
+[INFO] aspmc: Compilation time:         0.028201580047607422
+[INFO] aspmc: Preparation time:         0.0001125335693359375
+[INFO] aspmc: Counting time:            0.7621395587921143
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.903592109680176
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 2.8804945945739746
+number of sums: 3
+number of sub: 1
+number of prods: 4
+{11: 'a1', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.009755849838256836
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.24824276555157748
+       x: [ 5.000e-02  5.000e-01  5.000e-02]
+    nfev: 20
+   maxcv: 1.3877787807814457e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999132697048754
+       x: [ 9.500e-01  9.500e-01  9.500e-01]
+    nfev: 29
+   maxcv: 1.1102230246251565e-16]
+
+real	0m7.938s
+user	0m7.165s
+sys	0m0.643s
+Instance: 4
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027397871017456
+[INFO] aspmc: Compilation time:         0.02812981605529785
+[INFO] aspmc: Preparation time:         0.000110626220703125
+[INFO] aspmc: Counting time:            0.7230508327484131
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.862809181213379
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 2.9976754188537598
+number of sums: 3
+number of sub: 1
+number of prods: 4
+{12: 'a3', 11: 'a1', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.014081716537475586
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.24824276555157748
+       x: [ 7.500e-01  5.000e-02  5.000e-01  5.000e-02]
+    nfev: 26
+   maxcv: 1.3877787807814457e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999955293662307
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01]
+    nfev: 32
+   maxcv: 0.0]
+
+real	0m7.991s
+user	0m7.255s
+sys	0m0.629s
+Instance: 5
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027728319168091
+[INFO] aspmc: Compilation time:         0.028490066528320312
+[INFO] aspmc: Preparation time:         0.000102996826171875
+[INFO] aspmc: Counting time:            0.7364451885223389
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.87691593170166
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 3.3437139987945557
+number of sums: 4
+number of sub: 3
+number of prods: 12
+{12: 'a3', 11: 'a1', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.03656196594238281
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.2637429147154625
+       x: [ 5.000e-02  3.951e-01  5.000e-02  5.666e-01  5.000e-02]
+    nfev: 61
+   maxcv: -0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999997695549601
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01]
+    nfev: 43
+   maxcv: 0.0]
+
+real	0m8.390s
+user	0m7.623s
+sys	0m0.639s
+Instance: 6
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027888059616089
+[INFO] aspmc: Compilation time:         0.02857232093811035
+[INFO] aspmc: Preparation time:         0.00011539459228515625
+[INFO] aspmc: Counting time:            0.7204365730285645
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8616318702697754
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 3.8950791358947754
+number of sums: 4
+number of sub: 3
+number of prods: 12
+{13: 'a5', 12: 'a3', 11: 'a1', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.05480384826660156
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.2637429147154626
+       x: [ 5.005e-01  5.000e-02  5.869e-01  5.000e-02  4.100e-01
+            5.000e-02]
+    nfev: 68
+   maxcv: -0.0,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999881213896
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01]
+    nfev: 59
+   maxcv: 0.0]
+
+real	0m8.974s
+user	0m8.165s
+sys	0m0.664s
+Instance: 7
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0303215980529785
+[INFO] aspmc: Compilation time:         0.028476953506469727
+[INFO] aspmc: Preparation time:         0.00011301040649414062
+[INFO] aspmc: Counting time:            0.7954132556915283
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.9380064010620117
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 4.854627847671509
+number of sums: 9
+number of sub: 7
+number of prods: 32
+{13: 'a5', 12: 'a3', 11: 'a1', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.08263874053955078
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.27892347317493726
+       x: [ 5.000e-02  4.999e-01  5.000e-02  5.000e-01  5.000e-02
+            5.000e-01  5.000e-02]
+    nfev: 76
+   maxcv: 1.249000902703301e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999993877003
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01]
+    nfev: 63
+   maxcv: 1.1102230246251565e-16]
+
+real	0m10.030s
+user	0m9.208s
+sys	0m0.686s
+Instance: 8
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027764320373535
+[INFO] aspmc: Compilation time:         0.028346776962280273
+[INFO] aspmc: Preparation time:         0.00011539459228515625
+[INFO] aspmc: Counting time:            0.7280161380767822
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8678553104400635
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 7.255166053771973
+number of sums: 9
+number of sub: 7
+number of prods: 32
+{14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.10812783241271973
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.27892347317493754
+       x: [ 5.022e-01  5.000e-02  4.943e-01  5.000e-02  5.048e-01
+            5.000e-02  4.982e-01  5.000e-02]
+    nfev: 95
+   maxcv: 1.3877787807814457e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.999999999968438
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01  9.500e-01]
+    nfev: 74
+   maxcv: 0.0]
+
+real	0m12.376s
+user	0m11.634s
+sys	0m0.609s
+Instance: 9
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.027670383453369
+[INFO] aspmc: Compilation time:         0.028310775756835938
+[INFO] aspmc: Preparation time:         0.00011205673217773438
+[INFO] aspmc: Counting time:            0.7183473110198975
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.8589422702789307
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 10.767924308776855
+number of sums: 9
+number of sub: 30
+number of prods: 37
+{14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.15918350219726562
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.29379103042906207
+       x: [ 5.000e-02  1.132e-01  5.000e-02  7.662e-01  5.000e-02
+            5.004e-02  5.000e-02  8.349e-02  5.000e-02]
+    nfev: 123
+   maxcv: 1.1796119636642288e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999983731
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01  9.500e-01  9.500e-01]
+    nfev: 86
+   maxcv: 1.1102230246251565e-16]
+
+real	0m15.948s
+user	0m15.128s
+sys	0m0.659s
+Instance: 10
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0251171588897705
+[INFO] aspmc: Compilation time:         0.025007247924804688
+[INFO] aspmc: Preparation time:         9.250640869140625e-05
+[INFO] aspmc: Counting time:            0.6317665576934814
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.7564189434051514
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 18.406782627105713
+number of sums: 9
+number of sub: 30
+number of prods: 37
+{15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.2037370204925537
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.29379103042906246
+       x: [ 9.613e-02  5.000e-02  2.734e-01  5.000e-02  2.806e-01
+            5.000e-02  4.026e-01  5.000e-02  1.016e-01  5.000e-02]
+    nfev: 125
+   maxcv: 2.0816681711721685e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999162
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01]
+    nfev: 117
+   maxcv: 0.0]
+
+real	0m23.477s
+user	0m22.623s
+sys	0m0.701s
+Instance: 11
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.024557590484619
+[INFO] aspmc: Compilation time:         0.02499532699584961
+[INFO] aspmc: Preparation time:         9.846687316894531e-05
+[INFO] aspmc: Counting time:            0.7094967365264893
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.834540605545044
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 30.63405990600586
+number of sums: 9
+number of sub: 32
+number of prods: 40
+{15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.23802971839904785
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.308352040110937
+       x: [ 5.007e-02  5.000e-02  8.551e-02  5.000e-02  9.479e-02
+            5.000e-02  1.730e-01  5.000e-02  5.000e-02  5.000e-02
+            5.000e-02]
+    nfev: 132
+   maxcv: 1.457167719820518e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999957
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01]
+    nfev: 118
+   maxcv: 1.1102230246251565e-16]
+
+real	0m35.757s
+user	0m34.891s
+sys	0m0.739s
+Instance: 12
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0240468978881836
+[INFO] aspmc: Compilation time:         0.02473902702331543
+[INFO] aspmc: Preparation time:         0.00010538101196289062
+[INFO] aspmc: Counting time:            0.6610214710235596
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.7811672687530518
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 56.14735746383667
+number of sums: 9
+number of sub: 32
+number of prods: 40
+{16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.30291247367858887
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.3083520401109375
+       x: [ 8.217e-01  5.000e-02  4.117e-01  5.000e-02  2.004e-01
+            5.000e-02  1.153e-01  5.000e-02  5.000e-02  5.000e-02
+            2.813e-01  5.000e-02]
+    nfev: 135
+   maxcv: 2.0816681711721685e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999968
+       x: [ 9.500e-01  9.500e-01  9.500e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01  2.760e-01  9.500e-01  9.500e-01
+            9.500e-01  9.500e-01]
+    nfev: 158
+   maxcv: 0.0]
+
+real	1m1.368s
+user	1m0.455s
+sys	0m0.734s
+Instance: 13
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0245718955993652
+[INFO] aspmc: Compilation time:         0.02442169189453125
+[INFO] aspmc: Preparation time:         9.298324584960938e-05
+[INFO] aspmc: Counting time:            0.6674282550811768
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.7895870208740234
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 106.79987525939941
+number of sums: 7
+number of sub: 48
+number of prods: 57
+{16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.44597315788269043
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.3226128227890624
+       x: [ 5.000e-02  5.000e-02 ...  5.000e-02  5.000e-02]
+    nfev: 156
+   maxcv: 2.0816681711721685e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999999
+       x: [ 9.500e-01  9.500e-01 ...  9.500e-01  9.500e-01]
+    nfev: 188
+   maxcv: 0.0]
+
+real	1m52.309s
+user	1m51.241s
+sys	0m0.862s
+Instance: 14
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.024415969848633
+[INFO] aspmc: Compilation time:         0.024949312210083008
+[INFO] aspmc: Preparation time:         9.059906005859375e-05
+[INFO] aspmc: Counting time:            0.633181095123291
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.7549424171447754
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 212.19683456420898
+number of sums: 7
+number of sub: 48
+number of prods: 55
+{17: 'a13', 16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.5447235107421875
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.32261282278906234
+       x: [ 2.124e-01  5.000e-02 ...  1.759e-01  5.000e-02]
+    nfev: 168
+   maxcv: 4.85722573273506e-17,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -0.9999999999999999
+       x: [ 9.500e-01  9.500e-01 ...  9.500e-01  9.500e-01]
+    nfev: 183
+   maxcv: 0.0]
+
+real	3m37.983s
+user	3m36.783s
+sys	0m0.934s
+Instance: 15
+[INFO] aspmc: Tree Decomposition #bags: 30 unfolded treewidth: 4 #vertices: 39
+[INFO] aspmc: Preprocessing disabled
+[INFO] aspmc:    Stats Compilation
+[INFO] aspmc: ------------------------------------------------------------
+[INFO] aspmc: X/D-Constrained Tree Decomposition #bags: 42 treewidth: 11 #vertices: 57
+[INFO] aspmc: Dtree time:               2.0245985984802246
+[INFO] aspmc: Compilation time:         0.02511906623840332
+[INFO] aspmc: Preparation time:         0.00010085105895996094
+[INFO] aspmc: Counting time:            0.6169464588165283
+[INFO] aspmc: ------------------------------------------------------------
+[0.03::a0., 0.03::a1., 0.03::a2., 0.03::a3., 0.03::a4., 0.03::a5., 0.03::a6., 0.03::a7., 0.03::a8., 0.03::a9., 0.03::a10., 0.03::a11., 0.03::a12., 0.03::a13., 0.03::a14., qr:-a0., qr:-a1,not nqr., nqr:-a1,not qr., qr:-a2., qr:-a3,not nqr., nqr:-a3,not qr., qr:-a4., qr:-a5,not nqr., nqr:-a5,not qr., qr:-a6., qr:-a7,not nqr., nqr:-a7,not qr., qr:-a8., qr:-a9,not nqr., nqr:-a9,not qr., qr:-a10., qr:-a11,not nqr., nqr:-a11,not qr., qr:-a12., qr:-a13,not nqr., nqr:-a13,not qr., qr:-a14., query(qr).]
+tracc
+nnf_construction_time: 3.73891019821167
+Pre simplification
+number of sums: 3583
+number of prods: 8446
+Post simplification
+symp_time: 190.6863124370575
+number of sums: 9
+number of sub: 58
+number of prods: 51
+{17: 'a13', 16: 'a11', 15: 'a9', 14: 'a7', 13: 'a5', 12: 'a3', 11: 'a1', 9: 'a14', 8: 'a12', 7: 'a10', 6: 'a8', 5: 'a6', 4: 'a4', 3: 'a2', 1: 'a0'}
+Running COBYLA
+opt_time: 0.5085091590881348
+[ message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: 0.3365795687109371
+       x: [ 9.499e-01  5.000e-02 ...  2.244e-01  5.000e-02]
+    nfev: 181
+   maxcv: 1.1796119636642288e-16,  message: Optimization terminated successfully.
+ success: True
+  status: 1
+     fun: -1.0
+       x: [ 9.291e-01  9.404e-01 ...  9.500e-01  9.125e-01]
+    nfev: 154
+   maxcv: 2.220446049250313e-16]
+
+real	3m16.156s
+user	3m15.069s
+sys	0m0.866s
+Ended at: 
+Sat Jan 13 08:54:17 CET 2024
