@@ -2,7 +2,7 @@ import time
 
 from scipy.optimize import minimize
 
-from eqs_handler import get_nice_eqs, evaluate_eq, my_log
+from eqs_handler import get_nice_eqs, evaluate_eq, my_log, Program
 
 class ConstrainedProblem:
     '''
@@ -103,20 +103,19 @@ def solve_optimization(
 
     return res.x, -res.fun
 
-def solve_with_optimization(
-        prog : 'Program',
-        target : 'str',
-        interpretation_eq_dict : 'dict[int,str]',
-        opt_alg : 'str',
-        simplify_eqs : bool
-    ) -> 'tuple[list[float],float]':
-    '''
-    Solve with optimization problem
-    '''
+def compute_ll_from_eqs(
+    prog : 'Program',
+    target : 'str',
+    interpretation_eq_dict : 'dict[int,str]',
+    opt_alg : 'str',
+    simplify_eqs : bool):
+    """
+    Compute the LL
+    """
     ll0 = 0
     # step 2: compute the equations and probabilities of the interpretations
-    print("Computing equations form interpretations")
-        # print(interpretation.get_interpretation_query())
+    print("Computing equations from interpretations")
+    # print(interpretation.get_interpretation_query())
     prg = prog.clauses[:]
     for lf in prog.learnable_facts:
         prg.append(f"{prog.learnable_facts[lf]}::{lf}.")
@@ -144,14 +143,93 @@ def solve_with_optimization(
         # print(f"computed: {interpretation_eq_dict[idx]}")
         ll0 += my_log(evaluate_eq(interpretation_eq_dict[idx], prog.learnable_facts))
     
-    print(f"LL with initial values: {ll0}")
+    return ll0
 
-    start_time = time.time()
-    vals, final_ll = solve_optimization(
-        list(interpretation_eq_dict.values()),
-        list(prog.learnable_facts.keys()),
-        opt_alg
+def test_results(
+        interpretation_eq_dict : 'dict[int,str]',
+        learnable_facts : 'dict[str,float]',
+        computed_probs : 'list[float]'
+    ):
+    """
+    Compute the LL on the test set.
+    """
+
+    # set the probabilities
+    for computed, el in zip(computed_probs, learnable_facts):
+        learnable_facts[el] = computed
+
+    # compute the LL
+    ll0 = 0
+    for eq in interpretation_eq_dict.values():
+        ll0 += my_log(evaluate_eq(eq, learnable_facts))
+
+    return ll0
+
+
+def solve_with_optimization(
+        prog : 'Program',
+        target : 'str',
+        interpretation_eq_dict : 'dict[int,str]',
+        opt_alg : 'str',
+        simplify_eqs : bool
+    ) -> 'list[float]': # -> 'tuple[list[float],float]':
+    '''
+    Solve with optimization problem
+    '''
+    # cross validation: given X training examples, use X-1 for training and test
+    # on the remaining. Then, repeat X times.
+
+    ll0 = compute_ll_from_eqs(
+        prog,
+        target,
+        interpretation_eq_dict,
+        opt_alg,
+        simplify_eqs
     )
-    eq_opt_time = time.time() - start_time
-    print(f"Opt time with {opt_alg}: {eq_opt_time} seconds")
-    return vals, final_ll
+    print(f"LL on training set with initial values: {ll0}")
+
+    print("Computed equations")
+    print(interpretation_eq_dict)
+
+    # import sys
+    # sys.exit()
+    original_eq_dict = interpretation_eq_dict.copy()
+    original_dataset = prog.train_set
+    # initial_prob_facts = prog.learnable_facts.copy()
+    ll_test_list : 'list[float]' = []
+    
+    for n_fold in range(0, len(prog.train_set)):
+        ts = original_dataset
+        prog.train_set = ts[0 : n_fold] + ts[n_fold+1 : ]
+        prog.test_set = [ts[n_fold]]
+        current_eq_dict = original_eq_dict.copy()
+        # only 1 example in the test
+        # pop already removes the element
+        test_eq_dict = {ts[n_fold] : current_eq_dict.pop(ts[n_fold])}
+
+        print(f"Train: {prog.train_set} - test: {prog.test_set} - int.keys(): {prog.interpretations_dict.keys()}")
+
+        start_time = time.time()
+        vals, final_ll = solve_optimization(
+            list(current_eq_dict.values()),
+            list(prog.learnable_facts.keys()),
+            opt_alg
+        )
+        eq_opt_time = time.time() - start_time
+        print(f"Opt time with {opt_alg}: {eq_opt_time} seconds")
+        print(f"vals: {vals}, LL training: {final_ll}")
+
+        # test on the remaining fold
+        print(prog.learnable_facts)
+        print("Testing on")
+        print(test_eq_dict)
+        ll_test = test_results(
+            test_eq_dict,
+            prog.learnable_facts,
+            vals
+        )
+        print("LL test")
+        print(ll_test)
+        ll_test_list.append(ll_test)
+
+    return ll_test_list
