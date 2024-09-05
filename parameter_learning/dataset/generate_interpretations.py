@@ -28,12 +28,17 @@ def generate_answer_sets(program : str):
 def setup_program(
         program : str,
         facts : 'list[str]',
-        probs : 'list[float]',
         n_interpretations : int
     ):
     """
     Computes the interpretations.
     """
+    probs = [random.random() for _ in range(len(facts))]
+
+    print(program)
+    for l in facts:
+        print(f"#learnable({l}).")
+
     print(f"\n% facts: {facts}")
     print(f"% probs: {probs}")
     for i in range(n_interpretations):
@@ -93,10 +98,10 @@ def parse_arguments():
 
 def generate_coloring_4(n_interpretations : int):
     """
-    Generates the coloring dataset.
+    Generates the coloring 4 dataset.
     """
 
-    coloring_4 = """
+    program = """
 % Dataset coloring of size 4
 
 red(X)  :- node(X), not blue(X),not green(X).
@@ -118,7 +123,7 @@ node(3).
 node(4).
 
 """
-    learnable_4 = [
+    learnable = [
         "edge(1,2)",
         "edge(1,3)",
         "edge(1,4)",
@@ -147,15 +152,202 @@ negative(ID,valid):- id(ID), not valid.
 % #show valid/0.
 """
 
-    probs = [x/10 for x in range(1,7)]
+    setup_program(program + to_show, learnable, n_interpretations)
 
-    print(coloring_4)
-    for l in learnable_4:
-        print(f"#learnable({l}).")
 
-    setup_program(coloring_4 + to_show, learnable_4, probs, n_interpretations)
+def generate_coloring_5(n_interpretations : int):
+    """
+    Generates the coloring 5 dataset.
+    """
 
-    return
+    program = """
+% Dataset coloring of size 5
+
+red(X)  :- node(X), not blue(X),not green(X).
+green(X):- node(X), not red(X), not blue(X).
+blue(X) :- node(X), not red(X), not green(X).
+
+e(X,Y) :- edge(X,Y).
+e(X,Y) :- edge(Y,X).
+
+c0 :- e(X,Y), red(X), red(Y).
+c1 :- e(X,Y), green(X), green(Y).
+c2 :- e(X,Y), blue(X), blue(Y).
+
+valid :- not c0, not c1, not c2.
+
+node(1).
+node(2).
+node(3).
+node(4).
+node(5).
+
+"""
+    learnable = [
+        "edge(1,2)",
+        "edge(1,3)",
+        "edge(1,4)",
+        "edge(1,5)",
+        "edge(2,3)",
+        "edge(2,4)",
+        "edge(2,5)",
+        "edge(3,4)",
+        "edge(3,5)",
+        "edge(4,5)",
+    ]
+
+    to_show = """
+
+positive(ID,red(A)):- id(ID), red(A).
+positive(ID,green(A)):- id(ID), green(A).
+positive(ID,blue(A)):- id(ID), blue(A).
+positive(ID,valid):- id(ID), valid.
+
+negative(ID,red(A)):- id(ID), node(A), not red(A).
+negative(ID,green(A)):- id(ID), node(A), not green(A).
+negative(ID,blue(A)):- id(ID), node(A), not blue(A).
+negative(ID,valid):- id(ID), not valid.
+
+#show positive/2.
+#show negative/2.
+% #show red/1.
+% #show green/1.
+% #show blue/1.
+% #show valid/0.
+"""
+
+    setup_program(program + to_show, learnable, n_interpretations)
+
+################ paths
+def generate_paths_10(n_interpretations : int):
+    """
+    Generates the paths 10 dataset.
+    """
+
+    program = """
+
+"""
+    learnable = [
+  
+    ]
+
+    to_show = """
+
+"""
+
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_paths_15(n_interpretations : int):
+    """
+    Generates the paths 15 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+############### shop
+def generate_shop_4(n_interpretations : int):
+    """
+    Generates the shop 4 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_shop_8(n_interpretations : int):
+    """
+    Generates the shop 8 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_shop_10(n_interpretations : int):
+    """
+    Generates the shop 10 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_shop_12(n_interpretations : int):
+    """
+    Generates the shop 12 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+################# smokers
+def generate_smokers_1(n_interpretations : int):
+    """
+    Generates the smokers 1 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_smokers_2(n_interpretations : int):
+    """
+    Generates the smokers 2 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_smokers_3(n_interpretations : int):
+    """
+    Generates the smokers 3 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_smokers_4(n_interpretations : int):
+    """
+    Generates the smokers 4 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_smokers_5(n_interpretations : int):
+    """
+    Generates the smokers 5 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
+
+def generate_smokers_6(n_interpretations : int):
+    """
+    Generates the smokers 6 dataset.
+    """
+
+    program = """ """
+    learnable = []
+    to_show = """ """
+    setup_program(program + to_show, learnable, n_interpretations)
 
 
 def main():
@@ -182,7 +374,11 @@ def main():
         sys.exit()
 
     if args.p == "coloring":
-        generate_coloring_4(args.n)
+        if args.s == 4:
+            generate_coloring_4(args.n)
+        else:
+            generate_coloring_5(args.n)
+
 
 
 if __name__ == "__main__":
