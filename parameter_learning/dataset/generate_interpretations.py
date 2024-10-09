@@ -999,8 +999,8 @@ def main():
     elif args.p == "shop" and args.s not in [4,8,10,12]:
         print("Allowed sizes for shop: 4, 8, 10, and 12")
         sys.exit()
-    elif args.p == "smokers" and args.s not in range(2,7):
-        print("Allowed sizes for smokers: 2, 3, 4, 5, and 6")
+    elif args.p == "smokers" and args.s not in range(1,7):
+        print("Allowed sizes for smokers: 1, 2, 3, 4, 5, and 6")
         sys.exit()
 
     if args.p == "coloring":
@@ -1008,6 +1008,36 @@ def main():
             generate_coloring_4(args.n)
         else:
             generate_coloring_5(args.n)
+    
+    elif args.p == "paths":
+        if args.s == 10:
+            generate_paths_10(args.n)
+        else:
+            generate_paths_15(args.n)
+    
+    elif args.p == "shop":
+        if args.s == 4:
+            generate_shop_4(args.n)
+        elif args.s == 8:
+            generate_shop_8(args.n)
+        elif args.s == 10:
+            generate_shop_10(args.n)
+        elif args.s == 12:
+            generate_shop_12(args.n)
+    
+    elif args.p == "smokers":
+        if args.s == 1:
+            generate_smokers_1(args.n)
+        elif args.s == 2:
+            generate_smokers_2(args.n)
+        elif args.s == 3:
+            generate_smokers_3(args.n)
+        elif args.s == 4:
+            generate_smokers_4(args.n)
+        elif args.s == 5:
+            generate_smokers_5(args.n)
+        elif args.s == 6:
+            generate_smokers_6(args.n)
 
 
 
