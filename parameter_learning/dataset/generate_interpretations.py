@@ -35,7 +35,7 @@ def setup_program(
     """
     probs = [random.random() for _ in range(len(facts))]
 
-    print(program)
+    # print(program)
     for l in facts:
         print(f"#learnable({l}).")
 
@@ -47,7 +47,11 @@ def setup_program(
             if p > r:
                 program += f"\n{f}.\n"
         
-        answer_sets = generate_answer_sets(program + f"\nid({i}).\n")
+        # print("....")
+        program = program + f"\nid({i}).\n"
+        # print(program)
+        # sys.exit()
+        answer_sets = generate_answer_sets(program)
 
         # sample 1
         a = answer_sets[random.randint(0,len(answer_sets)-1)]
@@ -260,7 +264,7 @@ node(9).
 
     to_show = """
 positive(ID,path(A,B)):- id(ID), path(A,B).
-negative(ID,path(A,B)):- id(ID), not path(A,B).
+negative(ID,path(A,B)):- id(ID), node(A), node(B), not path(A,B).
 
 #show positive/2.
 #show negative/2.
@@ -318,7 +322,7 @@ node(13).
     ]
     to_show = """
 positive(ID,path(A,B)):- id(ID), path(A,B).
-negative(ID,path(A,B)):- id(ID), not path(A,B).
+negative(ID,path(A,B)):- id(ID), node(A), node(B), not path(A,B).
 
 #show positive/2.
 #show negative/2.
@@ -731,15 +735,15 @@ def generate_smokers_1(n_interpretations : int):
     """
 
     program = """
-0.1 :: asthma_f(1).
-0.1 :: asthma_f(2).
-0.3 :: stress(1).
-0.3 :: stress(2).
-0.4 :: stress_fact(1).
-0.4 :: stress_fact(2).
-0.4 :: asthma_fact(1).
-0.4 :: asthma_fact(2).
-0.2 :: pred.
+asthma_f(1).
+asthma_f(2).
+stress(1).
+stress(2).
+stress_fact(1).
+stress_fact(2).
+asthma_fact(1).
+asthma_fact(2).
+pred.
 
 smokes(X) :- stress(X), stress_fact(X).
 smokes(X) :- influences(Y,X), smokes(Y).
@@ -749,6 +753,7 @@ asthma(X):- asthma_rule(X).
 ill(X)  :- smokes(X), asthma(X), not n_ill(X).
 n_ill(X):- smokes(X), asthma(X), pred, not ill(X).
 
+person(1..2).
 """
     learnable = [
         "influences(1,2)",
@@ -756,7 +761,7 @@ n_ill(X):- smokes(X), asthma(X), pred, not ill(X).
     ]
     to_show = """
 positive(ID,ill(A)):- id(ID), ill(A).
-negative(ID,ill(A)):- id(ID), not ill(A).
+negative(ID,ill(A)):- id(ID), person(A), not ill(A).
 
 #show positive/2.
 #show negative/2.
@@ -772,35 +777,43 @@ def generate_smokers_2(n_interpretations : int):
     program = """
 % Dataset smokers of size 2
 
-0.1 :: asthma_f(1).
-0.1 :: asthma_f(2).
-0.3 :: stress(1).
-0.3 :: stress(2).
-0.4 :: stress_fact(1).
-0.4 :: stress_fact(2).
-0.4 :: asthma_fact(1).
-0.4 :: asthma_fact(2).
-0.2 :: pred.
+asthma_f(1).
+asthma_f(2).
+stress(1).
+stress(2).
+stress_fact(1).
+stress_fact(2).
+asthma_fact(1).
+asthma_fact(2).
+pred.
 
-0.1 :: asthma_f(3).
-0.3 :: stress(3).
-0.4 :: stress_fact(3).
-0.4 :: asthma_fact(3).
+asthma_f(3).
+stress(3).
+stress_fact(3).
+asthma_fact(3).
 
 smokes(X) :- stress(X), stress_fact(X).
 smokes(X) :- influences(Y,X), smokes(Y).
 asthma_rule(X):- smokes(X), asthma_fact(X).
 asthma(X):- asthma_f(X).
 asthma(X):- asthma_rule(X).
-ill(X)  :- smokes(X), asthma(X), \+ n_ill(X).
-n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
+ill(X)  :- smokes(X), asthma(X), not n_ill(X).
+n_ill(X):- smokes(X), asthma(X), pred, not ill(X).
 
 """
     learnable = [
         "influences(1,2)",
         "influences(2,1)"
     ]
-    to_show = """"""
+    to_show = """
+person(1..3).
+positive(ID,ill(A)):- id(ID), ill(A).
+negative(ID,ill(A)):- id(ID), person(A), not ill(A).
+
+#show positive/2.
+#show negative/2.
+"""
+    
     
     setup_program(program + to_show, learnable, n_interpretations)
 
@@ -812,39 +825,45 @@ def generate_smokers_3(n_interpretations : int):
     program = """
 % Dataset smokers of size 3
 
-0.1 :: asthma_f(1).
-0.1 :: asthma_f(2).
-0.3 :: stress(1).
-0.3 :: stress(2).
-0.4 :: stress_fact(1).
-0.4 :: stress_fact(2).
-0.4 :: asthma_fact(1).
-0.4 :: asthma_fact(2).
-0.2 :: pred.
-0.1 :: asthma_f(3).
-0.3 :: stress(3).
-0.4 :: stress_fact(3).
-0.4 :: asthma_fact(3).
-
-0.1 :: asthma_f(4).
-0.3 :: stress(4).
-0.4 :: stress_fact(4).
-0.4 :: asthma_fact(4).
+asthma_f(1).
+asthma_f(2).
+stress(1).
+stress(2).
+stress_fact(1).
+stress_fact(2).
+asthma_fact(1).
+asthma_fact(2).
+pred.
+asthma_f(3).
+stress(3).
+stress_fact(3).
+asthma_fact(3).
+asthma_f(4).
+stress(4).
+stress_fact(4).
+asthma_fact(4).
 
 smokes(X) :- stress(X), stress_fact(X).
 smokes(X) :- influences(Y,X), smokes(Y).
 asthma_rule(X):- smokes(X), asthma_fact(X).
 asthma(X):- asthma_f(X).
 asthma(X):- asthma_rule(X).
-ill(X)  :- smokes(X), asthma(X), \+ n_ill(X).
-n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
+ill(X)  :- smokes(X), asthma(X), not n_ill(X).
+n_ill(X):- smokes(X), asthma(X), pred, not ill(X).
 
 """
     learnable = [
         "influences(1,2)",
         "influences(2,1)"
     ]
-    to_show = """ """
+    to_show = """
+person(1..4).
+positive(ID,ill(A)):- id(ID), ill(A).
+negative(ID,ill(A)):- id(ID), person(A), not ill(A).
+
+#show positive/2.
+#show negative/2.
+"""
     setup_program(program + to_show, learnable, n_interpretations)
 
 def generate_smokers_4(n_interpretations : int):
@@ -855,31 +874,31 @@ def generate_smokers_4(n_interpretations : int):
     program = """
 % Dataset smokers of size 4
 
-0.1 :: asthma_f(1).
-0.1 :: asthma_f(2).
-0.3 :: stress(1).
-0.3 :: stress(2).
-0.4 :: stress_fact(1).
-0.4 :: stress_fact(2).
-0.4 :: asthma_fact(1).
-0.4 :: asthma_fact(2).
-0.2 :: pred.
-0.1 :: asthma_f(3).
-0.3 :: stress(3).
-0.4 :: stress_fact(3).
-0.4 :: asthma_fact(3).
-0.1 :: asthma_f(4).
-0.3 :: stress(4).
-0.4 :: stress_fact(4).
-0.4 :: asthma_fact(4).
+asthma_f(1).
+asthma_f(2).
+stress(1).
+stress(2).
+stress_fact(1).
+stress_fact(2).
+asthma_fact(1).
+asthma_fact(2).
+pred.
+asthma_f(3).
+stress(3).
+stress_fact(3).
+asthma_fact(3).
+asthma_f(4).
+stress(4).
+stress_fact(4).
+asthma_fact(4).
 
 smokes(X) :- stress(X), stress_fact(X).
 smokes(X) :- influences(Y,X), smokes(Y).
 asthma_rule(X):- smokes(X), asthma_fact(X).
 asthma(X):- asthma_f(X).
 asthma(X):- asthma_rule(X).
-ill(X)  :- smokes(X), asthma(X), \+ n_ill(X).
-n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
+ill(X)  :- smokes(X), asthma(X), not n_ill(X).
+n_ill(X):- smokes(X), asthma(X), pred, not ill(X).
 
 """
     learnable = [
@@ -887,7 +906,15 @@ n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
         "influences(2,1)",
         "influences(2,3)"
     ]
-    to_show = """ """
+    to_show = """
+person(1..3).
+positive(ID,ill(A)):- id(ID), ill(A).
+negative(ID,ill(A)):- id(ID), person(A), not ill(A).
+
+#show positive/2.
+#show negative/2.
+"""
+
     setup_program(program + to_show, learnable, n_interpretations)
 
 def generate_smokers_5(n_interpretations : int):
@@ -898,31 +925,31 @@ def generate_smokers_5(n_interpretations : int):
     program = """
 % Dataset smokers of size 5
 
-0.1 :: asthma_f(1).
-0.1 :: asthma_f(2).
-0.3 :: stress(1).
-0.3 :: stress(2).
-0.4 :: stress_fact(1).
-0.4 :: stress_fact(2).
-0.4 :: asthma_fact(1).
-0.4 :: asthma_fact(2).
-0.2 :: pred.
-0.1 :: asthma_f(3).
-0.3 :: stress(3).
-0.4 :: stress_fact(3).
-0.4 :: asthma_fact(3).
-0.1 :: asthma_f(4).
-0.3 :: stress(4).
-0.4 :: stress_fact(4).
-0.4 :: asthma_fact(4).
+asthma_f(1).
+asthma_f(2).
+stress(1).
+stress(2).
+stress_fact(1).
+stress_fact(2).
+asthma_fact(1).
+asthma_fact(2).
+pred.
+asthma_f(3).
+stress(3).
+stress_fact(3).
+asthma_fact(3).
+asthma_f(4).
+stress(4).
+stress_fact(4).
+asthma_fact(4).
 
 smokes(X) :- stress(X), stress_fact(X).
 smokes(X) :- influences(Y,X), smokes(Y).
 asthma_rule(X):- smokes(X), asthma_fact(X).
 asthma(X):- asthma_f(X).
 asthma(X):- asthma_rule(X).
-ill(X)  :- smokes(X), asthma(X), \+ n_ill(X).
-n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
+ill(X)  :- smokes(X), asthma(X), not n_ill(X).
+n_ill(X):- smokes(X), asthma(X), pred, not ill(X).
 
 """
     learnable = [
@@ -931,7 +958,14 @@ n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
         "influences(2,3)",
         "influences(3,4)"
     ]
-    to_show = """ """
+    to_show = """
+person(1..3).
+positive(ID,ill(A)):- id(ID), ill(A).
+negative(ID,ill(A)):- id(ID), person(A), not ill(A).
+
+#show positive/2.
+#show negative/2.
+"""
     setup_program(program + to_show, learnable, n_interpretations)
 
 def generate_smokers_6(n_interpretations : int):
@@ -942,31 +976,31 @@ def generate_smokers_6(n_interpretations : int):
     program = """
 % Dataset smokers of size 6
 
-0.1 :: asthma_f(1).
-0.1 :: asthma_f(2).
-0.3 :: stress(1).
-0.3 :: stress(2).
-0.4 :: stress_fact(1).
-0.4 :: stress_fact(2).
-0.4 :: asthma_fact(1).
-0.4 :: asthma_fact(2).
-0.2 :: pred.
-0.1 :: asthma_f(3).
-0.3 :: stress(3).
-0.4 :: stress_fact(3).
-0.4 :: asthma_fact(3).
-0.1 :: asthma_f(4).
-0.3 :: stress(4).
-0.4 :: stress_fact(4).
-0.4 :: asthma_fact(4).
+asthma_f(1).
+asthma_f(2).
+stress(1).
+stress(2).
+stress_fact(1).
+stress_fact(2).
+asthma_fact(1).
+asthma_fact(2).
+pred.
+asthma_f(3).
+stress(3).
+stress_fact(3).
+asthma_fact(3).
+asthma_f(4).
+stress(4).
+stress_fact(4).
+asthma_fact(4).
 
 smokes(X) :- stress(X), stress_fact(X).
 smokes(X) :- influences(Y,X), smokes(Y).
 asthma_rule(X):- smokes(X), asthma_fact(X).
 asthma(X):- asthma_f(X).
 asthma(X):- asthma_rule(X).
-ill(X)  :- smokes(X), asthma(X), \+ n_ill(X).
-n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
+ill(X)  :- smokes(X), asthma(X), not n_ill(X).
+n_ill(X):- smokes(X), asthma(X), pred, not ill(X).
 
 """
     learnable = [
@@ -976,7 +1010,14 @@ n_ill(X):- smokes(X), asthma(X), pred, \+ ill(X).
         "influences(3,4)",
         "influences(4,1)"
     ]
-    to_show = """ """
+    to_show = """
+person(1..3).
+positive(ID,ill(A)):- id(ID), ill(A).
+negative(ID,ill(A)):- id(ID), person(A), not ill(A).
+
+#show positive/2.
+#show negative/2.
+"""
     setup_program(program + to_show, learnable, n_interpretations)
 
 
