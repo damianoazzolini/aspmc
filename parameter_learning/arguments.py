@@ -67,4 +67,10 @@ def parse_arguments():
         default=0
     )
 
+    parser.add_argument("--kfold",
+        help="Number of folds for cross validation",
+        type=int,
+        default=0
+    )
+
     return parser.parse_args()

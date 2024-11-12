@@ -1,26 +1,7 @@
-from itertools import combinations
-import sys
-
-# from sympy import *
-from sympy import diff
-from sympy import simplify
-from sympy import sympify
-
-
-
-# from a import compute_optimal_probability
-from aspmc.programs.smprogram import SMProblogProgram
-import aspmc.config as config
-import time
-
-import sys
-import random
-import math
-
-import argparse
-
+import more_itertools as mit
 import statistics
-
+import sys
+import time
 
 from arguments import parse_arguments
 from em_solver import setup_program_EM, evaluate_function_EM
@@ -61,7 +42,7 @@ def main():
     if arguments.method == "opt":
         print("Solving with OPT")
         start_time_tot = time.time()
-        ll_test_list = solve_with_optimization(prog, target, interpretation_eq_dict, arguments.opt_alg, simplify)
+        ll_test_list = solve_with_optimization(prog, target, interpretation_eq_dict, arguments.opt_alg, simplify, arguments.kfold)
         print(f"Opt total time: {time.time() - start_time_tot} seconds")
     else:
         print("Solving with EM")
@@ -148,18 +129,29 @@ def main():
         ll_test_list : 'list[float]' = []
 
         original_eq_dict = interpretation_eq_dict.copy()
-        original_dataset = prog.train_set
         initial_value_lf = prog.learnable_facts.copy()
+        
+        print("--- INIT KFOLD ---")
+        
+        if len(prog.train_set) % arguments.kfold != 0:
+            print(f"Unable to split evenly the dataset: len training set {len(prog.train_set)}, folds {kfold}")
+            sys.exit()
+        
+        chunks : 'list[list[[int]]' = [list(l) for l in mit.divide(arguments.kfold, prog.train_set)]
+        print(f"chunks: {chunks}")
+        whole_train_set = prog.train_set
 
-        for n_fold in range(0, len(prog.train_set)):
-            ll0 = 0 
+        for chunk in chunks:
+            ll0 = 0
             ll1 = -999999
-            ts = original_dataset
-            prog.train_set = ts[0 : n_fold] + ts[n_fold+1 : ]
-            prog.test_set = [ts[n_fold]]
-
+            prog.test_set = chunk
+            prog.train_set = list(set(whole_train_set) - set(chunk))
             current_eq_dict = original_eq_dict.copy()
-            test_eq_dict = {ts[n_fold] : current_eq_dict.pop(ts[n_fold])}
+            # only 1 example in the test
+            # test_eq_dict = {ts[n_fold] : current_eq_dict.pop(ts[n_fold])}
+            test_eq_dict = {}
+            for c in chunk:
+                test_eq_dict[c] = current_eq_dict.pop(c)
 
             # restore the value of the learnable facts
             prog.learnable_facts = initial_value_lf.copy()
@@ -285,13 +277,13 @@ def main():
 
                 plt.show()
 
-    print(f"----- RESULTS -----")
+    print("----- RESULTS -----")
     print(f"LL test list: {ll_test_list}")
     mean_ll = statistics.mean(ll_test_list)
     variance_ll = statistics.variance(ll_test_list)
     min_ll = min(ll_test_list)
     max_ll = max(ll_test_list)
-    print(f"LL: mean, variance, min, max")
+    print("LL: mean, variance, min, max")
     print(f"{mean_ll}, {variance_ll}, {min_ll}, {max_ll}")
 
 

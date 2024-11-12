@@ -1,6 +1,7 @@
+import more_itertools as mit
 import time
-
 from scipy.optimize import minimize
+import sys
 
 from eqs_handler import get_nice_eqs, evaluate_eq, my_log, Program
 
@@ -171,7 +172,8 @@ def solve_with_optimization(
         target : 'str',
         interpretation_eq_dict : 'dict[int,str]',
         opt_alg : 'str',
-        simplify_eqs : bool
+        simplify_eqs : bool,
+        kfold : int
     ) -> 'list[float]': # -> 'tuple[list[float],float]':
     '''
     Solve with optimization problem
@@ -194,18 +196,40 @@ def solve_with_optimization(
     # import sys
     # sys.exit()
     original_eq_dict = interpretation_eq_dict.copy()
-    original_dataset = prog.train_set
     # initial_prob_facts = prog.learnable_facts.copy()
     ll_test_list : 'list[float]' = []
     
-    for n_fold in range(0, len(prog.train_set)):
-        ts = original_dataset
-        prog.train_set = ts[0 : n_fold] + ts[n_fold+1 : ]
-        prog.test_set = [ts[n_fold]]
+    # kfold: if 0, reserve one instance for test and the remaining for test
+    # if != 0, splits the dataset in kfold parts, use one for training and the
+    # remaining for test
+    # ex: len(test_set) = 12, [0,1,2,3,4,5,6,7,8,9,10,11] kfold = 3
+    # it0: test: [0,1,2,3], training: [4,5,6,7,8,9,10,11]
+    # it1: test: [4,5,6,7], training: [1,2,3,8,9,10,11]
+    # it2: test: [8,9,10,11], training: [1,2,3,4,5,6,7]
+    
+    print("--- INIT KFOLD ---")
+
+    if len(prog.train_set) % kfold != 0:
+        print(f"Unable to split evenly the dataset: len training set {len(prog.train_set)}, folds {kfold}")
+        sys.exit()
+    
+    # chunks : 'list[list[[int]]' = [prog.train_set[i::kfold] for i in range(kfold)]
+    chunks : 'list[list[[int]]' = [list(l) for l in mit.divide(kfold, prog.train_set)]
+    print(f"chunks: {chunks}")
+    whole_train_set = prog.train_set
+    
+    for chunk in chunks:
+        # ts = original_dataset
+        # prog.train_set = ts[0 : n_fold] + ts[n_fold+1 : ]
+        # prog.test_set = [ts[n_fold]]
+        prog.test_set = chunk
+        prog.train_set = list(set(whole_train_set) - set(chunk))
         current_eq_dict = original_eq_dict.copy()
         # only 1 example in the test
-        # pop already removes the element
-        test_eq_dict = {ts[n_fold] : current_eq_dict.pop(ts[n_fold])}
+        # test_eq_dict = {ts[n_fold] : current_eq_dict.pop(ts[n_fold])}
+        test_eq_dict = {}
+        for c in chunk:
+            test_eq_dict[c] = current_eq_dict.pop(c)
 
         print(f"Train: {prog.train_set} - test: {prog.test_set} - int.keys(): {prog.interpretations_dict.keys()}")
 
