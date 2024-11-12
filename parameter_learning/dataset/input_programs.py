@@ -124,7 +124,6 @@ negative(ID,valid):- id(ID), not valid.
     return program + to_show, learnable
 
 ################ paths
-# NOTE: error: unsafe variables in: negative(ID,path(A,B)):-[#inc_base];id(ID);not path(A,B).
 def generate_paths_10() -> 'tuple[str,list[str]]':
     """
     Generates the paths 10 dataset.
@@ -173,7 +172,6 @@ negative(ID,path(A,B)):- id(ID), node(A), node(B), not path(A,B).
 
     return program + to_show, learnable
     
-# NOTE: error: unsafe variables in: negative(ID,path(A,B)):-[#inc_base];id(ID);not path(A,B).
 def generate_paths_15() -> 'tuple[str,list[str]]':
     """
     Generates the paths 15 dataset.
@@ -232,8 +230,6 @@ negative(ID,path(A,B)):- id(ID), node(A), node(B), not path(A,B).
     return program + to_show, learnable
 
 ############### shop
-# NOTE: error: unsafe variables in: negative(ID,bought(A)):-[#inc_base];id(ID);not bought(A).
-# ^ Risolto mettendo A ground
 def generate_shop_4() -> 'tuple[str,list[str]]':
     """
     Generates the shop 4 dataset.
@@ -355,7 +351,7 @@ bought(zucchini):- bought(zucchini,_).
         "shops(g)",
         "shops(h)"
     ]
-    to_show = """ 
+    to_show = """
 positive(ID,bought(spaghetti)):- id(ID), bought(spaghetti).
 positive(ID,bought(steak)):- id(ID), bought(steak).
 positive(ID,bought(beans)):- id(ID), bought(beans).
@@ -389,7 +385,7 @@ def generate_shop_10() -> 'tuple[str,list[str]]':
     Generates the shop 10 dataset.
     """
 
-    program = """ 
+    program = """
 % Dataset shop of size 10
 
 bought(spaghetti,john) :- shops(john), not bought(steak,john).
@@ -468,7 +464,7 @@ bought(tape):- bought(tape,_).
         "shops(i)",
         "shops(l)"
     ]
-    to_show = """ 
+    to_show = """
 positive(ID,bought(spaghetti)):- id(ID), bought(spaghetti).
 positive(ID,bought(steak)):- id(ID), bought(steak).
 positive(ID,bought(beans)):- id(ID), bought(beans).
@@ -631,7 +627,6 @@ negative(ID,bought(tape)):- id(ID), not bought(tape).
     return program + to_show, learnable
 
 ################# smokers
-# NOTE: ERRORE sulle probabilità: <block>:2:2-3: error: syntax error, unexpected .
 def generate_smokers_1() -> 'tuple[str,list[str]]':
     """
     Generates the smokers 1 dataset.

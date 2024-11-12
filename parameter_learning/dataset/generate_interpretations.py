@@ -41,7 +41,20 @@ def setup_program(
     """
     probs = [random.random() for _ in range(len(facts))]
 
-    # print(program)
+    pl = program.splitlines()
+
+    cleaned_prog : 'list[str]' = []
+    for l in pl:
+        if not l.startswith("positive") and not l.startswith("negative") and not l.startswith("#show"):
+            pf = ["asthma_f","stress","pred"]
+            # only for smokers
+            if l.startswith(pf[0]) or l.startswith(pf[1]) or l.startswith(pf[2]):
+                cleaned_prog.append("0.2::" + l)
+            else:
+                cleaned_prog.append(l.replace("not", "\+ "))
+    
+    print("\n".join(cleaned_prog))
+    
     for l in facts:
         print(f"#learnable({l}).")
 
