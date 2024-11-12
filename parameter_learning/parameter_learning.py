@@ -25,6 +25,10 @@ def main():
 
     target : str = arguments.target
     simplify = not arguments.skip_simplify
+    
+    if arguments.kfold <= 0:
+        print("Folds must be > 0")
+        sys.exit()
 
     # step 1: parse the program
     fp = open(arguments.filename, "r")
@@ -146,12 +150,17 @@ def main():
             ll1 = -999999
             prog.test_set = chunk
             prog.train_set = list(set(whole_train_set) - set(chunk))
+            if prog.train_set == []:
+                prog.train_set = prog.test_set
             current_eq_dict = original_eq_dict.copy()
             # only 1 example in the test
             # test_eq_dict = {ts[n_fold] : current_eq_dict.pop(ts[n_fold])}
             test_eq_dict = {}
             for c in chunk:
                 test_eq_dict[c] = current_eq_dict.pop(c)
+                
+            if current_eq_dict == {}: # in case of only one fold, test on train
+                current_eq_dict = original_eq_dict.copy()
 
             # restore the value of the learnable facts
             prog.learnable_facts = initial_value_lf.copy()
@@ -279,8 +288,15 @@ def main():
 
     print("----- RESULTS -----")
     print(f"LL test list: {ll_test_list}")
-    mean_ll = statistics.mean(ll_test_list)
-    variance_ll = statistics.variance(ll_test_list)
+    try:
+        mean_ll = statistics.mean(ll_test_list)
+    except:
+        mean_ll = ll_test_list[0]
+    
+    try:
+        variance_ll = statistics.variance(ll_test_list)
+    except:
+        variance_ll = 0
     min_ll = min(ll_test_list)
     max_ll = max(ll_test_list)
     print("LL: mean, variance, min, max")

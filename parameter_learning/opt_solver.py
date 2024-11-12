@@ -1,7 +1,9 @@
 import more_itertools as mit
 import time
 from scipy.optimize import minimize
+from sympy import diff
 import sys
+
 
 from eqs_handler import get_nice_eqs, evaluate_eq, my_log, Program
 
@@ -208,7 +210,7 @@ def solve_with_optimization(
     # it2: test: [8,9,10,11], training: [1,2,3,4,5,6,7]
     
     print("--- INIT KFOLD ---")
-
+    
     if len(prog.train_set) % kfold != 0:
         print(f"Unable to split evenly the dataset: len training set {len(prog.train_set)}, folds {kfold}")
         sys.exit()
@@ -217,19 +219,24 @@ def solve_with_optimization(
     chunks : 'list[list[[int]]' = [list(l) for l in mit.divide(kfold, prog.train_set)]
     print(f"chunks: {chunks}")
     whole_train_set = prog.train_set
-    
+        
     for chunk in chunks:
         # ts = original_dataset
         # prog.train_set = ts[0 : n_fold] + ts[n_fold+1 : ]
         # prog.test_set = [ts[n_fold]]
         prog.test_set = chunk
         prog.train_set = list(set(whole_train_set) - set(chunk))
+        if prog.train_set == []:
+            prog.train_set = prog.test_set
         current_eq_dict = original_eq_dict.copy()
         # only 1 example in the test
         # test_eq_dict = {ts[n_fold] : current_eq_dict.pop(ts[n_fold])}
         test_eq_dict = {}
         for c in chunk:
             test_eq_dict[c] = current_eq_dict.pop(c)
+        
+        if current_eq_dict == {}: # in case of only one fold, test on train
+            current_eq_dict = original_eq_dict.copy()
 
         print(f"Train: {prog.train_set} - test: {prog.test_set} - int.keys(): {prog.interpretations_dict.keys()}")
 
@@ -255,5 +262,6 @@ def solve_with_optimization(
         print("LL test")
         print(ll_test)
         ll_test_list.append(ll_test)
+        print("----------------")
 
     return ll_test_list
