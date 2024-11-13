@@ -52,7 +52,8 @@ class ConstrainedProblem:
 def solve_optimization(
         eqs_list : 'list[str]',
         learnable_facts : 'list[str]',
-        opt_alg : 'str'
+        opt_alg : 'str',
+        clip_probs : 'tuple[float,float]'
     ) -> 'tuple[list[float],float]':
     """
     Solves the optimization problem.
@@ -65,7 +66,7 @@ def solve_optimization(
     whole_eq = "-(" + whole_eq[:-1] + ")"
 
 
-    learnable_facts_sorted = sorted(learnable_facts)
+    # learnable_facts_sorted = sorted(learnable_facts)
     
     # print("eq to minimize")
     # print(whole_eq)
@@ -73,16 +74,17 @@ def solve_optimization(
     # print(learnable_facts_sorted)
     
 
-    initial_guesses =  [] 
-    for el in learnable_facts:
-        initial_guesses.append(0.5)
+    initial_guesses =  [0.5]*len(learnable_facts)
+    # for el in learnable_facts:
+    #     initial_guesses.append(0.5)
 
-    opt_problem = ConstrainedProblem(whole_eq, learnable_facts_sorted)
+    opt_problem = ConstrainedProblem(whole_eq, learnable_facts)
 
     # constraints to keep the probabilities of the facts between 0 and 1
-    for el in learnable_facts_sorted:
-        current_problem_0 = ConstrainedProblem(f"1 - {el}", learnable_facts_sorted)
-        current_problem_1 = ConstrainedProblem(f"{el}", learnable_facts_sorted)
+    for el in learnable_facts:
+        # clipping the probabilities
+        current_problem_0 = ConstrainedProblem(f"{clip_probs[1]} - {el}", learnable_facts)
+        current_problem_1 = ConstrainedProblem(f"{el} - {clip_probs[0]}", learnable_facts)
         constraints.append({
             'type' : 'ineq',
             'fun' : current_problem_0.eval_fn,
@@ -161,10 +163,17 @@ def test_results(
     for computed, el in zip(computed_probs, learnable_facts):
         learnable_facts[el] = computed
 
+    print("Probabilities associated to facts")
+    print(learnable_facts)
+    
+    print("Probability of the interpretations")
     # compute the LL
     ll0 = 0
-    for eq in interpretation_eq_dict.values():
-        ll0 += my_log(evaluate_eq(eq, learnable_facts))
+    for idx, eq in enumerate(interpretation_eq_dict.values()):
+        r = evaluate_eq(eq, learnable_facts)
+        lr = my_log(r)
+        print(f"int {idx}: P = {r}, log(P) = {lr}")
+        ll0 += lr
 
     return ll0
 
@@ -182,6 +191,11 @@ def solve_with_optimization(
     '''
     # cross validation: given X training examples, use X-1 for training and test
     # on the remaining. Then, repeat X times.
+    
+    clip_probs = (0.000000001, 0.999999999)
+    
+    # sort the learnable facts, crucial
+    prog.learnable_facts = dict(sorted(prog.learnable_facts.items()))
 
     ll0 = compute_ll_from_eqs(
         prog,
@@ -192,8 +206,8 @@ def solve_with_optimization(
     )
     print(f"LL on training set with initial values: {ll0}")
 
-    print("Computed equations")
-    print(interpretation_eq_dict)
+    # print("Computed equations")
+    # print(interpretation_eq_dict)
 
     # import sys
     # sys.exit()
@@ -240,20 +254,34 @@ def solve_with_optimization(
 
         print(f"Train: {prog.train_set} - test: {prog.test_set} - int.keys(): {prog.interpretations_dict.keys()}")
 
+        # ordered_learnable_facts : 'list[str]' = sorted(list(prog.learnable_facts.keys()))
         start_time = time.time()
         vals, final_ll = solve_optimization(
             list(current_eq_dict.values()),
             list(prog.learnable_facts.keys()),
-            opt_alg
+            opt_alg,
+            clip_probs
         )
         eq_opt_time = time.time() - start_time
         print(f"Opt time with {opt_alg}: {eq_opt_time} seconds")
-        print(f"vals: {vals}, LL training: {final_ll}")
-
+        for v_opt, value in zip(prog.learnable_facts.keys(), vals):
+            print(f"{v_opt}:{value}")
+        print(f"LL training: {final_ll}")
+        
+        # clipping the probabilities:
+        # if prob < e-8 -> prob = 0.000000001
+        # if prob >= 1 -> prob = 0.999999999
+        # same values as in solve_optimization
+        for i in range(0,len(vals)):
+            if vals[i] < 10e-8:
+                vals[i] = clip_probs[0]
+            elif vals[i] >= 1:
+                vals[i] = clip_probs[1]
+        
         # test on the remaining fold
-        print(prog.learnable_facts)
+        # print(prog.learnable_facts)
         print("Testing on")
-        print(test_eq_dict)
+        # print(test_eq_dict)
         ll_test = test_results(
             test_eq_dict,
             prog.learnable_facts,

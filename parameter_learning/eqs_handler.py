@@ -119,7 +119,7 @@ def parse_facts(lines : 'list[str]', init_prob : float) -> Program:
 
 def my_log(x):
     if x <= 0:
-        return 0.001
+        return math.log(0.000001)
     return math.log(x)
 
 def get_equations(
