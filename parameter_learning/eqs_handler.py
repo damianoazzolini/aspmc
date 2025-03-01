@@ -3,7 +3,7 @@ import math
 import random
 
 from sympy import diff
-from sympy import simplify
+from sympy import simplify, expand, factor
 from sympy import sympify
 
 from aspmc.programs.smprogram import SMProblogProgram
@@ -178,18 +178,18 @@ def get_equations(
         if opt_mode:
             if target == "lower":
                 if simplify_eqs:
-                    eq_lp_list.append(str(simplify(sympify(eq_l))))
+                    eq_lp_list.append(str(factor(expand(sympify(eq_l)))))
                 else:
                     eq_lp_list.append(str(sympify(eq_l)))
             else:
                 if simplify_eqs:
-                    eq_up_list.append(str(simplify(sympify(eq_u))))
+                    eq_up_list.append(str(factor(expand(sympify(eq_u)))))
                 else:
                     eq_up_list.append(str(sympify(eq_u)))
         else: # for EM I need both equations
             if simplify_eqs:
-                eq_lp_list.append(str(simplify(sympify(eq_l))))
-                eq_up_list.append(str(simplify(sympify(eq_u))))
+                eq_lp_list.append(str(factor(expand(sympify(eq_l)))))
+                eq_up_list.append(str(factor(expand(sympify(eq_u)))))
             else:
                 eq_lp_list.append(str(sympify(eq_l)))
                 eq_up_list.append(str(sympify(eq_u)))
